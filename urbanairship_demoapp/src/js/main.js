@@ -131,15 +131,7 @@
 //        }
 //    );
 
-<<<<<<< HEAD
-
-
-forge.urbanairship.setTags( ["pete","me"], success, errorfail);
-forge.urbanairship.getTags( function (d)  { forge.logging.log(d[0]);} , errorfail);
-=======
-    //shutdown background location services
-    //forge.urbanairship.disableBackgroundLocation(success, errorfail);
 
 
 }());
->>>>>>> a047556cab587ac350d96ca51fdc77cc02b652f2
+
