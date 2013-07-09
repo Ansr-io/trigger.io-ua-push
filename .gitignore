@@ -1,3 +1,4 @@
-urbanairship_demoapp/development
-urbanairship_demoapp/.template
+urbanairship_demoapp/.lib/
+urbanairship_demoapp/.template/
+urbanairship_demoapp/development/
 forge-error.log
