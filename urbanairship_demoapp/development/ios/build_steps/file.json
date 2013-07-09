@@ -1,3 +1,0 @@
-[
-	{ "do": { "add_ios_system_framework": "MobileCoreServices.framework" } }
-]

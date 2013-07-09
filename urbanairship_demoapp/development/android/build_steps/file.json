@@ -1,9 +1,0 @@
-[
-	{
-		"do": {
-			"android_add_permission": {
-				"permission": "android.permission.WRITE_EXTERNAL_STORAGE"
-			}
-		}
-	}
-]
