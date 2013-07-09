@@ -85,17 +85,16 @@ forge.urbanairship = {
         //
     },
     enableLocation: function ( success, error) {
-        // [   INFO] W/Forge   (11400): Error while executing API method: odr_ua.enableLocation
-        // [   INFO] D/Forge   (11400): Returned: {"content":{"message":"Forge Java error: NullPointerException: null","type":"UNEXPECTED_FAILURE","subtype":null,"full_error":"java.lang.NullPointerException\n\tat com.urbanairship.location.UALocationManager.enableLocation(Unknown Source)\n\tat io.trigger.forge.android.modules.odr_ua.API.enableLocation(API.java:123)\n\tat java.lang.reflect.Method.invokeNative(Native Method)\n\tat java.lang.reflect.Method.invoke(Method.java:511)\n\tat io.trigger.forge.android.core.ForgeApp.callJavaFromJavaScript(ForgeApp.java:315)\n\tat io.trigger.forge.android.core.ForgeJSBridge$1.run(ForgeJSBridge.java:25)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)\n\tat java.lang.Thread.run(Thread.java:856)\n"},"callid":"03C29DC6-78F9-41C3-ABC7-5C4FA5382DCE","status":"error"}
+        //
     },
     disableLocation: function ( success, error) {
-        // untested
+        //
     },
     enableBackgroundLocation: function ( success, error) {
-        // [   INFO] E/Forge   ( 8139): error :: forge.odr_ua.enableBackgroundLocation :: {"message":"Forge Java error: NullPointerException: null","type":"UNEXPECTED_FAILURE","subtype":null,"full_error":"java.lang.NullPointerException\n\tat com.urbanairship.location.UALocationManager.enableBackgroundLocation(Unknown Source)\n\tat io.trigger.forge.android.modules.odr_ua.API.enableBackgroundLocation(API.java:134)\n\tat java.lang.reflect.Method.invokeNative(Native Method)\n\tat java.lang.reflect.Method.invoke(Method.java:511)\n\tat io.trigger.forge.android.core.ForgeApp.callJavaFromJavaScript(ForgeApp.java:315)\n\tat io.trigger.forge.android.core.ForgeJSBridge$1.run(ForgeJSBridge.java:25)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)\n\tat java.lang.Thread.run(Thread.java:856)\n"} -- From line 96 of content://com.plugtester/src/js/main.js
+        //
     },
     disableBackgroundLocation: function (success, error) {
-        // untested
+        //
     },
     // ------------------------------------------------------------
     isPushEnabled: function (callback) {},
@@ -132,7 +131,6 @@ forge.urbanairship = {
         // Set alias for the device.
     },
     setTags: function (tags, success, error) {
-        // tested:incomplete
         // @tags: Array : list of Strings to set
     },
     setSoundEnabled: function (enabled, callback) {
