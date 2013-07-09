@@ -6,8 +6,8 @@
             forge.logging.log('errorfail :: '+JSON.stringify(e));
         },
         log = function () {
-//            return forge.logging.log.apply(this, arguments);
-            return alert.apply(this, arguments);
+          return forge.logging.log.apply(this, arguments);
+            //return alert.apply(this, arguments);
         }
 
 
@@ -108,8 +108,8 @@
     forge.urbanairship.getTags(
         function (d) {
 //            var tags = JSON.parse(d.tags);
-//            log('getTags: '+tags.join(', '));
-            log('tags: '+JSON.stringify(d));
+            log('getTags: '+d.join(', '));
+            log('tags: '+d[0]);
         },
         errorfail
     );
