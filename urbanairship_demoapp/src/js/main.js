@@ -99,6 +99,13 @@
         },
         errorfail
     );
+    forge.urbanairship.setAlias(
+       'zacksnexusphone',
+       function (d) {
+           log('setAlias: '+JSON.stringify(d));
+       },
+       errorfail
+   );
     forge.urbanairship.getQuietTime(
         function (d) {
             log('getQuietTime: '+JSON.stringify(d));
@@ -113,6 +120,7 @@
         },
         errorfail
     );
+
     forge.urbanairship.getAlias(
         function (d) {
             log('getAlias: '+JSON.stringify(d));
