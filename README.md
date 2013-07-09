@@ -58,17 +58,23 @@ PLEASE NOTE - special attention will be required if your project uses build hook
 Modify local UA settings:
 
 #### Android
+
 Update the UA settings file in hooks/postbuild/uaplugin/airshipconfig.properties
-Open hooks/postbuild/hook.py - replace the string ‘com.plugtester’ with your app package name
+
+Open hooks/postbuild/hook.py - replace the string ‘com.plugtester’ with your app package name.
+N.B. package name is defined in src/config.json
 
 
 #### iOS
+
 Update the UA settings file in hooks/postbuild/uaplugin/airshipConfig.plist
 
 
 ### API documentation
-For full API details see
-http://docs.urbanairship.com/build/phonegap.html#javascript-api 
+
+For full API details see:
+
+http://docs.urbanairship.com/build/phonegap.html#javascript-api
 https://github.com/urbanairship/phonegap-ua-push
 
 
