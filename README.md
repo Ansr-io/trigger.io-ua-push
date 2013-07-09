@@ -3,7 +3,7 @@
 plugin for trigger.io platform allowing integration with push messaging service provided by Urban Airship
 Ported and modified with permission, from the official phonegap plugin.
 
-###License
+###License (BSD 2-part)
 
 Copyright (c) 2013, Ansr.io
 All rights reserved.
