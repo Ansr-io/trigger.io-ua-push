@@ -1,6 +1,6 @@
 {
     "author": "petehobo@gmail.com", 
-    "config_hash": "708ba5c331e20376a342b3e2415b9456077b7671", 
+    "config_hash": "e9be05b796e9d4895a7e4c4baaa565968d70ca7e", 
     "config_version": "4", 
     "core": {
         "android": {
@@ -57,7 +57,7 @@
             "hash": "notahash"
         }, 
         "urbanairship": {
-            "hash": "0ffaf3cba565c67150d1d567b6566f3e26d2081b", 
+            "hash": "1d514b8a461777c27c0d0f2217139a8102c11a6e", 
             "type": "project"
         }
     }, 

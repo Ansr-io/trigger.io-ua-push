@@ -1,4 +1,26 @@
 {
-
+	"android": {
+		"device": "4df1a5c646d45f31",
+		"profiles": {
+			"DEFAULT": {
+				"keystore": ".",
+				"keypass": "password",
+				"keyalias": "key",
+				"storepass": "password"
+			}
+		},
+		"sdk": "/Users/pete/adt-bundle-mac-x86_64-20130522/sdk/"
+	},
+	"ios": {
+		"device": "simulator",
+		"simulatorsdk": "6.1",
+		"simulatorfamily": "iphone",
+		"profiles": {
+			"DEFAULT": {
+				"provisioning_profile": "/Users/pete/Desktop/1BD7ABAC-F3F6-40AB-897C-D0E8B9BA29A1.mobileprovision",
+				"developer_certificate": "iPhone Developer: Pete Hobson (45TGF7V3QL)"
+			}
+		}
+	},
 	"general": {}
 }

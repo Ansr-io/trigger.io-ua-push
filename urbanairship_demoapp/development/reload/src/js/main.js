@@ -39,21 +39,7 @@ forge.urbanairship.enableBackgroundLocation(success,errorfail);
 // Test functionality
 //*******************
 
-//alert (JSON.parse (["pete","me"]));
-//forge.urbanairship.setTags(["pete","me"],success,errorfail);
 
-function getTags ( success, error) {
-    	suc_f = function (d) {
-    		suc_f.cb( JSON.parse(d.tags));
-    	}
-    	suc_f.cb = success;
-        forge.internal.call('urbanairship.getTags', {}, suc_f, error);
-    } 
 
-function get_tags_success(d) {
- 
-  forge.logging.log('success :: '+(JSON.parse(d.tags)));
-}
-
- forge.internal.call('urbanairship.setTags', {"tags":["pete","me"]}, success, errorfail);
- getTags( success, errorfail);
+forge.urbanairship.setTags( ["pete","me"], success, errorfail);
+forge.urbanairship.getTags( function (d)  { forge.logging.log(d[0]);} , errorfail);
