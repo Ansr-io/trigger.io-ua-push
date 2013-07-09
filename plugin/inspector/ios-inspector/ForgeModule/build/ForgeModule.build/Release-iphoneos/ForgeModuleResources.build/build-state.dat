@@ -1,0 +1,34 @@
+TForgeModuleResources
+v5
+r1
+cCheck dependencies
+cTouch /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/odr_ua.bundle
+
+N/Users/pete/Dropbox/forge-workspace/plugins/odr_ua/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/odr_ua.bundle
+t2
+s0
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/odr_ua.bundle
+t2
+s0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies58e308e32c8cb741^22c409e32c8cb741^---0#1#0#--18"Check dependencies36"39E5D52D-3A7C-4050-8757-F51891CECF88-
+
+CTouch /Users/pete/Dropbox/forge-workspace/plugins/odr_ua/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/odr_ua.bundle
+s394966339.703018
+e394966339.746043
+r1
+xTouch
+x/Users/pete/Dropbox/forge-workspace/plugins/odr_ua/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/odr_ua.bundle
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection129"Touch /Users/pete/Dropbox/forge-workspace/plugins/odr_ua/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/odr_ua.bundle1782b443b58ab741^d927c043b58ab741^---0#0#0#--1182"Touch build/Release-iphoneos/odr_ua.bundle    cd /Users/pete/Dropbox/forge-workspace/plugins/odr_ua/inspector/ios-inspector/ForgeModule    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/pete/Dropbox/forge-workspace/plugins/odr_ua/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/odr_ua.bundle36"59BE8C1E-96D6-419B-825E-90E726DA6A5B-
+
+CTouch /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/odr_ua.bundle
+s395062499.041997
+e395062499.095985
+r1
+xTouch
+x/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/odr_ua.bundle
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection140"Touch /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/odr_ua.bundle45460be32c8cb741^aab518e32c8cb741^---0#0#0#--305"Touch build/Release-iphoneos/odr_ua.bundle    cd /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule    /usr/bin/touch -c /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/odr_ua.bundle36"17B3F574-B9D1-4F32-9C3D-0D75589E0804-
+

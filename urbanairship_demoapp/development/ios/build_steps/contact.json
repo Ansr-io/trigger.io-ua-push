@@ -1,0 +1,4 @@
+[
+        { "do": { "add_ios_system_framework": "AddressBook.framework" } },
+        { "do": { "add_ios_system_framework": "AddressBookUI.framework" } }
+]

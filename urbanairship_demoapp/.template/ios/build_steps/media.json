@@ -1,0 +1,5 @@
+[
+	{ "do": { "add_ios_system_framework": "MediaPlayer.framework" } },
+	{ "do": { "add_ios_system_framework": "AVFoundation.framework" } },
+	{ "when": { "config_property_is_true": "{{plugins.media.config.enable_background_audio}}" }, "do": { "ios_add_background_mode": "audio" } }
+]

@@ -1,0 +1,204 @@
+{
+	"description": "Schema for locally set configuration",
+	"additionalProperties": false,
+	"type": "object",
+	"properties": {
+		"profile": {
+			"type": "string",
+			"description": "for switching between profiles in the config file",
+			"required": false,
+			"blank": false
+		},
+
+		"general": {
+			"required": false,
+			"type": "object",
+			"additionalProperties": false,
+			"properties": {
+				"interactive": {
+					"type": "boolean",
+					"required": false
+				},
+				"reload": {
+					"required": false,
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"external": {
+							"type": "boolean",
+							"required": false,
+							"description": "Use an external content delivery network for reload updates"
+						}
+					}
+				}
+			}
+		},
+
+		"ios": {
+			"required": false,
+			"type": "object",
+			"additionalProperties": false,
+			"properties": {
+				"device": {
+					"type": "string",
+					"blank": true,
+					"required": false,
+					"description": "either 'simulator', 'device' or a specific device ID"
+				},
+				"simulatorsdk": {
+					"type": "string",
+					"required": false,
+					"description": "SDK version to launch simulator at"
+				},
+				"simulatorfamily": {
+					"type": "string",
+					"required": false,
+					"description": "Device family to launch simulator with, either 'iphone' or 'ipad'"
+				},
+				"profile": {
+					"required": false,
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"provisioning_profile": {
+							"type": "string",
+							"blank": true,
+							"required": false,
+							"_filepicker": true
+						},
+						"developer_certificate": {
+							"type": "string",
+							"blank": true,
+							"required": false
+						},
+						"developer_certificate_path": {
+							"type": "string",
+							"blank": true,
+							"required": false,
+							"_filepicker": true
+						},
+						"developer_certificate_password": {
+							"type": "string",
+							"blank": true,
+							"required": false,
+							"_password": true
+						}
+					}
+				}
+			}
+		},
+		"android": {
+			"required": false,
+			"type": "object",
+			"additionalProperties": false,
+			"properties": {
+				"sdk": {
+					"type": "string",
+					"blank": true,
+					"required": false,
+					"_dirpicker": true
+				},
+				"device": {
+					"type": "string",
+					"blank": true,
+					"required": false
+				},
+				"purge": {
+					"type": "boolean",
+					"required": false
+				},
+				"profile": {
+					"required": false,
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"keystore": {
+							"type": "string",
+							"blank": true,
+							"required": false,
+							"filepicker": true
+						},
+						"keyalias": {
+							"type": "string",
+							"blank": true,
+							"required": false
+						},
+						"storepass": {
+							"type": "string",
+							"blank": true,
+							"required": false,
+							"_password": true
+						},
+						"keypass": {
+							"type": "string",
+							"blank": true,
+							"required": false,
+							"_password": true
+						}
+					}
+				}
+			}
+		},
+		"web": {
+			"required": false,
+			"type": "object",
+			"additionalProperties": false,
+			"properties": {
+				"node_path": {
+					"type": "string",
+					"blank": false,
+					"required": false,
+					"_dirpicker": true
+				},
+				"profile": {
+					"required": false,
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"heroku_api_key": {
+							"type": "string",
+							"blank": true,
+							"required": false
+						},
+						"heroku_app_name": {
+							"type": "string",
+							"blank": true,
+							"required": false
+						}
+					}
+				}
+			}
+		},
+		"ie": {
+			"required": false,
+			"type": "object",
+			"additionalProperties": false,
+			"properties": {
+				"profile": {
+					"required": false,
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"developer_certificate": {
+							"type": "string",
+							"blank": true,
+							"required": false
+						},
+						"developer_certificate_path": {
+							"type": "string",
+							"blank": true,
+							"required": false,
+							"_filepicker": true
+						},
+						"developer_certificate_password": {
+							"type": "string",
+							"blank": true,
+							"required": false,
+							"_password": true
+						}
+					}
+				}
+			}
+		}
+	}
+}
