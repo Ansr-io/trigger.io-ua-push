@@ -5,7 +5,7 @@ Ported and modified with permission, from the official phonegap plugin.
 
 ###License (BSD 2-part)
 
-Copyright (c) 2013, Ansr.io
+Copyright (c) 2013, On Device Research Ltd.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
