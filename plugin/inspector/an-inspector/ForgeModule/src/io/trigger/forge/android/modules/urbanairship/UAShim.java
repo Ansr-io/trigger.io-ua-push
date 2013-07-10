@@ -1,8 +1,13 @@
 package io.trigger.forge.android.modules.urbanairship;
 
 
+import android.os.RemoteException;
+
+import com.urbanairship.Logger;
 import com.urbanairship.UAirship;
+import com.urbanairship.location.UALocationManager;
 import com.urbanairship.push.PushManager;
+import com.urbanairship.util.ServiceNotBoundException;
 
 import io.trigger.forge.android.core.ForgeApp;
 
@@ -21,7 +26,10 @@ public class UAShim extends ForgeApp {
 	    UAirship.takeOff(this);
 	    PushManager.enablePush();
 		PushManager.shared().setIntentReceiver(IntentReceiver.class);	
+    	
+
 
 	    
 	}
+
 }

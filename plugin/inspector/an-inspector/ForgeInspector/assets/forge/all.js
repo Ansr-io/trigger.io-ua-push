@@ -93,9 +93,9 @@ forge.urbanairship	 = {
     setQuietTimeEnabled: function (text,  success, error) {
         forge.internal.call('urbanairship.setQuietTimeEnabled', {text:text}, success, error);
     },   
-    setQuietTime: function (startHour, startMinute, endHour,endMinute, success, error) {
+    setQuietTime: function (quiteTimeDef, success, error) {
     
-        forge.internal.call('urbanairship.setQuietTime', {startHour:startHour,startMinute:startMinute,endHour:endHour,endMinute:endMinute }, success, error);
+        forge.internal.call('urbanairship.setQuietTime', quiteTimeDef, success, error);
     },
     setAutobadgeEnabled: function ( success, error) {
     if (forge.is.ios())
@@ -104,7 +104,12 @@ forge.urbanairship	 = {
     setBadgeNumber: function ( text, success, error) {
      if (forge.is.ios())
         forge.internal.call('urbanairship.setBadgeNumber', {text:text}, success, error);
-    }
+    },
+    
+//location stuff
+	recordCurrentLocation: function (  success) {
+        forge.internal.call('urbanairship.recordCurrentLocation', {}, success, success);
+    } 
     
 
     

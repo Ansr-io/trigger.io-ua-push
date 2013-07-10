@@ -16,6 +16,7 @@ import com.urbanairship.UAirship;
 import com.urbanairship.location.UALocationManager;
 import com.urbanairship.push.GCMPushReceiver;
 import com.urbanairship.push.PushManager;
+import com.urbanairship.util.ServiceNotBoundException;
 
 import io.trigger.forge.android.core.ForgeApp;
 import io.trigger.forge.android.core.ForgeParam;
@@ -25,6 +26,8 @@ import android.app.Application;
 import android.content.BroadcastReceiver;
 import android.content.DialogInterface;
 import android.content.IntentFilter;
+import android.location.Location;
+import android.os.RemoteException;
 import android.util.Log;
 
 import java.lang.reflect.Method;
@@ -263,6 +266,7 @@ public class API {
 	}
 	
 	public static void getAlias(final ForgeTask callbackContext) {
+
         if (requirePushServiceEnabled(callbackContext)) {
             String alias = PushManager.shared().getAlias();
             alias = alias != null ? alias : "";
@@ -273,9 +277,12 @@ public class API {
 //setters
 
 	public static void setAlias(final ForgeTask callbackContext, @ForgeParam("text") final String text) {
-        //TODO this looks unimplmented in orginal
+       
 		Logger.debug("setAlias"+ text.toString());
+		PushManager.shared().setAlias(text);
         callbackContext.success();
+        
+        
         
 	}
 	public static void setTags(final ForgeTask callbackContext,  @ForgeParam("tags") final JsonArray tagsArray) {
@@ -369,8 +376,27 @@ public class API {
         }
 	}
 
+//location stuff
+	public static void recordCurrentLocation(final ForgeTask callbackContext) {	
+	    if (!requireLocationServiceEnabled(callbackContext)) {
+	        return;
+	    }
 
-	
+	    try {
+	        Logger.debug("LOGGING LOCATION");	
+	        UALocationManager.shared().recordCurrentLocation();
+	    } catch (ServiceNotBoundException e) {
+	        Logger.debug("Location not bound, binding now");
+	        UALocationManager.bindService();
+	    } catch (RemoteException e) {
+	        Logger.error("Caught RemoteException in recordCurrentLocation", e);
+	    } catch (Exception e) {
+	    	 Logger.error("Exception in recordCurrentLocation", e);
+	    
+	    }
+	    
+	    callbackContext.success();
+	}
 	
 	
 
