@@ -79,7 +79,7 @@
         errorfail
     );
     forge.urbanairship.setQuietTime(
-        22,0,10,0,
+        {"startHour":22,"startMinute":0,"endHour":10,"endMinute":0},
         function () {
             log('success :: setQuietTime');
 
@@ -121,14 +121,24 @@
     // --------------------------------------------------------------------------------------
 
     //startup background location services
+    //the record a location
     forge.urbanairship.enableBackgroundLocation(
         function () {
             log('success :: forge.urbanairship.enableBackgroundLocation');
+                 //record location 
+				forge.urbanairship.recordCurrentLocation(
+					function () {
+						log('success :: forge.urbanairship.recordCurrentLocation');
+					}
+				);
         },
         function (e) {
             log('error :: forge.urbanairship.enableBackgroundLocation :: '+JSON.stringify(e) );
         }
     );
+    
+  
+	
 
 
 

@@ -17,6 +17,7 @@ def build_android():
     """
     fpath = os.path.dirname(os.path.abspath(__file__))
     shutil.copy2(fpath + '/uaplugin/airshipconfig.properties', 'android/assets/airshipconfig.properties')
+    shutil.copy2(fpath + '/uaplugin/location.properties', 'android/assets/location.properties')
 
     with open("android/AndroidManifest.xml", "rw") as myfile:
         data = myfile.read()
