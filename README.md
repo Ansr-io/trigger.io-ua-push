@@ -198,6 +198,11 @@ forge.urbanairship = {
     },
     setBadgeNumber: function (number, success, error) {
         // Note: iOS only
+    },
+    //
+    recordCurrentLocation: function () {
+        // TODO: not yet implemented
+        // Report the location of the device.
     }
 };
 forge.internal.addEventListener("urbanairship.pushReceived", function (data) {

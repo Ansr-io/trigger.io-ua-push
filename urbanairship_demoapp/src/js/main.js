@@ -59,7 +59,7 @@
             log('getIncoming: '+JSON.stringify(d));
         },
         function (e) {
-            console.log('error :: forge.urbanairship.getIncoming :: '+e);
+            log('error :: forge.urbanairship.getIncoming :: '+e);
         }
     );
 
@@ -85,7 +85,7 @@
 
             forge.urbanairship.getQuietTime(
                 function (d) {
-                    alert('getQuietTime: '+JSON.stringify(d));
+                    log('getQuietTime: '+JSON.stringify(d));
                 },
                 errorfail
             );
