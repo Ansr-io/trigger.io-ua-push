@@ -23,8 +23,8 @@
 //    );
 
     forge.urbanairship.enablePush(
-        function (d) {
-            success(d);
+        function () {
+            success('enablePush');
 
             forge.urbanairship.isPushEnabled(function (d) {
                 log('isPushEnabled: '+d);
@@ -64,34 +64,34 @@
     );
 
     // --------------------------------------------------------------------------------------
-//    forge.urbanairship.setAlias(
-//        'zacksnexusphone',
-//        function (d) {
-//            alert('setAlias: '+JSON.stringify(d));
-//        },
-//        errorfail
-//    );
-//    forge.urbanairship.setTags(
-//        ['more', 'awesomeness'],
-//        function (d) {
-//            alert('setTags: '+JSON.stringify(d));
-//        },
-//        errorfail
-//    );
-//    forge.urbanairship.setQuietTime(
-//        22,0,10,0,
-//        function (d) {
-//            alert('setQuietTime: '+JSON.stringify(d));
-//
-//            forge.urbanairship.getQuietTime(
-//                function (d) {
-//                    alert('getQuietTime: '+JSON.stringify(d));
-//                },
-//                errorfail
-//            );
-//        },
-//        errorfail
-//    );
+    forge.urbanairship.setAlias(
+        'zacksnexusphone',
+        function () {
+            log('success :: setAlias');
+        },
+        errorfail
+    );
+    forge.urbanairship.setTags(
+        ['more', 'awesomeness'],
+        function () {
+            log('success :: setTags');
+        },
+        errorfail
+    );
+    forge.urbanairship.setQuietTime(
+        22,0,10,0,
+        function () {
+            log('success :: setQuietTime');
+
+            forge.urbanairship.getQuietTime(
+                function (d) {
+                    alert('getQuietTime: '+JSON.stringify(d));
+                },
+                errorfail
+            );
+        },
+        errorfail
+    );
     // --------------------------------------------------------------------------------------
     forge.urbanairship.getPushID(
         function (d) {
@@ -99,13 +99,6 @@
         },
         errorfail
     );
-    forge.urbanairship.setAlias(
-       'zacksnexusphone',
-       function (d) {
-           log('setAlias: '+JSON.stringify(d));
-       },
-       errorfail
-   );
     forge.urbanairship.getQuietTime(
         function (d) {
             log('getQuietTime: '+JSON.stringify(d));
@@ -113,31 +106,29 @@
         errorfail
     );
     forge.urbanairship.getTags(
-        function (d) {
-//            var tags = JSON.parse(d.tags);
-            log('getTags: '+d.join(', '));
-            log('tags: '+d[0]);
+        function (tags) {
+            log('getTags: '+tags.join(', '));
         },
         errorfail
     );
 
     forge.urbanairship.getAlias(
-        function (d) {
-            log('getAlias: '+JSON.stringify(d));
+        function (alias) {
+            log('getAlias: '+alias);
         },
         errorfail
     );
     // --------------------------------------------------------------------------------------
 
     //startup background location services
-//    forge.urbanairship.enableBackgroundLocation(
-//        function (d) {
-//            log('success :: forge.urbanairship.enableBackgroundLocation :: '+d);
-//        },
-//        function (e) {
-//            log('error :: forge.urbanairship.enableBackgroundLocation :: '+JSON.stringify(e) );
-//        }
-//    );
+    forge.urbanairship.enableBackgroundLocation(
+        function () {
+            log('success :: forge.urbanairship.enableBackgroundLocation');
+        },
+        function (e) {
+            log('error :: forge.urbanairship.enableBackgroundLocation :: '+JSON.stringify(e) );
+        }
+    );
 
 
 

@@ -111,34 +111,51 @@ https://github.com/urbanairship/phonegap-ua-push
 ```
 forge.urbanairship = {
     showAlert: function (text, success, error) {
-        // does nothing ?
+        // does nothing ????
+        // remove this - or fix it.
     },
     enablePush: function ( success, error) {
-        //
+        // Enable push notifications on the device. This sends a registration to the backend service.
     },
     disablePush: function ( success, error) {
-        //
+        // Disable push notifications on the device. The device will no longer recieve push notifications.
     },
     enableLocation: function ( success, error) {
-        //
+        // Enable location updates on the device.
     },
     disableLocation: function ( success, error) {
-        //
+        // Disable location updates on the device.
     },
     enableBackgroundLocation: function ( success, error) {
-        //
+        // Enable background location updates on the device.
     },
     disableBackgroundLocation: function (success, error) {
-        //
+        // Disable background location updates on the device.
     },
     // ------------------------------------------------------------
-    isPushEnabled: function (callback) {},
-    isSoundEnabled: function (callback) {},
-    isVibrateEnabled: function (callback) {},
-    isQuietTimeEnabled: function (callback) {},
-    isInQuietTime: function (callback) {},
-    isLocationEnabled: function (callback) {},
-    isBackgroundLocationEnabled: function (callback) {},
+    isPushEnabled: function (callback) {
+        // Callback arguments : Boolean : enabled
+    },
+    isSoundEnabled: function (callback) {
+        // Note: Android Only
+        // Callback arguments : Boolean : enabled
+    },
+    isVibrateEnabled: function (callback) {
+        // Note: Android Only
+        // Callback arguments : Boolean : enabled
+    },
+    isQuietTimeEnabled: function (callback) {
+        // Callback arguments : Boolean : enabled
+    },
+    isInQuietTime: function (callback) {
+        // Callback arguments : Boolean : enabled
+    },
+    isLocationEnabled: function (callback) {
+        // Callback arguments : Boolean : enabled
+    },
+    isBackgroundLocationEnabled: function (callback) {
+        // Callback arguments : Boolean : enabled
+    },
     // ------------------------------------------------------------
     getIncoming: function ( success, error) {
         // Will bring up any existing notification if launched from one
@@ -153,20 +170,17 @@ forge.urbanairship = {
     getTags: function (success, error) {
         // @return : Array : array of tags
     },
-    getAlias: function ( success, error) {
-        // tested: ..working ?
-        // returns success, but value is empty string
+    getAlias: function (success, error) {
+        // @return : String : alias
+        // Get alias for the device.
     },
     // ------------------------------------------------------------
-    setAlias: function (text, success, error) {
-        // tested: ..working ?
-        // returns success but no value is set.
-        //
-        // @text : String : alias
+    setAlias: function (alias, success, error) {
+        // @alias : String : alias
         // Set alias for the device.
     },
     setTags: function (tags, success, error) {
-        // @tags: Array : list of Strings to set
+        // @tags: Array : tags
     },
     setSoundEnabled: function (enabled, callback) {
         // Note: Android Only, iOS sound settings come in the push
@@ -177,7 +191,7 @@ forge.urbanairship = {
         // Set whether the device vibrates on push.
     },
     setQuietTimeEnabled: function (enabled, callback) {
-        //
+        // @enabled : Boolean : enabled
     },
     setQuietTime: function (startHour, startMinute, endHour, endMinute, success, error) {
         // tested:working
@@ -187,6 +201,7 @@ forge.urbanairship = {
     },
     setAutobadgeEnabled: function (enabled, callback) {
         // Note: iOS only
+        // Enable/disable the Urban Airship Autobadge feature.
     },
     setBadgeNumber: function (number, success, error) {
         // Note: iOS only
@@ -195,5 +210,6 @@ forge.urbanairship = {
 forge.internal.addEventListener("urbanairship.pushReceived", function (data) {
     // Register for our native push events
     // this is called when a push is received: ONLY while the app is active
+    // see also getIncoming
 });
 ```
