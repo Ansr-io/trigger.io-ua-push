@@ -101,13 +101,6 @@ Update the UA settings file in hooks/postbuild/uaplugin/airshipConfig.plist
 
 ### API documentation
 
-For full API details see:
-
-http://docs.urbanairship.com/build/phonegap.html#javascript-api
-https://github.com/urbanairship/phonegap-ua-push
-
-
-
 ```
 forge.urbanairship = {
     showAlert: function (text, success, error) {
