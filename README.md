@@ -90,8 +90,8 @@ Modify local UA settings:
 
 Update the UA settings file in hooks/postbuild/uaplugin/airshipconfig.properties
 
-Open hooks/postbuild/hook.py - replace the string ‘com.plugtester’ with your app package name.
-N.B. package name is defined in src/config.json
+Open hooks/postbuild/hook.py, and set APP_PACKAGE_NAME to your app package name.
+N.B. package name is defined in src/config.json.
 
 
 #### iOS
