@@ -91,7 +91,10 @@ Modify local UA settings:
 Update the UA settings file in hooks/postbuild/uaplugin/airshipconfig.properties
 
 Open hooks/postbuild/hook.py, and set APP_PACKAGE_NAME to your app package name.
-N.B. package name is defined in src/config.json.
+
+N.B. package_names is defined in src/config.json.
+- package name must be a valid Java package name (lowercase, no hyphens)
+- package name may not contain underscores - Apple rejects bundle identifiers with underscores as invalid.
 
 
 #### iOS
@@ -201,8 +204,7 @@ forge.urbanairship = {
         // Note: iOS only
     },
     //
-    recordCurrentLocation: function () {
-        // TODO: not yet implemented
+    recordCurrentLocation: function (callback) {
         // Report the location of the device.
     }
 };
