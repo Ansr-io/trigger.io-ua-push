@@ -140,6 +140,10 @@
         function () {
             log('enableLocation :: success');
 
+            forge.urbanairship.isLocationEnabled(function (d) {
+                log('isLocationEnabled: '+d);
+            });
+
             forge.urbanairship.recordCurrentLocation(
                 function () {
                     log('success :: forge.urbanairship.recordCurrentLocation');
@@ -153,7 +157,11 @@
 
 //    forge.urbanairship.enableBackgroundLocation(
 //        function () {
-//            log('success :: forge.urbanairship.enableBackgroundLocation');
+//            log('enableBackgroundLocation :: success');
+//
+//            forge.urbanairship.isBackgroundLocationEnabled(function (d) {
+//                log('isBackgroundLocationEnabled: '+d);
+//            });
 //
 //            forge.urbanairship.recordCurrentLocation(
 //                function () {
