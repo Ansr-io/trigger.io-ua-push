@@ -177,6 +177,7 @@ forge.urbanairship = {
     },
     setTags: function (tags, success, error) {
         // @tags: Array : tags
+        // The maximum length of a tag is 128 characters.
     },
     setSoundEnabled: function (enabled, callback) {
         // Note: Android Only, iOS sound settings come in the push
