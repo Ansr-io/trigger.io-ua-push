@@ -11,10 +11,10 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>20b61a2f-5828-4aee-96ab-feafe610ecbcbuild</key>
+		<key>00ef160c-783b-40c9-ab29-06f210044fe3build</key>
 		<dict>
 			<key>fileRef</key>
-			<string>20b61a2f-5828-4aee-96ab-feafe610ecbcfile</string>
+			<string>00ef160c-783b-40c9-ab29-06f210044fe3file</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -25,76 +25,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>20b61a2f-5828-4aee-96ab-feafe610ecbcfile</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>usr/lib/libz.dylib</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>536c6293-c15f-445d-b309-7aba9c33ca9fbuild</key>
-		<dict>
-			<key>fileRef</key>
-			<string>536c6293-c15f-445d-b309-7aba9c33ca9ffile</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Weak</string>
-				</array>
-			</dict>
-		</dict>
-		<key>536c6293-c15f-445d-b309-7aba9c33ca9ffile</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/MobileCoreServices.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>5986bef3-06fb-4379-bb85-3955a774c79abuild</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5986bef3-06fb-4379-bb85-3955a774c79afile</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Weak</string>
-				</array>
-			</dict>
-		</dict>
-		<key>5986bef3-06fb-4379-bb85-3955a774c79afile</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>usr/lib/libsqlite3.dylib</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>64be0636-6bb0-4473-ae17-6f8d29f0441abuild</key>
-		<dict>
-			<key>fileRef</key>
-			<string>64be0636-6bb0-4473-ae17-6f8d29f0441afile</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Weak</string>
-				</array>
-			</dict>
-		</dict>
-		<key>64be0636-6bb0-4473-ae17-6f8d29f0441afile</key>
+		<key>00ef160c-783b-40c9-ab29-06f210044fe3file</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -103,10 +34,10 @@
 			<key>sourceTree</key>
 			<string>SDKROOT</string>
 		</dict>
-		<key>740dbb82-3acd-41c5-88df-2ff0dc75a204build</key>
+		<key>136a27f6-c608-4f63-a22a-0675a4ce68dcbuild</key>
 		<dict>
 			<key>fileRef</key>
-			<string>740dbb82-3acd-41c5-88df-2ff0dc75a204file</string>
+			<string>136a27f6-c608-4f63-a22a-0675a4ce68dcfile</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -117,19 +48,19 @@
 				</array>
 			</dict>
 		</dict>
-		<key>740dbb82-3acd-41c5-88df-2ff0dc75a204file</key>
+		<key>136a27f6-c608-4f63-a22a-0675a4ce68dcfile</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
+			<string>System/Library/Frameworks/Security.framework</string>
 			<key>sourceTree</key>
 			<string>SDKROOT</string>
 		</dict>
-		<key>89e7588f-b347-42f1-9358-b4609846a86fbuild</key>
+		<key>2054d868-d4ba-419b-a43e-4547291c20f9build</key>
 		<dict>
 			<key>fileRef</key>
-			<string>89e7588f-b347-42f1-9358-b4609846a86ffile</string>
+			<string>2054d868-d4ba-419b-a43e-4547291c20f9file</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -140,7 +71,99 @@
 				</array>
 			</dict>
 		</dict>
-		<key>89e7588f-b347-42f1-9358-b4609846a86ffile</key>
+		<key>2054d868-d4ba-419b-a43e-4547291c20f9file</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AudioToolbox.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>2d8d6af1-f6d8-4c3e-869c-ba90e63a1057build</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2d8d6af1-f6d8-4c3e-869c-ba90e63a1057file</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>2d8d6af1-f6d8-4c3e-869c-ba90e63a1057file</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreTelephony.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>45b75537-a1da-4f95-8dd9-4685307de325build</key>
+		<dict>
+			<key>fileRef</key>
+			<string>45b75537-a1da-4f95-8dd9-4685307de325file</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>45b75537-a1da-4f95-8dd9-4685307de325file</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>usr/lib/libz.dylib</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>5d0375bc-0772-4e16-96d0-7e12588fb552build</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5d0375bc-0772-4e16-96d0-7e12588fb552file</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5d0375bc-0772-4e16-96d0-7e12588fb552file</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CFNetwork.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>5d7fa9b4-43d8-4615-a78b-341cdd76b980build</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5d7fa9b4-43d8-4615-a78b-341cdd76b980file</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5d7fa9b4-43d8-4615-a78b-341cdd76b980file</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -149,10 +172,10 @@
 			<key>sourceTree</key>
 			<string>SDKROOT</string>
 		</dict>
-		<key>9a205dc7-2864-4a55-adaa-cff7db29958cbuild</key>
+		<key>64568c5f-acbc-44ae-a50c-177ca6c0d167build</key>
 		<dict>
 			<key>fileRef</key>
-			<string>9a205dc7-2864-4a55-adaa-cff7db29958cfile</string>
+			<string>64568c5f-acbc-44ae-a50c-177ca6c0d167file</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -163,12 +186,81 @@
 				</array>
 			</dict>
 		</dict>
-		<key>9a205dc7-2864-4a55-adaa-cff7db29958cfile</key>
+		<key>64568c5f-acbc-44ae-a50c-177ca6c0d167file</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>path</key>
 			<string>System/Library/Frameworks/MessageUI.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>64c66583-b4fe-4480-85e7-a9c3175a4599build</key>
+		<dict>
+			<key>fileRef</key>
+			<string>64c66583-b4fe-4480-85e7-a9c3175a4599file</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>64c66583-b4fe-4480-85e7-a9c3175a4599file</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>usr/lib/libsqlite3.dylib</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>73371bdc-d62c-4e16-9444-5090285f4e0cbuild</key>
+		<dict>
+			<key>fileRef</key>
+			<string>73371bdc-d62c-4e16-9444-5090285f4e0cfile</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>73371bdc-d62c-4e16-9444-5090285f4e0cfile</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>925019d9-959f-4d65-ac67-6a7241d576e2build</key>
+		<dict>
+			<key>fileRef</key>
+			<string>925019d9-959f-4d65-ac67-6a7241d576e2file</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>925019d9-959f-4d65-ac67-6a7241d576e2file</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
 			<key>sourceTree</key>
 			<string>SDKROOT</string>
 		</dict>
@@ -748,20 +840,20 @@ mv build/Release-iphoneos/*.bundle ../build 2&gt;&gt;/dev/null || echo "No bundl
 				<string>B3FC517E15C14B2A003574D9</string>
 				<string>B3FC518015C14B2A003574D9</string>
 				<string>B3FC519315C14B35003574D9</string>
-				<string>a4e4a915-6682-47bb-bd50-4f0e592a64cabuild</string>
-				<string>ca469e58-bb84-4994-8321-e3d7ed3baaebbuild</string>
-				<string>740dbb82-3acd-41c5-88df-2ff0dc75a204build</string>
-				<string>536c6293-c15f-445d-b309-7aba9c33ca9fbuild</string>
-				<string>f3223310-6f98-4470-8c0f-8773958dd26ebuild</string>
-				<string>64be0636-6bb0-4473-ae17-6f8d29f0441abuild</string>
-				<string>f37686ec-aec9-4515-9421-064dbd7006b2build</string>
-				<string>20b61a2f-5828-4aee-96ab-feafe610ecbcbuild</string>
-				<string>5986bef3-06fb-4379-bb85-3955a774c79abuild</string>
-				<string>c1859cb7-3f65-4f72-aa6f-7f6a9d974acebuild</string>
-				<string>e9d651d7-75d2-4a62-8781-d77cc58d2bbbbuild</string>
-				<string>9a205dc7-2864-4a55-adaa-cff7db29958cbuild</string>
-				<string>eb3af9b6-3e98-4c2d-b75d-5e9f17c8ee6cbuild</string>
-				<string>89e7588f-b347-42f1-9358-b4609846a86fbuild</string>
+				<string>5d0375bc-0772-4e16-96d0-7e12588fb552build</string>
+				<string>bd4a68c3-0f37-4f9a-bec7-df9a44e77065build</string>
+				<string>925019d9-959f-4d65-ac67-6a7241d576e2build</string>
+				<string>f5532293-e90c-4892-8b6a-39f1abcb684fbuild</string>
+				<string>136a27f6-c608-4f63-a22a-0675a4ce68dcbuild</string>
+				<string>00ef160c-783b-40c9-ab29-06f210044fe3build</string>
+				<string>73371bdc-d62c-4e16-9444-5090285f4e0cbuild</string>
+				<string>45b75537-a1da-4f95-8dd9-4685307de325build</string>
+				<string>64c66583-b4fe-4480-85e7-a9c3175a4599build</string>
+				<string>2d8d6af1-f6d8-4c3e-869c-ba90e63a1057build</string>
+				<string>ad67c348-e7a5-4b12-ad6c-af8ebe503930build</string>
+				<string>64568c5f-acbc-44ae-a50c-177ca6c0d167build</string>
+				<string>2054d868-d4ba-419b-a43e-4547291c20f9build</string>
+				<string>5d7fa9b4-43d8-4615-a78b-341cdd76b980build</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -859,20 +951,20 @@ mv build/Release-iphoneos/*.bundle ../build 2&gt;&gt;/dev/null || echo "No bundl
 				<string>B3FC517B15C14B2A003574D9</string>
 				<string>B3FC517D15C14B2A003574D9</string>
 				<string>B3FC517F15C14B2A003574D9</string>
-				<string>a4e4a915-6682-47bb-bd50-4f0e592a64cafile</string>
-				<string>ca469e58-bb84-4994-8321-e3d7ed3baaebfile</string>
-				<string>740dbb82-3acd-41c5-88df-2ff0dc75a204file</string>
-				<string>536c6293-c15f-445d-b309-7aba9c33ca9ffile</string>
-				<string>f3223310-6f98-4470-8c0f-8773958dd26efile</string>
-				<string>64be0636-6bb0-4473-ae17-6f8d29f0441afile</string>
-				<string>f37686ec-aec9-4515-9421-064dbd7006b2file</string>
-				<string>20b61a2f-5828-4aee-96ab-feafe610ecbcfile</string>
-				<string>5986bef3-06fb-4379-bb85-3955a774c79afile</string>
-				<string>c1859cb7-3f65-4f72-aa6f-7f6a9d974acefile</string>
-				<string>e9d651d7-75d2-4a62-8781-d77cc58d2bbbfile</string>
-				<string>9a205dc7-2864-4a55-adaa-cff7db29958cfile</string>
-				<string>eb3af9b6-3e98-4c2d-b75d-5e9f17c8ee6cfile</string>
-				<string>89e7588f-b347-42f1-9358-b4609846a86ffile</string>
+				<string>5d0375bc-0772-4e16-96d0-7e12588fb552file</string>
+				<string>bd4a68c3-0f37-4f9a-bec7-df9a44e77065file</string>
+				<string>925019d9-959f-4d65-ac67-6a7241d576e2file</string>
+				<string>f5532293-e90c-4892-8b6a-39f1abcb684ffile</string>
+				<string>136a27f6-c608-4f63-a22a-0675a4ce68dcfile</string>
+				<string>00ef160c-783b-40c9-ab29-06f210044fe3file</string>
+				<string>73371bdc-d62c-4e16-9444-5090285f4e0cfile</string>
+				<string>45b75537-a1da-4f95-8dd9-4685307de325file</string>
+				<string>64c66583-b4fe-4480-85e7-a9c3175a4599file</string>
+				<string>2d8d6af1-f6d8-4c3e-869c-ba90e63a1057file</string>
+				<string>ad67c348-e7a5-4b12-ad6c-af8ebe503930file</string>
+				<string>64568c5f-acbc-44ae-a50c-177ca6c0d167file</string>
+				<string>2054d868-d4ba-419b-a43e-4547291c20f9file</string>
+				<string>5d7fa9b4-43d8-4615-a78b-341cdd76b980file</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1220,10 +1312,10 @@ mv build/Release-iphoneos/*.bundle ../build 2&gt;&gt;/dev/null || echo "No bundl
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>a4e4a915-6682-47bb-bd50-4f0e592a64cabuild</key>
+		<key>ad67c348-e7a5-4b12-ad6c-af8ebe503930build</key>
 		<dict>
 			<key>fileRef</key>
-			<string>a4e4a915-6682-47bb-bd50-4f0e592a64cafile</string>
+			<string>ad67c348-e7a5-4b12-ad6c-af8ebe503930file</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1234,76 +1326,7 @@ mv build/Release-iphoneos/*.bundle ../build 2&gt;&gt;/dev/null || echo "No bundl
 				</array>
 			</dict>
 		</dict>
-		<key>a4e4a915-6682-47bb-bd50-4f0e592a64cafile</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CFNetwork.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>c1859cb7-3f65-4f72-aa6f-7f6a9d974acebuild</key>
-		<dict>
-			<key>fileRef</key>
-			<string>c1859cb7-3f65-4f72-aa6f-7f6a9d974acefile</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Weak</string>
-				</array>
-			</dict>
-		</dict>
-		<key>c1859cb7-3f65-4f72-aa6f-7f6a9d974acefile</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreTelephony.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>ca469e58-bb84-4994-8321-e3d7ed3baaebbuild</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ca469e58-bb84-4994-8321-e3d7ed3baaebfile</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Weak</string>
-				</array>
-			</dict>
-		</dict>
-		<key>ca469e58-bb84-4994-8321-e3d7ed3baaebfile</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>e9d651d7-75d2-4a62-8781-d77cc58d2bbbbuild</key>
-		<dict>
-			<key>fileRef</key>
-			<string>e9d651d7-75d2-4a62-8781-d77cc58d2bbbfile</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Weak</string>
-				</array>
-			</dict>
-		</dict>
-		<key>e9d651d7-75d2-4a62-8781-d77cc58d2bbbfile</key>
+		<key>ad67c348-e7a5-4b12-ad6c-af8ebe503930file</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -1312,10 +1335,10 @@ mv build/Release-iphoneos/*.bundle ../build 2&gt;&gt;/dev/null || echo "No bundl
 			<key>sourceTree</key>
 			<string>SDKROOT</string>
 		</dict>
-		<key>eb3af9b6-3e98-4c2d-b75d-5e9f17c8ee6cbuild</key>
+		<key>bd4a68c3-0f37-4f9a-bec7-df9a44e77065build</key>
 		<dict>
 			<key>fileRef</key>
-			<string>eb3af9b6-3e98-4c2d-b75d-5e9f17c8ee6cfile</string>
+			<string>bd4a68c3-0f37-4f9a-bec7-df9a44e77065file</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1326,19 +1349,19 @@ mv build/Release-iphoneos/*.bundle ../build 2&gt;&gt;/dev/null || echo "No bundl
 				</array>
 			</dict>
 		</dict>
-		<key>eb3af9b6-3e98-4c2d-b75d-5e9f17c8ee6cfile</key>
+		<key>bd4a68c3-0f37-4f9a-bec7-df9a44e77065file</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>path</key>
-			<string>System/Library/Frameworks/AudioToolbox.framework</string>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
 			<key>sourceTree</key>
 			<string>SDKROOT</string>
 		</dict>
-		<key>f3223310-6f98-4470-8c0f-8773958dd26ebuild</key>
+		<key>f5532293-e90c-4892-8b6a-39f1abcb684fbuild</key>
 		<dict>
 			<key>fileRef</key>
-			<string>f3223310-6f98-4470-8c0f-8773958dd26efile</string>
+			<string>f5532293-e90c-4892-8b6a-39f1abcb684ffile</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1349,35 +1372,12 @@ mv build/Release-iphoneos/*.bundle ../build 2&gt;&gt;/dev/null || echo "No bundl
 				</array>
 			</dict>
 		</dict>
-		<key>f3223310-6f98-4470-8c0f-8773958dd26efile</key>
+		<key>f5532293-e90c-4892-8b6a-39f1abcb684ffile</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>path</key>
-			<string>System/Library/Frameworks/Security.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>f37686ec-aec9-4515-9421-064dbd7006b2build</key>
-		<dict>
-			<key>fileRef</key>
-			<string>f37686ec-aec9-4515-9421-064dbd7006b2file</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Weak</string>
-				</array>
-			</dict>
-		</dict>
-		<key>f37686ec-aec9-4515-9421-064dbd7006b2file</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
+			<string>System/Library/Frameworks/MobileCoreServices.framework</string>
 			<key>sourceTree</key>
 			<string>SDKROOT</string>
 		</dict>
