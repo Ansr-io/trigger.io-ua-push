@@ -107,19 +107,19 @@ forge.urbanairship = {
         // does nothing ????
         // remove this - or fix it.
     },
-    enablePush: function ( success, error) {
+    enablePush: function (success, error) {
         // Enable push notifications on the device. This sends a registration to the backend service.
     },
-    disablePush: function ( success, error) {
+    disablePush: function (success, error) {
         // Disable push notifications on the device. The device will no longer recieve push notifications.
     },
-    enableLocation: function ( success, error) {
+    enableLocation: function (success, error) {
         // Enable location updates on the device.
     },
-    disableLocation: function ( success, error) {
+    disableLocation: function (success, error) {
         // Disable location updates on the device.
     },
-    enableBackgroundLocation: function ( success, error) {
+    enableBackgroundLocation: function (success, error) {
         // Enable background location updates on the device.
     },
     disableBackgroundLocation: function (success, error) {

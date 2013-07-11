@@ -33,16 +33,6 @@
         errorfail
     );
 
-//    forge.urbanairship.enableLocation(
-//        function () {
-//            alert('enableLocation success');
-//        },
-//        function (e) {
-//            alert('enableLocation fail:'+JSON.stringify(e));
-//        }
-//    );
-
-
     // Register for our native push events
     // this is called when a push is received while the app is active
     forge.internal.addEventListener("urbanairship.pushReceived", function (d) {
@@ -146,25 +136,35 @@
 
     // startup background location services
     // record location
-    forge.urbanairship.enableBackgroundLocation(
+    forge.urbanairship.enableLocation(
         function () {
-            log('success :: forge.urbanairship.enableBackgroundLocation');
-                 //record location 
-				forge.urbanairship.recordCurrentLocation(
-					function () {
-						log('success :: forge.urbanairship.recordCurrentLocation');
-					}
-				);
+            log('enableLocation :: success');
+
+            forge.urbanairship.recordCurrentLocation(
+                function () {
+                    log('success :: forge.urbanairship.recordCurrentLocation');
+                }
+            );
         },
         function (e) {
-            log('error :: forge.urbanairship.enableBackgroundLocation :: '+JSON.stringify(e) );
+            alert('error :: enableLocation :: '+JSON.stringify(e));
         }
     );
-    
-  
-	
 
-
+//    forge.urbanairship.enableBackgroundLocation(
+//        function () {
+//            log('success :: forge.urbanairship.enableBackgroundLocation');
+//
+//            forge.urbanairship.recordCurrentLocation(
+//                function () {
+//                    log('success :: forge.urbanairship.recordCurrentLocation');
+//                }
+//            );
+//        },
+//        function (e) {
+//            log('error :: forge.urbanairship.enableBackgroundLocation :: '+JSON.stringify(e) );
+//        }
+//    );
 
 }());
 
