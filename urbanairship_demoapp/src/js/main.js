@@ -42,7 +42,6 @@
 //        }
 //    );
 
-//    forge.urbanairship.enablePush(success, errorfail);
 
     // Register for our native push events
     // this is called when a push is received while the app is active
@@ -118,10 +117,35 @@
         },
         errorfail
     );
+
     // --------------------------------------------------------------------------------------
 
-    //startup background location services
-    //the record a location
+    forge.urbanairship.setSoundEnabled(1, function () {
+        log('setSoundEnabled :: success');
+
+        forge.urbanairship.isSoundEnabled(function (enabled) {
+            log('isSoundEnabled :: '+enabled);
+        });
+    });
+
+    forge.urbanairship.setVibrateEnabled(1, function () {
+        log('setVibrateEnabled :: success');
+
+        forge.urbanairship.isVibrateEnabled(function (enabled) {
+            log('isVibrateEnabled :: '+enabled);
+        });
+    });
+
+    forge.urbanairship.setQuietTimeEnabled(1, function () {
+        log('setQuietTimeEnabled :: success');
+
+        forge.urbanairship.isQuietTimeEnabled(function (enabled) {
+            log('isQuietTimeEnabled :: '+enabled);
+        });
+    });
+
+    // startup background location services
+    // record location
     forge.urbanairship.enableBackgroundLocation(
         function () {
             log('success :: forge.urbanairship.enableBackgroundLocation');

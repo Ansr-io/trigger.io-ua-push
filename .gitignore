@@ -2,6 +2,6 @@ urbanairship_demoapp/hooks/postbuild/uaplugin/AirshipConfig.plist
 urbanairship_demoapp/hooks/postbuild/uaplugin/airshipconfig.properties
 urbanairship_demoapp/local_config.json
 urbanairship_demoapp/.lib/
-urbanairship_demoapp/.template/
+urbanairship_demoapp/.template
 urbanairship_demoapp/development/
 forge-error.log

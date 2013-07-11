@@ -178,6 +178,7 @@ forge.urbanairship = {
     setSoundEnabled: function (enabled, callback) {
         // Note: Android Only, iOS sound settings come in the push
         // Set whether the device makes sound on push.
+        // @enabled : Boolean : enabled
     },
     setVibrateEnabled: function (enabled, callback) {
         // Note: Android Only
