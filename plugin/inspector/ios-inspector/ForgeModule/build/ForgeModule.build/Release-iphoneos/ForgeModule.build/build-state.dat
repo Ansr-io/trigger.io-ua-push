@@ -2,11 +2,11 @@ TForgeModule
 v5
 r1
 cCheck dependencies
-cProcessPCH /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-aiujqvhbxosiadaswwktltyvqjea/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_EventListener.o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_EventListener.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/UAAppDelegateSurrogate.o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_API.o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLibtool /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a normal armv7
+cProcessPCH /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gmmfvoqowdydvyaeaysbjnfybpbc/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/UAAppDelegateSurrogate.o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_EventListener.o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_EventListener.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_API.o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a normal armv7
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
 c0000000050ED385D0000000000000110
@@ -115,9 +115,9 @@ t1373369617
 s3726168
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAAnalytics.h
-c000000005113C4300000000000000F73
-t1360249904
-s3955
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAEvent.h
 c000000005113C4300000000000000D25
@@ -125,9 +125,9 @@ t1360249904
 s3365
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAGlobal.h
-c000000005113C43000000000000020A4
-t1360249904
-s8356
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAHTTPConnection.h
 c000000005113C4300000000000000CD5
@@ -155,14 +155,14 @@ t1360249904
 s2461
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UALocationService.h
-c000000005113C4300000000000004ECD
-t1360249904
-s20173
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAObservable.h
-c000000005113C43000000000000006C0
-t1360249904
-s1728
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/External/UA_json-framework/UA_SBJsonBase.h
 c000000005113C4300000000000000A15
@@ -170,19 +170,19 @@ t1360249904
 s2581
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/External/UA_json-framework/UA_SBJsonWriter.h
-c000000005113C4300000000000000DA7
-t1360249904
-s3495
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Library/AirshipLib/UAirship.h
-c000000005113C430000000000000293F
-t1360249904
-s10559
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Library/PushLib/UAPush.h
-c000000005113C4300000000000004AF7
-t1360249904
-s19191
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/libUAirship-1.4.0.a
 c000000005113C4300000000000A25C40
@@ -195,14 +195,14 @@ t1371738200
 s345
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h
-c0000000051ADDB400000000000000336
-t1370348352
-s822
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m
-c0000000051C42DA800000000000013E8
-t1371811240
-s5096
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/ForgeModule.LinkFileList
 c0000000051DBE691000000000000025F
@@ -226,24 +226,250 @@ t1373365910
 s2990520
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.h
-c0000000051DBE49E00000000000000CE
-t1373365406
-s206
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m
-c0000000051DBE57B0000000000003466
-t1373365627
-s13414
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_EventListener.h
-c0000000051DBE4BD000000000000008D
-t1373365437
-s141
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_EventListener.m
-c0000000051DBE5150000000000001169
-t1373365525
-s4457
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/ForgeCore
+c0000000051DFCC82000000000038DB58
+t1373621378
+s3726168
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ALAsset+Data.h
+c0000000051DFCC82000000000000010F
+t1373621378
+s271
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/BorderControl.h
+c0000000051DFCC820000000000000220
+t1373621378
+s544
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeApp.h
+c0000000051DFCC8200000000000003D1
+t1373621378
+s977
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeAppDelegate.h
+c0000000051DFCC820000000000000187
+t1373621378
+s391
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeCore.h
+c0000000051DFCC8200000000000002D1
+t1373621378
+s721
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeEventListener.h
+c0000000051DFCC820000000000000B3B
+t1373621378
+s2875
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeFile.h
+c0000000051DFCC82000000000000037A
+t1373621378
+s890
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeLog.h
+c0000000051DFCC82000000000000013F
+t1373621378
+s319
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeTask.h
+c0000000051DFCC8200000000000002F7
+t1373621378
+s759
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeUtil.h
+c0000000051DFCC820000000000000115
+t1373621378
+s277
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeViewController.h
+c0000000051DFCC8200000000000001C2
+t1373621378
+s450
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/JSONKit.h
+c0000000051DFCC820000000000002DBE
+t1373621378
+s11710
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/NSData+Base64.h
+c0000000051DFCC820000000000000212
+t1373621378
+s530
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/NSFileManager+DirectoryLocations.h
+c0000000051DFCC82000000000000057F
+t1373621378
+s1407
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/NSURL+QueryString.h
+c0000000051DFCC820000000000000103
+t1373621378
+s259
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/Reachability.h
+c0000000051DFCC820000000000000CDD
+t1373621378
+s3293
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/UIImage+ResizeImage.h
+c0000000051DFCC820000000000000182
+t1373621378
+s386
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/UIViewController+dismissViewControllerHelper.h
+c0000000051DFCC820000000000000149
+t1373621378
+s329
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAAnalytics.h
+c0000000051DC3EB80000000000000F73
+t1373388472
+s3955
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAEvent.h
+c0000000051DC3EB80000000000000D25
+t1373388472
+s3365
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAGlobal.h
+c0000000051DC3EB800000000000020A4
+t1373388472
+s8356
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAHTTPConnection.h
+c0000000051DC3EB80000000000000CD5
+t1373388472
+s3285
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UALocationCommonValues.h
+c0000000051DC3EB80000000000000BB3
+t1373388472
+s2995
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UALocationEvent.h
+c0000000051DC3EB80000000000001E5F
+t1373388472
+s7775
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UALocationProviderDelegate.h
+c0000000051DC3EB80000000000000B86
+t1373388472
+s2950
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UALocationProviderProtocol.h
+c0000000051DC3EB8000000000000099D
+t1373388472
+s2461
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UALocationService.h
+c0000000051DC3EB80000000000004ECD
+t1373388472
+s20173
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAObservable.h
+c0000000051DC3EB800000000000006C0
+t1373388472
+s1728
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/External/UA_json-framework/UA_SBJsonBase.h
+c0000000051DC3EB80000000000000A15
+t1373388472
+s2581
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/External/UA_json-framework/UA_SBJsonWriter.h
+c0000000051DC3EB80000000000000DA7
+t1373388472
+s3495
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Library/AirshipLib/UAirship.h
+c0000000051DC3EB8000000000000293F
+t1373388472
+s10559
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Library/PushLib/UAPush.h
+c0000000051DC3EB80000000000004AF7
+t1373388472
+s19191
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/libUAirship-1.4.0.a
+c0000000051DC3EB80000000000A25C40
+t1373388472
+s10640448
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch
+c0000000051DC3EB80000000000000159
+t1373388472
+s345
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h
+c0000000051DC3EB80000000000000336
+t1373388472
+s822
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m
+c0000000051DC3EB800000000000013E8
+t1373388472
+s5096
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/ForgeModule.LinkFileList
+c0000000051DFC9BE0000000000000298
+t1373620670
+s664
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/UAAppDelegateSurrogate.o
+t1373625346
+s30908
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_API.o
+t1373625346
+s132772
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_EventListener.o
+t1373625346
+s95452
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a
+t1373625347
+s3007680
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.h
+c0000000051DC3EB800000000000000CE
+t1373388472
+s206
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m
+c0000000051DFDD66000000000000357F
+t1373625702
+s13695
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_EventListener.h
+c0000000051DC3EB8000000000000008D
+t1373388472
+s141
+
+N/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_EventListener.m
+c0000000051DFCAE400000000000012BC
+t1373620964
+s4796
 
 N/var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-aiujqvhbxosiadaswwktltyvqjea/ForgeModule-Prefix.pch.pth
 t2
@@ -257,9 +483,17 @@ N/var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrec
 t2
 s0
 
+N/var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gmmfvoqowdydvyaeaysbjnfybpbc/ForgeModule-Prefix.pch.pth
+t1373621034
+s5005648
+
+N/var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gwjfpepquhmurhbwcthbcpuphuoe/ForgeModule-Prefix.pch.pth
+t1373620672
+s5005648
+
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesea94c3de2c8cb741^749bdcde2c8cb741^---0#1#0#--18"Check dependencies36"3C7CD653-F8B6-4DD3-982F-56E9FC992E9C-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesb3b4e3ec1490b741^bf7d51ed1490b741^---0#1#0#--18"Check dependencies36"A7A2ECCD-1252-42D8-A961-194238D0E8BA-
 
 CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/UAAppDelegateSurrogate.o /Users/pete/Dropbox/forge-workspace/plugins/odr_ua/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s394966337.536677
@@ -343,6 +577,47 @@ o                     ^
 o3 warnings generated.
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"Compile /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m674514e02c8cb741^07231ae12c8cb741^-2646"/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m:13:1: warning: autosynthesized property 'surrogateDelegate' will use synthesized instance variable '_surrogateDelegate', not existing instance variable 'surrogateDelegate' [-Wobjc-autosynthesis-property-ivar-name-match]@implementation UAAppDelegateSurrogate^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h:23:63: note: property declared here@property(nonatomic, assign) NSObject<UIApplicationDelegate> *surrogateDelegate;                                                              ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h:17:39: note: instance variable is declared here    NSObject <UIApplicationDelegate> *surrogateDelegate;                                      ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m:13:1: warning: autosynthesized property 'defaultAppDelegate' will use synthesized instance variable '_defaultAppDelegate', not existing instance variable 'defaultAppDelegate' [-Wobjc-autosynthesis-property-ivar-name-match]@implementation UAAppDelegateSurrogate^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h:24:63: note: property declared here@property(nonatomic, assign) NSObject<UIApplicationDelegate> *defaultAppDelegate;                                                              ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h:16:39: note: instance variable is declared here    NSObject <UIApplicationDelegate> *defaultAppDelegate;                                      ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m:13:17: warning: incomplete implementation [-Wincomplete-implementation]@implementation UAAppDelegateSurrogate                ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h:21:1: note: method definition for 'forceRelease' not foundSINGLETON_INTERFACE(UAAppDelegateSurrogate);^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAGlobal.h:129:22: note: expanded from macro 'SINGLETON_INTERFACE'+ (CLASSNAME*)shared;\                     ^3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@156"Autosynthesized property 'surrogateDelegate' will use synthesized instance variable '_surrogateDelegate', not existing instance variable 'surrogateDelegate'-395062497#18446744073709551615#0#2(2@22"Property declared here-395062497#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@138"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h0000000000000000^22#62#22#62#620#0#14"Semantic Issue--2@34"Instance variable is declared here-395062497#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@138"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h0000000000000000^16#38#16#38#457#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@138"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m0000000000000000^12#0#12#0#252#0#14"Semantic Issue--2@159"Autosynthesized property 'defaultAppDelegate' will use synthesized instance variable '_defaultAppDelegate', not existing instance variable 'defaultAppDelegate'-395062497#18446744073709551615#0#2(2@22"Property declared here-395062497#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@138"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h0000000000000000^23#62#23#62#701#0#14"Semantic Issue--2@34"Instance variable is declared here-395062497#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@138"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h0000000000000000^15#38#15#38#399#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@138"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m0000000000000000^12#0#12#0#252#0#14"Semantic Issue--2@25"Incomplete implementation-395062497#18446744073709551615#0#1(2@46"Method definition for 'forceRelease' not found-395062497#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@138"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h0000000000000000^20#0#20#0#23#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@138"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m0000000000000000^12#16#12#16#268#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@138"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m0000000000000000^4441"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/UAAppDelegateSurrogate.o UAAppDelegateSurrogate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -IAirship -Ibuild -IAirship/Common -IAirship/External -IAirship/Library -Ibuild/ForgeModule.build -Ibuild/Release-iphoneos -Ibuild/Release-iphonesimulator -IAirship/External/UA_asi-http-request -IAirship/External/UA_fmdb -IAirship/External/UA_json-framework -IAirship/External/UA_ZipFile-OC -IAirship/Library/AirshipLib -IAirship/Library/InboxLib -IAirship/Library/PushLib -IAirship/Library/StoreFrontLib -IAirship/Library/SubscriptionLib -Ibuild/ForgeModule.build/Release-iphoneos -Ibuild/ForgeModule.build/Release-iphonesimulator -IAirship/External/UA_ZipFile-OC/UA_minizip -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModule.build -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModuleResources.build -Ibuild/ForgeModule.build/Release-iphonesimulator/ForgeModule.build -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal -Ibuild/ForgeModule.build/Release-iphonesimulator/ForgeModule.build/Objects-normal -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7 -Ibuild/ForgeModule.build/Release-iphonesimulator/ForgeModule.build/Objects-normal/i386 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/.. -include /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-aiujqvhbxosiadaswwktltyvqjea/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/UAAppDelegateSurrogate.d --serialize-diagnostics /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/UAAppDelegateSurrogate.dia -c /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m -o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/UAAppDelegateSurrogate.o36"CF458860-B308-434B-9229-1DBEA28223D7-
 
+CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/UAAppDelegateSurrogate.o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395318511.259150
+e395318512.003741
+r1
+xCompileC
+xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/UAAppDelegateSurrogate.o
+x/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m:13:1: warning: autosynthesized property 'defaultAppDelegate' will use synthesized instance variable '_defaultAppDelegate', not existing instance variable 'defaultAppDelegate' [-Wobjc-autosynthesis-property-ivar-name-match]
+o@implementation UAAppDelegateSurrogate
+o^
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h:24:63: note: property declared here
+o@property(nonatomic, assign) NSObject<UIApplicationDelegate> *defaultAppDelegate;
+o                                                              ^
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h:16:39: note: instance variable is declared here
+o    NSObject <UIApplicationDelegate> *defaultAppDelegate;
+o                                      ^
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m:13:1: warning: autosynthesized property 'surrogateDelegate' will use synthesized instance variable '_surrogateDelegate', not existing instance variable 'surrogateDelegate' [-Wobjc-autosynthesis-property-ivar-name-match]
+o@implementation UAAppDelegateSurrogate
+o^
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h:23:63: note: property declared here
+o@property(nonatomic, assign) NSObject<UIApplicationDelegate> *surrogateDelegate;
+o                                                              ^
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h:17:39: note: instance variable is declared here
+o    NSObject <UIApplicationDelegate> *surrogateDelegate;
+o                                      ^
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m:13:17: warning: incomplete implementation [-Wincomplete-implementation]
+o@implementation UAAppDelegateSurrogate
+o                ^
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h:21:1: note: method definition for 'forceRelease' not found
+oSINGLETON_INTERFACE(UAAppDelegateSurrogate);
+o^
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAGlobal.h:129:22: note: expanded from macro 'SINGLETON_INTERFACE'
+o+ (CLASSNAME*)shared;\
+o                     ^
+o3 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection149"Compile /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m07f042ef1490b741^b95001f01490b741^-2817"/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m:13:1: warning: autosynthesized property 'defaultAppDelegate' will use synthesized instance variable '_defaultAppDelegate', not existing instance variable 'defaultAppDelegate' [-Wobjc-autosynthesis-property-ivar-name-match]@implementation UAAppDelegateSurrogate^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h:24:63: note: property declared here@property(nonatomic, assign) NSObject<UIApplicationDelegate> *defaultAppDelegate;                                                              ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h:16:39: note: instance variable is declared here    NSObject <UIApplicationDelegate> *defaultAppDelegate;                                      ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m:13:1: warning: autosynthesized property 'surrogateDelegate' will use synthesized instance variable '_surrogateDelegate', not existing instance variable 'surrogateDelegate' [-Wobjc-autosynthesis-property-ivar-name-match]@implementation UAAppDelegateSurrogate^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h:23:63: note: property declared here@property(nonatomic, assign) NSObject<UIApplicationDelegate> *surrogateDelegate;                                                              ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h:17:39: note: instance variable is declared here    NSObject <UIApplicationDelegate> *surrogateDelegate;                                      ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m:13:17: warning: incomplete implementation [-Wincomplete-implementation]@implementation UAAppDelegateSurrogate                ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h:21:1: note: method definition for 'forceRelease' not foundSINGLETON_INTERFACE(UAAppDelegateSurrogate);^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAGlobal.h:129:22: note: expanded from macro 'SINGLETON_INTERFACE'+ (CLASSNAME*)shared;\                     ^3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@159"Autosynthesized property 'defaultAppDelegate' will use synthesized instance variable '_defaultAppDelegate', not existing instance variable 'defaultAppDelegate'-395318512#18446744073709551615#0#2(2@22"Property declared here-395318512#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@157"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h0000000000000000^23#62#23#62#701#0#14"Semantic Issue--2@34"Instance variable is declared here-395318512#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@157"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h0000000000000000^15#38#15#38#399#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@157"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m0000000000000000^12#0#12#0#252#0#14"Semantic Issue--2@156"Autosynthesized property 'surrogateDelegate' will use synthesized instance variable '_surrogateDelegate', not existing instance variable 'surrogateDelegate'-395318512#18446744073709551615#0#2(2@22"Property declared here-395318512#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@157"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h0000000000000000^22#62#22#62#620#0#14"Semantic Issue--2@34"Instance variable is declared here-395318512#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@157"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h0000000000000000^16#38#16#38#457#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@157"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m0000000000000000^12#0#12#0#252#0#14"Semantic Issue--2@25"Incomplete implementation-395318512#18446744073709551615#0#1(2@46"Method definition for 'forceRelease' not found-395318512#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@157"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.h0000000000000000^20#0#20#0#23#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@157"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m0000000000000000^12#16#12#16#268#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@157"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m0000000000000000^4877"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/UAAppDelegateSurrogate.o UAAppDelegateSurrogate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -IAirship -IAirship/Common -IAirship/External -IAirship/Library -IAirship/External/UA_asi-http-request -IAirship/External/UA_fmdb -IAirship/External/UA_json-framework -IAirship/External/UA_ZipFile-OC -IAirship/Library/AirshipLib -IAirship/Library/InboxLib -IAirship/Library/PushLib -IAirship/Library/StoreFrontLib -IAirship/Library/SubscriptionLib -IAirship/External/UA_ZipFile-OC/UA_minizip -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/.. -include /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gmmfvoqowdydvyaeaysbjnfybpbc/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/UAAppDelegateSurrogate.d --serialize-diagnostics /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/UAAppDelegateSurrogate.dia -c /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/UAAppDelegateSurrogate.m -o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/UAAppDelegateSurrogate.o36"10980C39-9A40-4944-ACE0-0A33B51D78C7-
+
 CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/odr_ua_API.o /Users/pete/Dropbox/forge-workspace/plugins/odr_ua/inspector/ios-inspector/ForgeModule/odr_ua_API.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s394966336.655020
 e394966337.740527
@@ -408,6 +683,41 @@ o          ^
 o3 warnings generated.
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Compile /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.ma2251be12c8cb741^a3ea97e12c8cb741^-1211"/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m:52:34: warning: incompatible pointer types sending 'const Class' to parameter of type 'id<UAPushNotificationDelegate>' [-Wincompatible-pointer-types]    [[UAPush shared] setDelegate:self];                                 ^~~~/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Library/PushLib/UAPush.h:191:62: note: passing argument to parameter 'delegate' here@property (nonatomic, assign) id<UAPushNotificationDelegate> delegate;                                                             ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m:25:26: warning: unused variable 'airshipConfigOptions' [-Wunused-variable]    NSMutableDictionary *airshipConfigOptions = [NSMutableDictionary dictionary];                         ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m:356:11: warning: unused variable 'c' [-Wunused-variable]    Class c = [NSNumber class];          ^3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@102"Incompatible pointer types sending 'const Class' to parameter of type 'id<UAPushNotificationDelegate>'-395062497#18446744073709551615#0#1(2@45"Passing argument to parameter 'delegate' here-395062497#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@146"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Library/PushLib/UAPush.h0000000000000000^190#61#190#61#6473#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@132"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m0000000000000000^51#33#51#33#1911#0#14"Semantic Issue1(3@132"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m0000000000000000^51#33#51#37#1911#0#-2@38"Unused variable 'airshipConfigOptions'-395062497#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@132"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m0000000000000000^24#25#24#25#498#0#19"Unused Entity Issue--2@19"Unused variable 'c'-395062497#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@132"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m0000000000000000^355#10#355#10#11501#0#19"Unused Entity Issue--0#0#0#-19%DVTDocumentLocation4@132"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m0000000000000000^4405"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_API.o urbanairship_API.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -IAirship -Ibuild -IAirship/Common -IAirship/External -IAirship/Library -Ibuild/ForgeModule.build -Ibuild/Release-iphoneos -Ibuild/Release-iphonesimulator -IAirship/External/UA_asi-http-request -IAirship/External/UA_fmdb -IAirship/External/UA_json-framework -IAirship/External/UA_ZipFile-OC -IAirship/Library/AirshipLib -IAirship/Library/InboxLib -IAirship/Library/PushLib -IAirship/Library/StoreFrontLib -IAirship/Library/SubscriptionLib -Ibuild/ForgeModule.build/Release-iphoneos -Ibuild/ForgeModule.build/Release-iphonesimulator -IAirship/External/UA_ZipFile-OC/UA_minizip -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModule.build -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModuleResources.build -Ibuild/ForgeModule.build/Release-iphonesimulator/ForgeModule.build -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal -Ibuild/ForgeModule.build/Release-iphonesimulator/ForgeModule.build/Objects-normal -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7 -Ibuild/ForgeModule.build/Release-iphonesimulator/ForgeModule.build/Objects-normal/i386 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/.. -include /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-aiujqvhbxosiadaswwktltyvqjea/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_API.d --serialize-diagnostics /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_API.dia -c /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m -o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_API.o36"A5C2B547-5BE4-4853-82C8-CFF201546797-
 
+CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_API.o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395318512.010059
+e395318512.981994
+r1
+xCompileC
+xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_API.o
+x/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m:53:34: warning: incompatible pointer types sending 'const Class' to parameter of type 'id<UAPushNotificationDelegate>' [-Wincompatible-pointer-types]
+o    [[UAPush shared] setDelegate:self];
+o                                 ^~~~
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Library/PushLib/UAPush.h:191:62: note: passing argument to parameter 'delegate' here
+o@property (nonatomic, assign) id<UAPushNotificationDelegate> delegate;
+o                                                             ^
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m:26:26: warning: unused variable 'airshipConfigOptions' [-Wunused-variable]
+o    NSMutableDictionary *airshipConfigOptions = [NSMutableDictionary dictionary];
+o                         ^
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m:105:37: warning: format specifies type 'int' but the argument has type 'NSNumber *' [-Wformat]
+o        UALOG(@"bitmask value: %d", text);
+o                               ~~   ^~~~
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAGlobal.h:65:72: note: expanded from macro 'UA_LDEBUG'
+o#define UA_LDEBUG(fmt, ...) UA_LEVEL_LOG(UALogLevelDebug, @"D", fmt, ##__VA_ARGS__)
+o                                                                       ^
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAGlobal.h:50:94: note: expanded from macro 'UA_LEVEL_LOG_NO_THREAD'
+o            NSLog((@"[%@] %s [Line %d] " fmt), levelString, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__); \
+o                                                                                             ^
+o/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m:370:11: warning: unused variable 'c' [-Wunused-variable]
+o    Class c = [NSNumber class];
+o          ^
+o4 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection143"Compile /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m5a9e0bf01490b741^5f99fbf01490b741^-2352"/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m:53:34: warning: incompatible pointer types sending 'const Class' to parameter of type 'id<UAPushNotificationDelegate>' [-Wincompatible-pointer-types]    [[UAPush shared] setDelegate:self];                                 ^~~~/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Library/PushLib/UAPush.h:191:62: note: passing argument to parameter 'delegate' here@property (nonatomic, assign) id<UAPushNotificationDelegate> delegate;                                                             ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m:26:26: warning: unused variable 'airshipConfigOptions' [-Wunused-variable]    NSMutableDictionary *airshipConfigOptions = [NSMutableDictionary dictionary];                         ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m:105:37: warning: format specifies type 'int' but the argument has type 'NSNumber *' [-Wformat]        UALOG(@"bitmask value: %d", text);                               ~~   ^~~~/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAGlobal.h:65:72: note: expanded from macro 'UA_LDEBUG'#define UA_LDEBUG(fmt, ...) UA_LEVEL_LOG(UALogLevelDebug, @"D", fmt, ##__VA_ARGS__)                                                                       ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAGlobal.h:50:94: note: expanded from macro 'UA_LEVEL_LOG_NO_THREAD'            NSLog((@"[%@] %s [Line %d] " fmt), levelString, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__); \                                                                                             ^/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m:370:11: warning: unused variable 'c' [-Wunused-variable]    Class c = [NSNumber class];          ^4 warnings generated.4(36%IDEClangDiagnosticActivityLogMessage2@102"Incompatible pointer types sending 'const Class' to parameter of type 'id<UAPushNotificationDelegate>'-395318512#18446744073709551615#0#1(2@45"Passing argument to parameter 'delegate' here-395318512#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@165"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Library/PushLib/UAPush.h0000000000000000^190#61#190#61#6473#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@151"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m0000000000000000^52#33#52#33#1912#0#14"Semantic Issue1(3@151"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m0000000000000000^52#33#52#37#1912#0#-2@38"Unused variable 'airshipConfigOptions'-395318512#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@151"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m0000000000000000^25#25#25#25#499#0#19"Unused Entity Issue--2@66"Format specifies type 'int' but the argument has type 'NSNumber *'-395318512#18446744073709551615#0#2(2@31"Expanded from macro 'UA_LDEBUG'-395318512#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@158"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAGlobal.h0000000000000000^64#71#64#71#2618#0#30"Apple LLVM compiler 4.2 Notice2(3@158"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAGlobal.h0000000000000000^104#36#104#40#3214#0#3@158"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAGlobal.h0000000000000000^104#31#104#33#3209#2#-2@44"Expanded from macro 'UA_LEVEL_LOG_NO_THREAD'-395318512#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@158"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAGlobal.h0000000000000000^49#93#49#93#2142#0#30"Apple LLVM compiler 4.2 Notice2(3@158"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAGlobal.h0000000000000000^104#36#104#40#3214#0#3@158"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship/Common/UAGlobal.h0000000000000000^104#31#104#33#3209#2#-1#27"com.apple.dt.IDE.diagnostic3@151"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m0000000000000000^104#36#104#36#0#0#19"Format String Issue2(3@151"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m0000000000000000^104#36#104#40#3214#0#3@151"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m0000000000000000^104#31#104#33#3209#2#-2@19"Unused variable 'c'-395318512#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@151"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m0000000000000000^369#10#369#10#11782#0#19"Unused Entity Issue--0#0#0#-19%DVTDocumentLocation4@151"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m0000000000000000^4841"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_API.o urbanairship_API.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -IAirship -IAirship/Common -IAirship/External -IAirship/Library -IAirship/External/UA_asi-http-request -IAirship/External/UA_fmdb -IAirship/External/UA_json-framework -IAirship/External/UA_ZipFile-OC -IAirship/Library/AirshipLib -IAirship/Library/InboxLib -IAirship/Library/PushLib -IAirship/Library/StoreFrontLib -IAirship/Library/SubscriptionLib -IAirship/External/UA_ZipFile-OC/UA_minizip -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/.. -include /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gmmfvoqowdydvyaeaysbjnfybpbc/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_API.d --serialize-diagnostics /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_API.dia -c /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_API.m -o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_API.o36"1906B659-44C8-4C57-ACED-01475DF20F9E-
+
 CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_EventListener.o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_EventListener.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s395062496.074535
 e395062497.147563
@@ -420,6 +730,19 @@ xarmv7
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection134"Compile /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_EventListener.md49d13e02c8cb741^e23a26e12c8cb741^---0#0#0#-19%DVTDocumentLocation2@142"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_EventListener.m0000000000000000^4465"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_EventListener.o urbanairship_EventListener.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -IAirship -Ibuild -IAirship/Common -IAirship/External -IAirship/Library -Ibuild/ForgeModule.build -Ibuild/Release-iphoneos -Ibuild/Release-iphonesimulator -IAirship/External/UA_asi-http-request -IAirship/External/UA_fmdb -IAirship/External/UA_json-framework -IAirship/External/UA_ZipFile-OC -IAirship/Library/AirshipLib -IAirship/Library/InboxLib -IAirship/Library/PushLib -IAirship/Library/StoreFrontLib -IAirship/Library/SubscriptionLib -Ibuild/ForgeModule.build/Release-iphoneos -Ibuild/ForgeModule.build/Release-iphonesimulator -IAirship/External/UA_ZipFile-OC/UA_minizip -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModule.build -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModuleResources.build -Ibuild/ForgeModule.build/Release-iphonesimulator/ForgeModule.build -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal -Ibuild/ForgeModule.build/Release-iphonesimulator/ForgeModule.build/Objects-normal -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7 -Ibuild/ForgeModule.build/Release-iphonesimulator/ForgeModule.build/Objects-normal/i386 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/.. -include /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-aiujqvhbxosiadaswwktltyvqjea/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_EventListener.d --serialize-diagnostics /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_EventListener.dia -c /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_EventListener.m -o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_EventListener.o36"798BA227-E07E-4427-9422-10C516ADC622-
+
+CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_EventListener.o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_EventListener.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395318511.261856
+e395318512.069802
+r1
+xCompileC
+xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_EventListener.o
+x/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_EventListener.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection153"Compile /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_EventListener.m768c43ef1490b741^d0ee14f01490b741^---0#0#0#-19%DVTDocumentLocation2@161"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_EventListener.m0000000000000000^4901"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_EventListener.o urbanairship_EventListener.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -IAirship -IAirship/Common -IAirship/External -IAirship/Library -IAirship/External/UA_asi-http-request -IAirship/External/UA_fmdb -IAirship/External/UA_json-framework -IAirship/External/UA_ZipFile-OC -IAirship/Library/AirshipLib -IAirship/Library/InboxLib -IAirship/Library/PushLib -IAirship/Library/StoreFrontLib -IAirship/Library/SubscriptionLib -IAirship/External/UA_ZipFile-OC/UA_minizip -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/.. -include /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gmmfvoqowdydvyaeaysbjnfybpbc/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_EventListener.d --serialize-diagnostics /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_EventListener.dia -c /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/urbanairship_EventListener.m -o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/urbanairship_EventListener.o36"DA0DF1AA-F9AE-4E12-B7C6-CF9DD03D3910-
 
 CLibtool /Users/pete/Dropbox/forge-workspace/plugins/odr_ua/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a normal armv7
 s394966337.833839
@@ -442,6 +765,17 @@ xnormal
 xarmv7
 o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Libtool build/Release-iphoneos/libForgeModule.a normal armv7b308a1e12c8cb741^2b16d3e12c8cb741^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1194"Libtool build/Release-iphoneos/libForgeModule.a normal armv7    cd /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -L/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship -filelist /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/ForgeModule.LinkFileList -ObjC -framework SystemConfiguration -framework AssetsLibrary -framework CoreGraphics -framework UIKit -framework Foundation -framework ForgeCore -lUAirship-1.4.0 -o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a36"E78AC5C2-8F0E-4278-951F-49903F13297F-
+
+CLibtool /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a normal armv7
+s395318513.011015
+e395318513.853548
+r1
+xLibtool
+x/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a
+xnormal
+xarmv7
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Libtool build/Release-iphoneos/libForgeModule.a normal armv701bf0af11490b741^f9bcdaf11490b741^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--2188"Libtool build/Release-iphoneos/libForgeModule.a normal armv7    cd /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -L/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/Airship -filelist /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/ForgeModule.LinkFileList -ObjC -framework SystemConfiguration -framework AssetsLibrary -framework CoreGraphics -framework UIKit -framework Foundation -framework ForgeCore -lUAirship-1.4.0 -o /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a36"417C1A80-9EC0-4D54-BC6F-495B96DEBA27-
 
 CProcessPCH /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-aiujqvhbxosiadaswwktltyvqjea/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s395062494.867738
@@ -481,4 +815,30 @@ xarmv7
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile ForgeModule-Prefix.pchadf688111e8cb741^94bc02141e8cb741^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch0000000000000000^5150"ProcessPCH /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-fueirviynatcogeeelzkfymgogpt/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -IAirship -Ibuild -IAirship/Common -IAirship/External -IAirship/Library -Ibuild/ForgeModule.build -Ibuild/Release-iphoneos -Ibuild/Release-iphonesimulator -IAirship/External/UA_asi-http-request -IAirship/External/UA_fmdb -IAirship/External/UA_json-framework -IAirship/External/UA_ZipFile-OC -IAirship/Library/AirshipLib -IAirship/Library/InboxLib -IAirship/Library/PushLib -IAirship/Library/StoreFrontLib -IAirship/Library/SubscriptionLib -Ibuild/ForgeModule.build/Release-iphoneos -Ibuild/ForgeModule.build/Release-iphonesimulator -IAirship/External/UA_ZipFile-OC/UA_minizip -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModule.build -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModuleResources.build -Ibuild/ForgeModule.build/Release-iphonesimulator/ForgeModule.build -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal -Ibuild/ForgeModule.build/Release-iphonesimulator/ForgeModule.build/Objects-normal -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7 -Ibuild/ForgeModule.build/Release-iphonesimulator/ForgeModule.build/Objects-normal/i386 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/.. --serialize-diagnostics /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-fueirviynatcogeeelzkfymgogpt/ForgeModule-Prefix.pch.dia -c /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch -o /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-fueirviynatcogeeelzkfymgogpt/ForgeModule-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-fueirviynatcogeeelzkfymgogpt/ForgeModule-Prefix.pch.d36"0234A755-0A12-4CDB-89B4-75D7E2AE5B15-
+
+CProcessPCH /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gmmfvoqowdydvyaeaysbjnfybpbc/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395318509.439696
+e395318511.252215
+r1
+xProcessPCH
+x/var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gmmfvoqowdydvyaeaysbjnfybpbc/ForgeModule-Prefix.pch.pth
+xForgeModule-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile ForgeModule-Prefix.pch632a71ed1490b741^3f9040ef1490b741^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch0000000000000000^4609"ProcessPCH /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gmmfvoqowdydvyaeaysbjnfybpbc/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -IAirship -IAirship/Common -IAirship/External -IAirship/Library -IAirship/External/UA_asi-http-request -IAirship/External/UA_fmdb -IAirship/External/UA_json-framework -IAirship/External/UA_ZipFile-OC -IAirship/Library/AirshipLib -IAirship/Library/InboxLib -IAirship/Library/PushLib -IAirship/Library/StoreFrontLib -IAirship/Library/SubscriptionLib -IAirship/External/UA_ZipFile-OC/UA_minizip -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/.. --serialize-diagnostics /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gmmfvoqowdydvyaeaysbjnfybpbc/ForgeModule-Prefix.pch.dia -c /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch -o /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gmmfvoqowdydvyaeaysbjnfybpbc/ForgeModule-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gmmfvoqowdydvyaeaysbjnfybpbc/ForgeModule-Prefix.pch.d36"1216DAAE-95D1-4030-AF54-1AE080DA84F5-
+
+CProcessPCH /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gwjfpepquhmurhbwcthbcpuphuoe/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395318142.005128
+e395318145.324686
+r1
+xProcessPCH
+x/var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gwjfpepquhmurhbwcthbcpuphuoe/ForgeModule-Prefix.pch.pth
+xForgeModule-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile ForgeModule-Prefix.pchec85067e1390b741^b41d53811390b741^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch0000000000000000^5321"ProcessPCH /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gwjfpepquhmurhbwcthbcpuphuoe/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -IAirship -Ibuild -IAirship/Common -IAirship/External -IAirship/Library -Ibuild/ForgeModule.build -Ibuild/Release-iphoneos -Ibuild/Release-iphonesimulator -IAirship/External/UA_asi-http-request -IAirship/External/UA_fmdb -IAirship/External/UA_json-framework -IAirship/External/UA_ZipFile-OC -IAirship/Library/AirshipLib -IAirship/Library/InboxLib -IAirship/Library/PushLib -IAirship/Library/StoreFrontLib -IAirship/Library/SubscriptionLib -Ibuild/ForgeModule.build/Release-iphoneos -Ibuild/ForgeModule.build/Release-iphonesimulator -IAirship/External/UA_ZipFile-OC/UA_minizip -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModule.build -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModuleResources.build -Ibuild/ForgeModule.build/Release-iphonesimulator/ForgeModule.build -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal -Ibuild/ForgeModule.build/Release-iphonesimulator/ForgeModule.build/Objects-normal -Ibuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7 -Ibuild/ForgeModule.build/Release-iphonesimulator/ForgeModule.build/Objects-normal/i386 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule -F/Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/.. --serialize-diagnostics /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gwjfpepquhmurhbwcthbcpuphuoe/ForgeModule-Prefix.pch.dia -c /Users/pete/Dropbox/forge-workspace/trigger.io-ua-push/trigger.io-ua-push/plugin/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch -o /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gwjfpepquhmurhbwcthbcpuphuoe/ForgeModule-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/gx/rpzw9kz56w58lh4zj4dvks1h0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ForgeModule-Prefix-gwjfpepquhmurhbwcthbcpuphuoe/ForgeModule-Prefix.pch.d36"BC9FEC10-62BF-4D5F-9B3B-15C0D4DE1FDB-
 

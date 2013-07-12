@@ -28,12 +28,14 @@
     // Updates the device token and registers the token with UA
     UALOG(@"PushNotificationPlugin: registered for remote notifications");
     [[UAPush shared] registerDeviceToken:deviceToken];
-    [self raiseRegistration:YES withpushID:[UAirship shared].deviceToken];
+    NSString *json =[self raiseRegistration:YES withpushID:[UAirship shared].deviceToken];
+    [[ForgeApp sharedApp] event:@"urbanairship.registration" withParam:json];
 }
 
 + (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *) error {
     UALOG(@"PushNotificationPlugin: Failed To Register For Remote Notifications With Error: %@", error);
-    [self raiseRegistration:NO withpushID:@""];
+     NSString *json =[self raiseRegistration:NO withpushID:@""];
+     [[ForgeApp sharedApp] event:@"urbanairship.registration" withParam:json];
 }
 
 + (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
@@ -107,7 +109,7 @@
     return json;
 }
 
-+ (void)raiseRegistration:(BOOL)valid withpushID:(NSString *)pushID {
++ (NSString *)raiseRegistration:(BOOL)valid withpushID:(NSString *)pushID {
     
     if (!pushID) {
         UALOG(@"PushNotificationPlugin: attempted to raise registration with nil pushID");
@@ -119,6 +121,10 @@
     [data setObject:[NSNumber numberWithBool:valid] forKey:@"valid"];
     [data setObject:pushID forKey:@"pushID"];
     
+    UA_SBJsonWriter *writer = [[UA_SBJsonWriter alloc] init] ;
+    NSString *json = [writer stringWithObject:data];
+    
+    
     //UA_SBJsonWriter *writer = [[[UA_SBJsonWriter alloc] init] autorelease];
     //NSString *json = [writer stringWithObject:data];
     //NSString *js = [NSString stringWithFormat:@"window.pushNotification.registrationCallback(%@);", json];
@@ -126,6 +132,7 @@
     //[self writeJavascript:js];
     
     //UALOG(@"js callback: %@", js);
+    return json;
 }
 
 @end

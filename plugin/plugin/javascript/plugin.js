@@ -79,25 +79,25 @@ forge.urbanairship	 = {
         forge.internal.call('urbanairship.setTags', {"tags":tags}, success, error);
     },   
     setSoundEnabled: function (text, success, error) {
-        forge.internal.call('urbanairship.setSoundEnabled', {text:text}, success, error);
+        forge.internal.call('urbanairship.setSoundEnabled', {text:(text ? 1 :0)}, success, error);
     },   
     setVibrateEnabled: function (text, success, error) {
      if (forge.is.android())
-        forge.internal.call('urbanairship.setVibrateEnabled', {text:text}, success, error);
+        forge.internal.call('urbanairship.setVibrateEnabled', {text:(text ? 1 :0)}, success, error);
     else {
     	success();
     }
     },   
     setQuietTimeEnabled: function (text,  success, error) {
-        forge.internal.call('urbanairship.setQuietTimeEnabled', {text:text}, success, error);
+        forge.internal.call('urbanairship.setQuietTimeEnabled', {text:(text ? 1 :0)}, success, error);
     },   
     setQuietTime: function (quiteTimeDef, success, error) {
     
         forge.internal.call('urbanairship.setQuietTime', quiteTimeDef, success, error);
     },
-    setAutobadgeEnabled: function ( success, error) {
+    setAutobadgeEnabled: function (text, success, error) {
     if (forge.is.ios())
-        forge.internal.call('urbanairship.setAutobadgeEnabled', {}, success, error);
+        forge.internal.call('urbanairship.setAutobadgeEnabled', {text:(text ? 1 :0)}, success, error);
     },
     setBadgeNumber: function ( text, success, error) {
      if (forge.is.ios())
@@ -107,7 +107,20 @@ forge.urbanairship	 = {
 //location stuff
 	recordCurrentLocation: function (  success) {
         forge.internal.call('urbanairship.recordCurrentLocation', {}, success, success);
-    } 
+    },
+//registration  
+// Types
+
+	notificationType : {
+ 		none: 0,
+    	badge: 1,
+      	sound: 2,
+        alert: 4
+    } ,
+    registerForNotificationTypes: function ( types, callback) {
+     if (forge.is.ios())
+        forge.internal.call('urbanairship.registerForNotificationTypes', {text:types}, callback, callback);
+    },
     
 
     

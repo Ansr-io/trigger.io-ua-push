@@ -17,6 +17,7 @@
 
 
 
+
 +(void)takeOff:(ForgeTask*)command {
     
     
@@ -52,6 +53,9 @@
     [[UAPush shared] setDelegate:self];
     
 }
+
+
+
 
 + (NSString *)alertForUserInfo:(NSDictionary *)userInfo {
     NSString *alert = @"";
@@ -91,12 +95,22 @@
 
 
 
-//
-// Here you can implement your API methods which can be called from JavaScript
-// an example method is included below to get you started.
-//
+//registration
 
++(void)registerForNotificationTypes:(ForgeTask*)command text:(NSNumber *)text {
+    UALOG(@"PushNotificationPlugin: register for notification types");
+    
+   
+        UIRemoteNotificationType bitmask = text ;
+        UALOG(@"bitmask value: %d", text);
+        [[UAPush shared] registerForRemoteNotificationTypes:bitmask];
+        [command success:nil];
 
+    
+        [command success:nil];
+        
+    
+}
 
 //general enablement
 

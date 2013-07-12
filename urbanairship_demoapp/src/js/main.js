@@ -32,6 +32,15 @@
         },
         errorfail
     );
+    
+    // Register for our native push events
+    // this is called when a push is received while the app is active
+    forge.internal.addEventListener("urbanairship.registration", function (d) {
+        var txt = 'registration: '+JSON.stringify(d);
+        alert(txt);
+        log(txt);
+//        forge.urbanairship.showAlert(txt); // does nothing
+    });
 
     // Register for our native push events
     // this is called when a push is received while the app is active
@@ -107,6 +116,14 @@
         },
         errorfail
     );
+   
+    forge.urbanairship.registerForNotificationTypes(
+    	forge.urbanairship.notificationType.badge,
+        function (d) {
+            log('registerForNotificationTypes: '+alias);
+        }
+    );
+   
 
     // --------------------------------------------------------------------------------------
 
