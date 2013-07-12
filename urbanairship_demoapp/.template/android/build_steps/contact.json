@@ -1,3 +1,0 @@
-[
-        { "do": { "android_add_permission": "android.permission.READ_CONTACTS" } }
-]
