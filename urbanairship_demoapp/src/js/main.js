@@ -127,7 +127,7 @@
 
     // --------------------------------------------------------------------------------------
 
-    forge.urbanairship.setSoundEnabled(1, function () {
+    forge.urbanairship.setSoundEnabled(true, function () {
         log('setSoundEnabled :: success');
 
         forge.urbanairship.isSoundEnabled(function (enabled) {
@@ -135,7 +135,7 @@
         });
     });
 
-    forge.urbanairship.setVibrateEnabled(1, function () {
+    forge.urbanairship.setVibrateEnabled(true, function () {
         log('setVibrateEnabled :: success');
 
         forge.urbanairship.isVibrateEnabled(function (enabled) {
@@ -143,7 +143,7 @@
         });
     });
 
-    forge.urbanairship.setQuietTimeEnabled(1, function () {
+    forge.urbanairship.setQuietTimeEnabled(true, function () {
         log('setQuietTimeEnabled :: success');
 
         forge.urbanairship.isQuietTimeEnabled(function (enabled) {
