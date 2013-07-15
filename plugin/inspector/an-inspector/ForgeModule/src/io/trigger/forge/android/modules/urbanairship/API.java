@@ -118,13 +118,13 @@ public class API {
 	    }
 	}
 	public static void enableLocation(final ForgeTask callbackContext) {
-        /*if (requireLocationServiceEnabled(callbackContext)) {
-            UALocationManager.enableLocation();
+       if (requireLocationServiceEnabled(callbackContext)) {
+            UALocationManager.enableLocation();            
             callbackContext.success();
         }
-        */
-		UALocationManager.enableLocation();
-        callbackContext.success();
+        
+		//UALocationManager.enableLocation();
+        //callbackContext.success();
 	}
 	public static void disableLocation(final ForgeTask callbackContext) {
         if (requireLocationServiceEnabled(callbackContext)) {
@@ -178,10 +178,10 @@ public class API {
         }
 	}
 	public static void isLocationEnabled(final ForgeTask callbackContext) {
-        if (requireLocationServiceEnabled(callbackContext)) {
+       // if (requireLocationServiceEnabled(callbackContext)) {
             Boolean value =  UALocationManager.shared().getPreferences().isLocationEnabled();
             callbackContext.success(value);
-        }
+        //}
 	}
 	
 	public static void isBackgroundLocationEnabled(final ForgeTask callbackContext) {
@@ -453,18 +453,17 @@ public class API {
     }
 
     private static boolean requireLocationServiceEnabled(final ForgeTask callbackContext) {
-      /*  if (!UAirship.shared().getAirshipConfigOptions().locationOptions.locationServiceEnabled) {
-            //Logger.warn("locationServiceEnabled must be enabled in the location.properties file");
-            callbackContext.error("locationServiceEnabled must be enabled in the location.properties file");
-            return false;
-        }
-*/	
-    	UALocationManager.init();
-    	UALocationManager.enableLocation();
+    	
+    	if (locationTakeOff == false) {
+    
+    		UALocationManager.init();
+    		locationTakeOff = true;
+    	}
+    	
         return true;
     }	
 	
-	
+    public static Boolean locationTakeOff = true;
 	public static Boolean takeOff = true;
 	
 	public static void showAlert(final ForgeTask task, @ForgeParam("text") final String text) {

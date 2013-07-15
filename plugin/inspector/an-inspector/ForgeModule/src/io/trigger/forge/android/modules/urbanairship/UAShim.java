@@ -1,6 +1,7 @@
 package io.trigger.forge.android.modules.urbanairship;
 
 
+import android.location.LocationManager;
 import android.os.RemoteException;
 
 import com.urbanairship.Logger;
@@ -25,6 +26,7 @@ public class UAShim extends ForgeApp {
 	    super.onCreate();
 	    UAirship.takeOff(this);
 	    PushManager.enablePush();
+	    UALocationManager.init();
 		PushManager.shared().setIntentReceiver(IntentReceiver.class);	
     	
 
