@@ -48,13 +48,7 @@
 			}
 		}
 	},
-	{
-		"do": {
-			"android_add_permission": {
-				"permission": "android.permission.BROADCAST_STICKY"
-			}
-		}
-	},	
+
 	{
 		"do": {
 			"android_add_to_manifest": {
@@ -65,6 +59,13 @@
 						"android:protectionLevel": "signature"
 					}
 				}
+			}
+		}
+	},
+	{
+		"do": {
+			"android_add_permission": {
+				"permission": "ODR_PACKAGE_TOKEN.permission.C2D_MESSAGE"
 			}
 		}
 	},
