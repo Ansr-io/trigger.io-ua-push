@@ -8,7 +8,8 @@
         log = function () {
           return forge.logging.log.apply(this, arguments);
             //return alert.apply(this, arguments);
-        }
+        },
+        registered = false;
 
 
 //    forge.urbanairship.disablePush(
@@ -34,14 +35,13 @@
     );
 
     forge.internal.addEventListener("urbanairship.registration", function (d) {
-        var registered = false,
-            txt;
+        var txt;
 
         if (!registered) {
             registered = d;
             txt = 'registration: '+JSON.stringify(registered);
+            console.log(txt);
             alert(txt);
-            log(txt);
         }
     });
 

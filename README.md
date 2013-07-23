@@ -224,14 +224,20 @@ forge.internal.addEventListener("urbanairship.pushReceived", function (data) {
 
 ### Registration
 
-Callback arguments: (Boolean error, String id)
+Callback arguments: (Object)
+    ```
+       {
+       valid: Boolean
+       pushID: String
+       }
+    ```
 
-This event is trigerred when your application recieves a registration response from Urban Airship.
+This event is trigerred when a registration response is recieved from UrbanAirship.
 
 ```
+var registered = false;
 forge.internal.addEventListener("urbanairship.registration", function (d) {
-        var registered = false,
-            txt;
+        var txt;
 
         if (!registered) {
             registered = d;
