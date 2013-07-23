@@ -9,19 +9,7 @@
 		"logging": {
 			"level": "DEBUG"
 		},
-		"contact": true,
-		"file": true,
-		"is": true,
 		"media": true,
-		"prefs": true,
-		"request": {
-			"permissions": [
-				"http://*/*",
-				"https://*/*"
-			]
-		},
-		"tools": true,
-		"reload": true,
 		"package_names": {
 			"ios": "com.plugtester",
 			"android": "com.plugtester"
@@ -33,5 +21,6 @@
 			"type": "project"
 		}
 	},
-	"trusted_urls": []
+	"trusted_urls": [],
+	"uuid": "ef4904c2d9bf11e2a0e312313d00ecf3"
 }
