@@ -118,9 +118,9 @@
     );
    
     forge.urbanairship.registerForNotificationTypes(
-    	forge.urbanairship.notificationType.badge,
+        forge.urbanairship.notificationType.alert | forge.urbanairship.notificationType.sound | forge.urbanairship.notificationType.badge,
         function (d) {
-            log('registerForNotificationTypes: '+alias);
+            log('registerForNotificationTypes: '+d);
         }
     );
    

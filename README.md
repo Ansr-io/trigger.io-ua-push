@@ -128,6 +128,23 @@ forge.urbanairship = {
     disableBackgroundLocation: function (success, error) {
         // Disable background location updates on the device.
     },
+    registerForNotificationTypes: function (bitmask) {
+        // Note:: iOS Only
+        //
+        // On iOS, registration for push requires specifying what combination of badges,
+        // sound and alerts are desired. This function must be explicitly called in order
+        // to begin the registration process. For example:
+        //
+        // push.registerForNotificationTypes(push.notificationType.sound | push.notificationType.alert)
+        //
+        // If your are unfamiliar with bitmasks, see: https://en.wikipedia.org/wiki/Bitmask#Uses_of_bitmasks
+        //
+        // Available notification types:
+        //
+        // notificationType.sound
+        // notificationType.alert
+        // notificationType.badge
+    },
     // ------------------------------------------------------------
     isPushEnabled: function (callback) {
         // Callback arguments : Boolean : enabled
