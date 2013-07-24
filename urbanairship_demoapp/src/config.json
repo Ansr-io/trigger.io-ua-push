@@ -13,7 +13,8 @@
 		"package_names": {
 			"ios": "com.plugtester",
 			"android": "com.plugtester"
-		}
+		},
+		"is": true
 	},
 	"plugins": {
 		"urbanairship": {

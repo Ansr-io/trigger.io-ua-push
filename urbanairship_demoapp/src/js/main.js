@@ -57,7 +57,9 @@
     // i.e. is only called when the app is NOT running and is launched from a push notification
     forge.urbanairship.getIncoming(
         function (d) {
-            log('getIncoming: '+JSON.stringify(d));
+            var txt = 'getIncoming: '+JSON.stringify(d);
+            log(txt);
+            alert(txt);
         },
         function (e) {
             log('error :: forge.urbanairship.getIncoming :: '+e);
@@ -94,68 +96,73 @@
         errorfail
     );
     // --------------------------------------------------------------------------------------
-    forge.urbanairship.getPushID(
-        function (d) {
-            log('getPushID: '+d);
-        },
-        errorfail
-    );
-    forge.urbanairship.getQuietTime(
-        function (d) {
-            log('getQuietTime: '+JSON.stringify(d));
-        },
-        errorfail
-    );
-    forge.urbanairship.getTags(
-        function (tags) {
-            log('getTags: '+tags.join(', '));
-        },
-        errorfail
-    );
+//    forge.urbanairship.getPushID(
+//        function (d) {
+//            log('getPushID: '+d);
+//        },
+//        errorfail
+//    );
+//    forge.urbanairship.getQuietTime(
+//        function (d) {
+//            log('getQuietTime: '+JSON.stringify(d));
+//        },
+//        errorfail
+//    );
+//    forge.urbanairship.getTags(
+//        function (tags) {
+//            log('getTags: '+tags.join(', '));
+//        },
+//        errorfail
+//    );
+//
+//    forge.urbanairship.getAlias(
+//        function (alias) {
+//            log('getAlias: '+alias);
+//        },
+//        errorfail
+//    );
+//
 
-    forge.urbanairship.getAlias(
-        function (alias) {
-            log('getAlias: '+alias);
-        },
-        errorfail
-    );
-   
-    forge.urbanairship.registerForNotificationTypes(
-        forge.urbanairship.notificationType.alert | forge.urbanairship.notificationType.sound | forge.urbanairship.notificationType.badge,
-        function (d) {
-            log('registerForNotificationTypes: '+d);
-        }
-    );
-   
+    if (forge.is.ios()) {
+        forge.urbanairship.setAutobadgeEnabled(true, function () {
+            log('setAutobadgeEnabled :: success');
+        });
+
+        forge.urbanairship.registerForNotificationTypes(
+            forge.urbanairship.notificationType.alert | forge.urbanairship.notificationType.sound | forge.urbanairship.notificationType.badge,
+            function (d) {
+                log('registerForNotificationTypes: '+d);
+            }
+        );
+    }
+
+    if (forge.is.android()) {
+        forge.urbanairship.setSoundEnabled(true, function () {
+            log('setSoundEnabled :: success');
+
+            forge.urbanairship.isSoundEnabled(function (enabled) {
+                log('isSoundEnabled :: '+enabled);
+            });
+        });
+
+        forge.urbanairship.setVibrateEnabled(true, function () {
+            log('setVibrateEnabled :: success');
+
+            forge.urbanairship.isVibrateEnabled(function (enabled) {
+                log('isVibrateEnabled :: '+enabled);
+            });
+        });
+    }
 
     // --------------------------------------------------------------------------------------
-
-    forge.urbanairship.setSoundEnabled(true, function () {
-        log('setSoundEnabled :: success');
-
-        forge.urbanairship.isSoundEnabled(function (enabled) {
-            log('isSoundEnabled :: '+enabled);
-        });
-    });
-
-    forge.urbanairship.setVibrateEnabled(true, function () {
-        log('setVibrateEnabled :: success');
-
-        forge.urbanairship.isVibrateEnabled(function (enabled) {
-            log('isVibrateEnabled :: '+enabled);
-        });
-    });
-
-    forge.urbanairship.setQuietTimeEnabled(true, function () {
-        log('setQuietTimeEnabled :: success');
-
-        forge.urbanairship.isQuietTimeEnabled(function (enabled) {
-            log('isQuietTimeEnabled :: '+enabled);
-        });
-    });
-
-    // startup background location services
-    // record location
+//    forge.urbanairship.setQuietTimeEnabled(true, function () {
+//        log('setQuietTimeEnabled :: success');
+//
+//        forge.urbanairship.isQuietTimeEnabled(function (enabled) {
+//            log('isQuietTimeEnabled :: '+enabled);
+//        });
+//    });
+    // --------------------------------------------------------------------------------------
     forge.urbanairship.enableLocation(
         function () {
             log('enableLocation :: success');
@@ -175,6 +182,7 @@
         }
     );
 
+    // --------------------------------------------------------------------------------------
 //    forge.urbanairship.enableBackgroundLocation(
 //        function () {
 //            log('enableBackgroundLocation :: success');
