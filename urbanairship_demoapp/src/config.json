@@ -12,7 +12,7 @@
 		"contact": true,
 		"file": true,
 		"is": true,
-		"media": true,
+		"media": {},
 		"prefs": true,
 		"request": {
 			"permissions": [
@@ -23,13 +23,13 @@
 		"tools": true,
 		"reload": true,
 		"package_names": {
-			"ios": "com.plugtester",
+			"ios": "com.ondeviceresearch.ondeviceresearch",
 			"android": "com.plugtester"
 		}
 	},
 	"plugins": {
 		"urbanairship": {
-			"hash": "0b694b0b5890f8e5d9ac2df873117fdaf1b3f2c8",
+			"hash": "ed805d5b8b932d8c0879319aaa3a462e2a80ad17",
 			"type": "project"
 		}
 	},
