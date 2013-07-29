@@ -68,7 +68,7 @@ public class API {
         Logger.info("raisePush: " + data);
 
         try {
-        	ForgeApp.event("odr_ua.pushReceived", data);
+        	ForgeApp.event("urbanairship.pushReceived", data);
         }
         catch (Exception e) {
             Logger.error("unexpected exception in raisePush", e);
