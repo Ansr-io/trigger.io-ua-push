@@ -28,13 +28,13 @@
     // Updates the device token and registers the token with UA
     UALOG(@"PushNotificationPlugin: registered for remote notifications");
     [[UAPush shared] registerDeviceToken:deviceToken];
-    NSString *json =[self raiseRegistration:YES withpushID:[UAirship shared].deviceToken];
+    NSMutableDictionary *json =[self raiseRegistration:YES withpushID:[UAirship shared].deviceToken];
     [[ForgeApp sharedApp] event:@"urbanairship.registration" withParam:json];
 }
 
 + (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *) error {
     UALOG(@"PushNotificationPlugin: Failed To Register For Remote Notifications With Error: %@", error);
-     NSString *json =[self raiseRegistration:NO withpushID:@""];
+     NSMutableDictionary *json =[self raiseRegistration:NO withpushID:@""];
      [[ForgeApp sharedApp] event:@"urbanairship.registration" withParam:json];
 }
 
@@ -47,7 +47,7 @@
     NSString *alert = [self alertForUserInfo:userInfo];
     NSMutableDictionary *extras = [self extrasForUserInfo:userInfo];
     
-    NSString *json = [self raisePush:alert withExtras:extras];
+    NSMutableDictionary *json = [self raisePush:alert withExtras:extras];
     [[ForgeApp sharedApp] event:@"urbanairship.pushReceived" withParam:json];
 }
 
@@ -86,7 +86,7 @@
 
 //events
 
-+ (NSString *)raisePush:(NSString *)message withExtras:(NSDictionary *)extras {
++ (NSMutableDictionary *)raisePush:(NSString *)message withExtras:(NSDictionary *)extras {
     
     if (!message || !extras) {
         UALOG(@"PushNotificationPlugin: attempted to raise push with nil message or extras");
@@ -99,17 +99,12 @@
     [data setObject:message forKey:@"message"];
     [data setObject:extras forKey:@"extras"];
     
-    UA_SBJsonWriter *writer = [[UA_SBJsonWriter alloc] init] ;
-    NSString *json = [writer stringWithObject:data];
-    //NSString *js = [NSString stringWithFormat:@"window.pushNotification.pushCallback(%@);", json];
-    
-    //[self writeJavascript:js];
-    
-    //UALOG(@"js callback: %@", js);
-    return json;
+
+
+    return data;
 }
 
-+ (NSString *)raiseRegistration:(BOOL)valid withpushID:(NSString *)pushID {
++ (NSMutableDictionary *)raiseRegistration:(BOOL)valid withpushID:(NSString *)pushID {
     
     if (!pushID) {
         UALOG(@"PushNotificationPlugin: attempted to raise registration with nil pushID");
@@ -120,19 +115,10 @@
     NSMutableDictionary *data = [NSMutableDictionary dictionary];
     [data setObject:[NSNumber numberWithBool:valid] forKey:@"valid"];
     [data setObject:pushID forKey:@"pushID"];
+
     
-    UA_SBJsonWriter *writer = [[UA_SBJsonWriter alloc] init] ;
-    NSString *json = [writer stringWithObject:data];
-    
-    
-    //UA_SBJsonWriter *writer = [[[UA_SBJsonWriter alloc] init] autorelease];
-    //NSString *json = [writer stringWithObject:data];
-    //NSString *js = [NSString stringWithFormat:@"window.pushNotification.registrationCallback(%@);", json];
-    
-    //[self writeJavascript:js];
-    
-    //UALOG(@"js callback: %@", js);
-    return json;
+
+    return data;
 }
 
 @end
