@@ -77,27 +77,24 @@ public class API {
     }
     
     public static void raiseRegistration(Boolean valid, String pushID) {
-    	/*
-        JSONObject data = new JSONObject();
+    	
+    	JsonObject data = new JsonObject();
         try {
-            data.put("valid", valid);
-            data.put("pushID", pushID);
-        } catch (JSONException e) {
+            data.addProperty("valid", valid);
+            data.addProperty("pushID", pushID);
+        } catch (Exception e) {
             Logger.error("Error In raiseRegistration", e);
         }
-        String js = String.format(
-                "window.pushNotification.registrationCallback(%s);",
-                data.toString());
-        Logger.info("Javascript Calling back: " + js);
+ 
 
         try {
-            this.webView.sendJavascript(js);
+        	ForgeApp.event("urbanairship.registration", data);
         } catch (NullPointerException npe) {
             Logger.info("unable to send javascript in raiseRegistration");
         } catch (Exception e) {
             Logger.error("unexpected exception in raisePush", e);
         }
-        */
+        
     }
    
 	// Top level enabling/disabling
