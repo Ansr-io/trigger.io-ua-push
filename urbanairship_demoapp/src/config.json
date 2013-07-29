@@ -9,10 +9,11 @@
 		"logging": {
 			"level": "DEBUG"
 		},
+
 		"contact": true,
 		"file": true,
 		"is": true,
-		"media": {},
+
 		"prefs": true,
 		"request": {
 			"permissions": [
@@ -22,10 +23,14 @@
 		},
 		"tools": true,
 		"reload": true,
+
+		"media": true,
+
 		"package_names": {
 			"ios": "com.ondeviceresearch.ondeviceresearch",
 			"android": "com.plugtester"
-		}
+		},
+		"is": true
 	},
 	"plugins": {
 		"urbanairship": {
@@ -33,5 +38,6 @@
 			"type": "project"
 		}
 	},
-	"trusted_urls": []
+	"trusted_urls": [],
+	"uuid": "ef4904c2d9bf11e2a0e312313d00ecf3"
 }
