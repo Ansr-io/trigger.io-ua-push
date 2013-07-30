@@ -9,28 +9,12 @@
 		"logging": {
 			"level": "DEBUG"
 		},
-
-		"contact": true,
-		"file": true,
-		"is": true,
-
-		"prefs": true,
-		"request": {
-			"permissions": [
-				"http://*/*",
-				"https://*/*"
-			]
-		},
-		"tools": true,
-		"reload": true,
-
-		"media": true,
-
 		"package_names": {
 			"ios": "com.ondeviceresearch.ondeviceresearch",
 			"android": "com.plugtester"
 		},
-		"is": true
+		"is": true,
+		"prefs": true
 	},
 	"plugins": {
 		"urbanairship": {
