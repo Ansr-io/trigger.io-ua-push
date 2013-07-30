@@ -84,8 +84,8 @@ Update the UA settings file `hooks/postbuild/uaplugin/airshipConfig.plist`
 
 All methods without a return value return null or undefined.
 
-### enablePush()
-Enable push notifications on the device. This sends a registration request to the backend service.
+
+### Core methods
 
 
 ```
@@ -155,7 +155,12 @@ forge.urbanairship = {
         // i.e. is only called when the app is NOT running and is launched from a push notification
     },
     getPushID: function ( success, error) {
+        // Callback arguments: (Object) {valid: Boolean, pushID: String}
         //
+        // Get the push identifier for the device. The push ID is used to send messages to
+        // the device for testing, and is the canoncial identifer for the device in Urban Airship.
+        //
+        // Note: iOS will always have a push identifier, Android will have one after successful registration.
     },
     getQuietTime: function (success, error) {
         // @return : Object : {"startHour":0,"startMinute":0,"endHour":0,"endMinute":0}
@@ -208,12 +213,12 @@ forge.urbanairship = {
 };
 ```
 
-## Events
+### Events
 
-### Incoming Push
+#### Incoming Push
 
 This is called when a push is received, but ONLY while the app is active.
-See also getIncoming.
+See also `forge.urbanairship.getIncoming()`.
 
 ```
 forge.internal.addEventListener("urbanairship.pushReceived", function (data) {
@@ -222,15 +227,9 @@ forge.internal.addEventListener("urbanairship.pushReceived", function (data) {
 });
 ```
 
-### Registration
+#### Registration
 
-Callback arguments: (Object)
-    ```
-       {
-       valid: Boolean
-       pushID: String
-       }
-    ```
+Callback arguments: `Object : { valid: Boolean, pushID: String }`
 
 This event is trigerred when a registration response is recieved from UrbanAirship.
 
