@@ -7,7 +7,6 @@
         },
         log = function () {
           return forge.logging.log.apply(this, arguments);
-            //return alert.apply(this, arguments);
         },
         registered = false;
 
@@ -47,19 +46,23 @@
 
     // Register for our native push events
     // this is called when a push is received while the app is active
-    forge.internal.addEventListener("urbanairship.pushReceived", function (d) {
-        var txt = 'pushReceived: '+JSON.stringify(d);
-        log(txt);
-//        forge.urbanairship.showAlert(txt); // does nothing
+    forge.internal.addEventListener("urbanairship.pushReceived", function (push) {
+        if (push && push.message && push.message !== '') {
+            txt = 'pushReceived: '+push.message;
+            log(txt);
+            alert(txt);
+        }
     });
 
     // Will bring up any existing notification if launched from one
     // i.e. is only called when the app is NOT running and is launched from a push notification
     forge.urbanairship.getIncoming(
-        function (d) {
-            var txt = 'getIncoming: '+JSON.stringify(d);
-            log(txt);
-            alert(txt);
+        function (push) {
+            if (push && push.message && push.message !== '') {
+                txt = 'getIncoming: '+push.message;
+                log(txt);
+                alert(txt);
+            }
         },
         function (e) {
             log('error :: forge.urbanairship.getIncoming :: '+e);
@@ -163,24 +166,24 @@
 //        });
 //    });
     // --------------------------------------------------------------------------------------
-    forge.urbanairship.enableLocation(
-        function () {
-            log('enableLocation :: success');
-
-            forge.urbanairship.isLocationEnabled(function (d) {
-                log('isLocationEnabled: '+d);
-            });
-
-            forge.urbanairship.recordCurrentLocation(
-                function () {
-                    log('success :: forge.urbanairship.recordCurrentLocation');
-                }
-            );
-        },
-        function (e) {
-            alert('error :: enableLocation :: '+JSON.stringify(e));
-        }
-    );
+//    forge.urbanairship.enableLocation(
+//        function () {
+//            log('enableLocation :: success');
+//
+//            forge.urbanairship.isLocationEnabled(function (d) {
+//                log('isLocationEnabled: '+d);
+//            });
+//
+//            forge.urbanairship.recordCurrentLocation(
+//                function () {
+//                    log('success :: forge.urbanairship.recordCurrentLocation');
+//                }
+//            );
+//        },
+//        function (e) {
+//            alert('error :: enableLocation :: '+JSON.stringify(e));
+//        }
+//    );
 
     // --------------------------------------------------------------------------------------
 //    forge.urbanairship.enableBackgroundLocation(
