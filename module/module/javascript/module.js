@@ -121,11 +121,11 @@ forge.urbanairship	 = {
      if (forge.is.ios())
         forge.internal.call('urbanairship.registerForNotificationTypes', {text:types}, callback, callback);
     },
-    
 
-    
+    // Event handlers
+    pushReceived: {
+        addListener: function (callback) {
+            forge.internal.addEventListener("urbanairship.pushReceived", callback);
+        }
+    }
 };
-
-
-
-
