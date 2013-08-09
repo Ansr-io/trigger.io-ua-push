@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A84B68A17B52333003AB3CF /* libUAirship-2.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A84B68917B52333003AB3CF /* libUAirship-2.0.0.a */; };
 		B31B6D5215C13D5200854074 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31B6D5115C13D5200854074 /* Foundation.framework */; };
 		B31B6D6F15C1467100854074 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31B6D6E15C1467100854074 /* CoreFoundation.framework */; };
 		B37C3A5D162717A200B50A60 /* ForgeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37C3A5C162717A200B50A60 /* ForgeCore.framework */; };
@@ -16,11 +17,11 @@
 		B3FC51FF15C1523D003574D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FC51FE15C1523D003574D9 /* CoreGraphics.framework */; };
 		B3FC524215C177EA003574D9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FC524115C177EA003574D9 /* AssetsLibrary.framework */; };
 		B3FC524815C17B2C003574D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FC524715C17B2C003574D9 /* SystemConfiguration.framework */; };
-		C197C7AA177349EC008FD463 /* libUAirship-1.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C197C7A9177349EC008FD463 /* libUAirship-1.4.0.a */; };
 		C197C7AE17734BD6008FD463 /* UAAppDelegateSurrogate.m in Sources */ = {isa = PBXBuildFile; fileRef = C197C7AC17734BD6008FD463 /* UAAppDelegateSurrogate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A84B68917B52333003AB3CF /* libUAirship-2.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libUAirship-2.0.0.a"; sourceTree = "<group>"; };
 		B31B6D4E15C13D5200854074 /* libForgeModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libForgeModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31B6D5115C13D5200854074 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B31B6D6D15C1467100854074 /* odr_ua.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = odr_ua.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +116,6 @@
 		C197C7A6177349EC008FD463 /* UASubscriptionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UASubscriptionManager.h; sourceTree = "<group>"; };
 		C197C7A7177349EC008FD463 /* UASubscriptionObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UASubscriptionObserver.h; sourceTree = "<group>"; };
 		C197C7A8177349EC008FD463 /* UASubscriptionProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UASubscriptionProduct.h; sourceTree = "<group>"; };
-		C197C7A9177349EC008FD463 /* libUAirship-1.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libUAirship-1.4.0.a"; sourceTree = "<group>"; };
 		C197C7AC17734BD6008FD463 /* UAAppDelegateSurrogate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAAppDelegateSurrogate.m; sourceTree = "<group>"; };
 		C197C7AD17734BD6008FD463 /* UAAppDelegateSurrogate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAAppDelegateSurrogate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,7 +131,7 @@
 				B3FC51F815C151E5003574D9 /* UIKit.framework in Frameworks */,
 				B31B6D5215C13D5200854074 /* Foundation.framework in Frameworks */,
 				B37C3A5D162717A200B50A60 /* ForgeCore.framework in Frameworks */,
-				C197C7AA177349EC008FD463 /* libUAirship-1.4.0.a in Frameworks */,
+				1A84B68A17B52333003AB3CF /* libUAirship-2.0.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,10 +187,10 @@
 		C197C74A177349EC008FD463 /* Airship */ = {
 			isa = PBXGroup;
 			children = (
+				1A84B68917B52333003AB3CF /* libUAirship-2.0.0.a */,
 				C197C74B177349EC008FD463 /* Common */,
 				C197C767177349EC008FD463 /* External */,
 				C197C788177349EC008FD463 /* Library */,
-				C197C7A9177349EC008FD463 /* libUAirship-1.4.0.a */,
 			);
 			path = Airship;
 			sourceTree = "<group>";
