@@ -1,52 +1,36 @@
 package io.trigger.forge.android.modules.urbanairship;
 
-
-
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonIOException;
-import com.google.gson.JsonObject;
-
-import com.urbanairship.AirshipConfigOptions;
-import com.urbanairship.LocationOptions;
-import com.urbanairship.Logger;
-import com.urbanairship.UAirship;
-import com.urbanairship.location.UALocationManager;
-import com.urbanairship.push.GCMPushReceiver;
-import com.urbanairship.push.PushManager;
-import com.urbanairship.util.ServiceNotBoundException;
-
 import io.trigger.forge.android.core.ForgeApp;
 import io.trigger.forge.android.core.ForgeParam;
 import io.trigger.forge.android.core.ForgeTask;
-import android.app.AlertDialog;
-import android.app.Application;
-import android.content.BroadcastReceiver;
-import android.content.DialogInterface;
-import android.content.IntentFilter;
-import android.location.Location;
-import android.os.RemoteException;
-import android.util.Log;
 
-import java.lang.reflect.Method;
-import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.json.JSONException;
+import android.os.RemoteException;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonIOException;
+import com.google.gson.JsonObject;
+import com.urbanairship.Logger;
+import com.urbanairship.location.UALocationManager;
+import com.urbanairship.push.PushManager;
+import com.urbanairship.util.ServiceNotBoundException;
 
 public class API {
 	
     static public String incomingAlert = "";
-    static public Map<String, String> incomingExtras = new HashMap<String, String>();
+    static public Map<String, String> incomingExtras = new HashMap<String, String>();	
+	
+    public static Boolean locationTakeOff = true;
+	public static Boolean takeOff = true;
 	
     private static JsonObject notificationObject(String message, Map<String, String> extras) {
     	JsonObject data = new JsonObject();
@@ -458,57 +442,54 @@ public class API {
     	}
     	
         return true;
-    }	
+    }
 	
-    public static Boolean locationTakeOff = true;
-	public static Boolean takeOff = true;
-	
-	public static void showAlert(final ForgeTask task, @ForgeParam("text") final String text) {
-	
-	
-		
-		LocationOptions lOptions 		= new LocationOptions();
-		lOptions.locationServiceEnabled = true;
-		
-		
-		 AirshipConfigOptions options 	= new AirshipConfigOptions();
-		 options.developmentAppKey		= "v_WZYBsVTxWS4U1UBHQK7w";
-		 options.developmentAppSecret	= "SkADXHqWRNyCQoVSJErbGA";
-		 options.transport				= "gcm";
-		 options.gcmSender				= "128731908880";
-		 options.inProduction			= false;
-		 options.developmentLogLevel	= Log.DEBUG;
-		 options.pushServiceEnabled		= true;
-		 
-		 options.locationOptions      = lOptions;
-		 
-		
-		UAirship.takeOff(ForgeApp.getApp(), options);
-		//TODO figure out a way to enable this...
-		ForgeApp.getApp().registerReceiver(new IntentReceiver(), new IntentFilter("com.urbanairship.push.PUSH_RECEIVED") );
-		
-		//PushManager.shared().setIntentReceiver(IntentReceiver.class);			
-		requirePushServiceEnabled(task);
-		UALocationManager.enableLocation();
-		
-		
-		if (text.length() == 0) {
-			// Error if there is no text to show
-			task.error("No text entered");
-			return;
-			
-		}
-		task.performUI(new Runnable() {
-			public void run() {
-				AlertDialog.Builder builder = new AlertDialog.Builder(ForgeApp.getActivity());
-				builder.setMessage(text).setCancelable(false).setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int which) {
-						task.success();
-					}
-				});
-				AlertDialog alert = builder.create();
-				alert.show();
-			}
-		});
-	}
+//	public static void showAlert(final ForgeTask task, @ForgeParam("text") final String text) {
+//	
+//	
+//		
+//		LocationOptions lOptions 		= new LocationOptions();
+//		lOptions.locationServiceEnabled = true;
+//		
+//		
+//		 AirshipConfigOptions options 	= new AirshipConfigOptions();
+//		 options.developmentAppKey		= "v_WZYBsVTxWS4U1UBHQK7w";
+//		 options.developmentAppSecret	= "SkADXHqWRNyCQoVSJErbGA";
+//		 options.transport				= "gcm";
+//		 options.gcmSender				= "128731908880";
+//		 options.inProduction			= false;
+//		 options.developmentLogLevel	= Log.DEBUG;
+//		 options.pushServiceEnabled		= true;
+//		 
+//		 options.locationOptions      = lOptions;
+//		 
+//		
+//		UAirship.takeOff(ForgeApp.getApp(), options);
+//		//TODO figure out a way to enable this...
+//		ForgeApp.getApp().registerReceiver(new IntentReceiver(), new IntentFilter("com.urbanairship.push.PUSH_RECEIVED") );
+//		
+//		//PushManager.shared().setIntentReceiver(IntentReceiver.class);			
+//		requirePushServiceEnabled(task);
+//		UALocationManager.enableLocation();
+//		
+//		
+//		if (text.length() == 0) {
+//			// Error if there is no text to show
+//			task.error("No text entered");
+//			return;
+//			
+//		}
+//		task.performUI(new Runnable() {
+//			public void run() {
+//				AlertDialog.Builder builder = new AlertDialog.Builder(ForgeApp.getActivity());
+//				builder.setMessage(text).setCancelable(false).setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+//					public void onClick(DialogInterface dialog, int which) {
+//						task.success();
+//					}
+//				});
+//				AlertDialog alert = builder.create();
+//				alert.show();
+//			}
+//		});
+//	}
 }
