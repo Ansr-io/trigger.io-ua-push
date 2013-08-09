@@ -1,5 +1,5 @@
 /*
- Copyright 2009-2012 Urban Airship Inc. All rights reserved.
+ Copyright 2009-2013 Urban Airship Inc. All rights reserved.
 
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -24,122 +24,46 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "UAObservable.h"
 
-@class UA_ASIHTTPRequest;
+extern NSString * const UAUserCreatedNotification;
 
-typedef enum _UAUserState {
-    UAUserStateEmpty = 0,
-    UAUserStateNoEmail = 1,
-    UAUserStateWithEmail = 2,
-    UAUserStateInRecovery = 3,
-    UAUserStateCreating = 4
-} UAUserState;
+/**
+ * Primary interface for working with the application's associated UA user.
+ */
+@interface UAUser : NSObject
 
-@protocol UAUserObserver <NSObject>
-@optional
-
-// Notified when user created or modified, not including recovery
-- (void)userUpdated;
-- (void)userUpdateFailed;
-
-// Notified during recovering process
-- (void)userRecoveryStarted;
-- (void)userRecoveryFinished;
-- (void)userRecoveryFailed;
-
-- (void)userRetrieveStarted;
-- (void)userRetrieveFinished;
-- (void)userRetrieveFailed;
-@end
-
-@interface UAUser : UAObservable {
-
-  @private
-    BOOL initialized;
-    NSString *username;
-    NSString *password;
-    NSString *email;
-    NSString *url;
-    NSString *alias;
-    NSMutableSet *tags;
-    
-    UAUserState userState;
-    
-    //recovery
-    NSString *recoveryEmail;
-    NSString *recoveryStatusUrl;
-    NSTimer *recoveryPoller;
-    BOOL inRecovery;
-    BOOL recoveryStarted;
-    BOOL sentRecoveryEmail;
-    BOOL retrievingUser;
-    
-    BOOL isObservingDeviceToken;
-    
-    //creation flag
-    BOOL creatingUser;
-
-}
-
-@property (retain, nonatomic) NSString *recoveryEmail;
-@property (retain, nonatomic) NSString *recoveryStatusUrl;
-@property (retain, nonatomic) NSTimer *recoveryPoller;
-
-// Public interface
-@property (assign, readonly, nonatomic) UAUserState userState;
-@property (retain, nonatomic) NSString *username;
-@property (retain, nonatomic) NSString *password;
-@property (retain, nonatomic) NSString *email;
-@property (retain, nonatomic) NSString *url;
-@property (retain, nonatomic) NSString *alias;
-@property (retain, nonatomic) NSMutableSet *tags;
-
+/**
+ * Returns the singleton user instance.
+ */
 + (UAUser *)defaultUser;
+
+/**
+ * Causes the user instance to stop listening for device token changes.
+ */
 + (void)land;
 
+/**
+ * Indicates whether the default user has been created.
+ * @return `YES` if the user has been created, `NO` otherwise.
+ */
 - (BOOL)defaultUserCreated;
-- (BOOL)setUserEmail:(NSString *)address;
-- (void)startRecovery;
-- (void)cancelRecovery;
 
-// Private interface
-@property (assign, nonatomic) BOOL inRecovery;
-@property (assign, nonatomic) BOOL recoveryStarted;
-@property (assign, nonatomic) BOOL sentRecoveryEmail;
-@property (assign, nonatomic) BOOL retrievingUser;
-
-//Specifies a default PRE-EXISTING username and password to use in the case a new user would 
-//otherwise be created by [UAUser defaultUser]
-+ (void)setDefaultUsername:(NSString *)defaultUsername withPassword:(NSString *)defaultPassword;
-
+/**
+ * Loads the user from disk if available, otherwise creates the user (asynchronously) from scratch.
+ */
 - (void)initializeUser;
-- (void)loadUser;
 
-- (void)createUser;
-- (void)createUserWithEmail:(NSString *)value;
-- (void)modifyUserWithEmail:(NSString *)value;
-
-- (void)retrieveUser;
-
-- (void)startRecoveryPoller;
-- (void)stopRecoveryPoller;
-- (void)checkRecoveryStatus:(NSTimer *)timer;
-
-- (void)didMergeWithUser:(NSDictionary *)userData;
-
-- (void)saveUserData;
-- (void)updateUserState;
-- (void)notifyObserversUserUpdated;
-
-- (void)requestWentWrong:(UA_ASIHTTPRequest*)request;
-- (void)userRequestWentWrong:(UA_ASIHTTPRequest*)request;
-
-//POST
-- (void)updateUserInfo:(NSDictionary *)info withDelegate:(id)delegate finish:(SEL)finishSelector fail:(SEL)failSelector;
-
-//PUT
-- (void)updateUserWithDelegate:(id)delegate finish:(SEL)finishSelector fail:(SEL)failSelector;
-- (NSMutableDictionary*)createUserDictionary;
+/**
+ * The user name.
+ */
+@property (nonatomic, readonly, copy) NSString *username;
+/**
+ * The user password.
+ */
+@property (nonatomic, readonly, copy) NSString *password;
+/**
+ * The user url.
+ */
+@property (nonatomic, readonly, copy) NSString *url;
 
 @end

@@ -1,5 +1,5 @@
 /*
- Copyright 2009-2012 Urban Airship Inc. All rights reserved.
+ Copyright 2009-2013 Urban Airship Inc. All rights reserved.
 
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -24,60 +24,71 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "UAHTTPRequest.h"
 
+/**
+ * A wrapper for NSURLConnection implementing the NSURLConnectionDelegate protocol.
+ */
+@interface UAHTTPConnection : NSObject <NSURLConnectionDelegate> {
 
-@interface UAHTTPRequest : NSObject {
-    
-  @private
-    NSURL *url;
-    NSString *HTTPMethod;
-    NSMutableDictionary *headers;
-    NSString *username;
-    NSString *password;
-    NSMutableData *body;
-    BOOL compressBody;
-    id userInfo;
 }
-@property (readonly, nonatomic) NSURL *url;
-@property (copy, nonatomic) NSString *HTTPMethod;
-@property (readonly, nonatomic) NSDictionary *headers;
-@property (copy, nonatomic) NSString *username;
-@property (copy, nonatomic) NSString *password;
-@property (retain, nonatomic) NSData *body;
-@property (assign, nonatomic) BOOL compressBody;
-@property (retain, nonatomic) id userInfo;
 
-+ (UAHTTPRequest *)requestWithURLString:(NSString *)urlString;
-- (id)initWithURLString:(NSString *)urlString;
-- (void)addRequestHeader:(NSString *)header value:(NSString *)value;
-- (void)appendBodyData:(NSData *)data;
-
-@end
-
-@protocol UAHTTPConnectionDelegate <NSObject>
-@required
-- (void)requestDidSucceed:(UAHTTPRequest *)request
-               response:(NSHTTPURLResponse *)response
-             responseData:(NSData *)responseData;
-- (void)requestDidFail:(UAHTTPRequest *)request;
-@end
+@property (nonatomic, retain, readonly) NSURLConnection *urlConnection;
+@property (nonatomic, retain, readonly) UAHTTPRequest *request;
 
 
-@interface UAHTTPConnection : NSObject {
-    UAHTTPRequest *request;
+@property (assign, nonatomic) id delegate;
+@property (nonatomic, assign) SEL successSelector;
+@property (nonatomic, assign) SEL failureSelector;
 
-    NSURLConnection *urlConnection_;
-    NSHTTPURLResponse *urlResponse;
-	NSMutableData *responseData;
+@property (nonatomic, copy) UAHTTPConnectionSuccessBlock successBlock;
+@property (nonatomic, copy) UAHTTPConnectionFailureBlock failureBlock;
 
-    id<UAHTTPConnectionDelegate> delegate;
-}
-@property (assign, nonatomic) id<UAHTTPConnectionDelegate> delegate;
-@property (nonatomic, retain) NSURLConnection *urlConnection;
-
+/**
+ * Class factory method for creating a UAHTTPConnection.
+ * @param httpRequest An instance of UAHTTPRequest.
+ */
 + (UAHTTPConnection *)connectionWithRequest:(UAHTTPRequest *)httpRequest;
+
++ (UAHTTPConnection *)connectionWithRequest:(UAHTTPRequest *)httpRequest
+                                   delegate:(id)delegate
+                                    success:(SEL)successSelector
+                                    failure:(SEL)failureSelector;
+
+/**
+ * Class factory method for creating a UAHTTPConnection.
+ * @param httpRequest An instance of UAHTTPRequest.
+ * @param successBlock A UAHTTPConnectionSuccessBlock that will be called if the connection was successful.
+ * @param failureBlock A UAHTTPConnectionFailureBlock that will be called if the connection was unsuccessful.
+ *
+ */
++ (UAHTTPConnection *)connectionWithRequest:(UAHTTPRequest *)httpRequest
+                               successBlock:(UAHTTPConnectionSuccessBlock)successBlock
+                               failureBlock:(UAHTTPConnectionFailureBlock)failureBlock;
+
+/**
+ * Initializer with the HTTP request.
+ * @param httpRequest An instance of UAHTTPRequest.
+ */
 - (id)initWithRequest:(UAHTTPRequest *)httpRequest;
+
+/**
+ * Start the connection asynchronously.
+ */
 - (BOOL)start;
+
+/**
+ * Start the connection synchronously
+ */
+- (BOOL)startSynchronous;
+
+/**
+ * Cancel the connection
+ */
+- (void)cancel;
+
+#pragma mark -
+#pragma mark NSURLConnectionDelegate
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSHTTPURLResponse *)response;
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data;

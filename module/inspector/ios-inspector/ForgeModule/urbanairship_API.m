@@ -9,6 +9,8 @@
 
 #import "UALocationService.h"
 
+#import "UAConfig.h"
+
 #import <Foundation/Foundation.h>
 
 @implementation urbanairship_API
@@ -17,32 +19,13 @@
 
 
 
-
-+(void)takeOff:(ForgeTask*)command {
-    
-    
-    //Create Airship options directory and add the required UIApplication launchOptions
-    NSMutableDictionary *takeOffOptions = [NSMutableDictionary dictionary];
-    NSMutableDictionary *airshipConfigOptions = [NSMutableDictionary dictionary];
-  
-    [takeOffOptions setValue: [UAAppDelegateSurrogate shared].launchOptions forKey:UAirshipTakeOffOptionsLaunchOptionsKey];
-    /*
-     * this section can be enabled to override the text based config file
-    [takeOffOptions setValue:airshipConfigOptions forKey:UAirshipTakeOffOptionsAirshipConfigKey];
-    
-    // Set config values
-    [airshipConfigOptions setValue:@"xxxxxxxxx" forKey:@"DEVELOPMENT_APP_KEY"];
-    [airshipConfigOptions setValue:@"xxxxxxxxx" forKey:@"DEVELOPMENT_APP_SECRET"];
-    [airshipConfigOptions setValue:@"PRODUCTION_APP_KEY" forKey:@"PRODUCTION_APP_KEY"];
-    [airshipConfigOptions setValue:@"PRODUCTION_APP_SECRET" forKey:@"PRODUCTION_APP_SECRET"];
-    */
-    // Call takeOff (which creates the UAirship singleton), passing in the launch options so the
-    // library can properly record when the app i launched from a push notification. This call is
-    // required.
-    //
-    // Populate AirshipConfig.plist with your app's info from https://go.urbanairship.com
-    [UAirship takeOff:takeOffOptions];
-    
++(void)takeOff:(ForgeTask*) command {
+	NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+	NSString *assetsFolder = [[ForgeApp sharedApp] assetsFolderLocationWithPrefs:prefs];
+	NSString *configPath = [[assetsFolder stringByAppendingPathComponent:@"src"] stringByAppendingPathComponent:[[[ForgeApp sharedApp] configForModule:@"urbanairship"] objectForKey:@"airshipConfigPlist"]];
+	UAConfig* config = [UAConfig configWithContentsOfFile:configPath];
+	
+	[UAirship takeOff:config];    
     
     // Register for notifications
     [[UAPush shared]
@@ -53,9 +36,6 @@
     [[UAPush shared] setDelegate:self];
     
 }
-
-
-
 
 + (NSString *)alertForUserInfo:(NSDictionary *)userInfo {
     NSString *alert = @"";

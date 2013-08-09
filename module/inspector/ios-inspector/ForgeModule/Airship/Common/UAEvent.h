@@ -1,5 +1,5 @@
 /*
- Copyright 2009-2012 Urban Airship Inc. All rights reserved.
+ Copyright 2009-2013 Urban Airship Inc. All rights reserved.
  
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -31,36 +31,21 @@
 #define kEventAppActiveSize             120
 #define kEventAppInactiveSize           120
 
-@interface UAEvent : NSObject {
-    NSString *time;
-    NSString *event_id;
-    NSMutableDictionary *data;
-}
+@interface UAEvent : NSObject
 
-@property (nonatomic, readonly) NSString *time;
-@property (nonatomic, readonly) NSString *event_id;
-@property (nonatomic, readonly) NSMutableDictionary *data;
+@property (nonatomic, readonly, copy) NSString *time;
+@property (nonatomic, readonly, copy) NSString *event_id;
+@property (nonatomic, readonly, retain) NSMutableDictionary *data;
 
 + (id)event;
-- (id)initWithContext:(NSDictionary*)context;
-+ (id)eventWithContext:(NSDictionary*)context;
+- (id)initWithContext:(NSDictionary *)context;
++ (id)eventWithContext:(NSDictionary *)context;
 - (NSString *)getType;
-- (void)gatherData:(NSDictionary*)context;
+- (void)gatherData:(NSDictionary *)context;
 - (int)getEstimatedSize;
-- (void)addDataFromSessionForKey:(NSString*)dataKey;
-- (void)addDataWithValue:(id)value forKey:(NSString*)key;
+- (void)addDataFromSessionForKey:(NSString *)dataKey;
+- (void)addDataWithValue:(id)value forKey:(NSString *)key;
 @end
-
-@interface UAEventCustom : UAEvent {
-  @private
-    NSString *type;
-}
-- (id)initWithType:(NSString*)aType;
-+ (id)eventWithType:(NSString*)aType;
-- (id)initWithType:(NSString*)aType andContext:(NSDictionary*)context;
-+ (id)eventWithType:(NSString*)aType andContext:(NSDictionary*)context;
-@end
-
 
 @interface UAEventAppInit : UAEvent
 @end

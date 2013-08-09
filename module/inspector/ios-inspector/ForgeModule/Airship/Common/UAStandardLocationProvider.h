@@ -1,5 +1,5 @@
 /*
- Copyright 2009-2012 Urban Airship Inc. All rights reserved.
+ Copyright 2009-2013 Urban Airship Inc. All rights reserved.
  
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -25,34 +25,37 @@
 
 #import "UABaseLocationProvider.h"
 
-/** UAStandardLocationProvider 
- 
- The UAStandardLocationProvider encapsulates the funcionality of the CLLocationManager running
- the standard location service. 
+/**
+ * The UAStandardLocationProvider encapsulates the functionality of the CLLocationManager running
+ * the standard location service. 
  */
-
 @interface UAStandardLocationProvider : UABaseLocationProvider 
 
 ///---------------------------------------------------------------------------------------
 /// @name Starting and Stopping the location service
 ///---------------------------------------------------------------------------------------
-/** Starts the standard location service 
- 
- The standard location service uses the GPS capabilities of the device to provide location
- information to the delegate
+
+/**
+ * Starts the standard location service.
+ * The standard location service uses the GPS capabilities of the device to provide location
+ * information to the delegate.
  */
 - (void)startReportingLocation;
 
-/** Stops the standard location service */
+/**
+ * Stops the standard location service
+ */
 - (void)stopReportingLocation;
 
 ///---------------------------------------------------------------------------------------
 /// @name Creating a UAStandardLocationProvider
 ///---------------------------------------------------------------------------------------
 
-/** Returns a location provider with the provided object assigned as the delegate
- @param serviceDelegateOrNil Delgate object or nil.
- @return Standard location provider.
+/**
+ * Returns a location provider with the provided object assigned as the delegate.
+ *
+ * @param serviceDelegateOrNil Delegate object or nil.
+ * @return Standard location provider.
  */
-+ (UAStandardLocationProvider*)providerWithDelegate:(id<UALocationProviderDelegate>)serviceDelegateOrNil;
++ (UAStandardLocationProvider *)providerWithDelegate:(id<UALocationProviderDelegate>)serviceDelegateOrNil;
 @end

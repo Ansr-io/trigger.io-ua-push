@@ -1,5 +1,5 @@
 /*
- Copyright 2009-2012 Urban Airship Inc. All rights reserved.
+ Copyright 2009-2013 Urban Airship Inc. All rights reserved.
 
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -28,13 +28,11 @@
 #import "sqlite3.h"
 
 @interface UASQLite : NSObject {
-    NSInteger busyRetryTimeout;
-    NSString *dbPath;
-    sqlite3 *db;
+    sqlite3 *_db;
 }
 
-@property (readwrite) NSInteger busyRetryTimeout;
-@property (readonly) NSString *dbPath;
+@property (assign) NSInteger busyRetryTimeout;
+@property (copy) NSString *dbPath;
 
 - (id)initWithDBPath:(NSString *)aDBPath;
 

@@ -1,5 +1,5 @@
 /*
- Copyright 2009-2012 Urban Airship Inc. All rights reserved.
+ Copyright 2009-2013 Urban Airship Inc. All rights reserved.
  
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -27,22 +27,23 @@
 
 #define kUAKeychainDeviceIDKey @"com.urbanairship.deviceID"
 
-@interface UAKeychainUtils : NSObject {
-	
-}
+/**
+ * The UAKeychainUtils object provides an interface for keychain related methods.
+ */
+@interface UAKeychainUtils : NSObject
 
 + (BOOL)createKeychainValueForUsername:(NSString *)username 
-						withPassword:(NSString *)password 
-						forIdentifier:(NSString *)identifier;
+                          withPassword:(NSString *)password 
+                         forIdentifier:(NSString *)identifier;
+
 + (void)deleteKeychainValue:(NSString *)identifier;
-+ (BOOL)updateKeychainValueForUsername:(NSString *)username 
-						withPassword:(NSString *)password
-                        withEmailAddress:(NSString *)password
-						forIdentifier:(NSString *)identifier;
+
++ (BOOL)updateKeychainValueForUsername:(NSString *)username
+                          withPassword:(NSString *)password
+                         forIdentifier:(NSString *)identifier;
 
 + (NSString *)getPassword:(NSString *)identifier;
 + (NSString *)getUsername:(NSString *)identifier;
-+ (NSString *)getEmailAddress:(NSString *)identifier;
 
 /**
  * Gets the device ID, creating or refreshing if necessary. Device IDs will be regenerated if a

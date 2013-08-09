@@ -1,5 +1,5 @@
 /*
- Copyright 2009-2012 Urban Airship Inc. All rights reserved.
+ Copyright 2009-2013 Urban Airship Inc. All rights reserved.
 
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -25,11 +25,12 @@
 
 #import <Foundation/Foundation.h>
 
-@class UA_ASIHTTPRequest;
+@class UAHTTPRequest;
 
-@interface UAUtils : NSObject {
-
-}
+/**
+ * The UAUtils object provides an interface for utility methods.
+ */
+@interface UAUtils : NSObject
 
 ///---------------------------------------------------------------------------------------
 /// @name Digest/Hash Utils
@@ -41,8 +42,18 @@
 /// @name Device ID Utils
 ///---------------------------------------------------------------------------------------
 
+/**
+ * Generate a UUID.
+ * Uses CFUUID to generate and return a UUID.
+ *
+ * @return A UUID.
+ */
 + (NSString *)UUID;
 
+/**
+ * Get the device model name. e.g., iPhone3,1
+ * @return The device model name.
+ */
 + (NSString *)deviceModelName;
 
 /**
@@ -58,22 +69,15 @@
 
 + (NSString *)urlEncodedStringWithString:(NSString *)string encoding:(NSStringEncoding)encoding;
 
-
 ///---------------------------------------------------------------------------------------
-/// @name HTTP Authenticated Request Helpers
+/// @name UAHTTP Authenticated Request Helpers
 ///---------------------------------------------------------------------------------------
 
-+ (UA_ASIHTTPRequest *)userRequestWithURL:(NSURL *)url method:(NSString *)method
-                                 delegate:(id)delegate finish:(SEL)selector;
++ (UAHTTPRequest *)UAHTTPUserRequestWithURL:(NSURL *)url method:(NSString *)method;
 
-+ (UA_ASIHTTPRequest *)userRequestWithURL:(NSURL *)url method:(NSString *)method
-                                 delegate:(id)delegate finish:(SEL)sel1 fail:(SEL)sel2;
++ (UAHTTPRequest *)UAHTTPRequestWithURL:(NSURL *)url method:(NSString *)method;
 
-+ (UA_ASIHTTPRequest *)requestWithURL:(NSURL *)url method:(NSString *)method
-                             delegate:(id)delegate finish:(SEL)selector;
-
-+ (UA_ASIHTTPRequest *)requestWithURL:(NSURL *)url method:(NSString *)method
-                             delegate:(id)delegate finish:(SEL)sel1 fail:(SEL)sel2;
++ (void)logFailedRequest:(UAHTTPRequest *)request withMessage:(NSString *)message;
 
 /**
  * Returns a basic auth header string.
@@ -85,14 +89,6 @@
 + (NSString *)userAuthHeaderString;
 
 ///---------------------------------------------------------------------------------------
-/// @name HTTP Response Helpers
-///---------------------------------------------------------------------------------------
-+ (id)responseFromRequest:(UA_ASIHTTPRequest *)request;
-+ (id)parseJSON:(NSString *)responseString;
-+ (void)requestWentWrong:(UA_ASIHTTPRequest *)request;
-+ (void)requestWentWrong:(UA_ASIHTTPRequest *)request keyword:(NSString *)keyword;
-
-///---------------------------------------------------------------------------------------
 /// @name UI Formatting Helpers
 ///---------------------------------------------------------------------------------------
 
@@ -101,5 +97,18 @@
              pluralForm:(NSString*)plural;
 
 + (NSString *)getReadableFileSizeFromBytes:(double)bytes;
+
+///---------------------------------------------------------------------------------------
+/// @name Date Formatting
+///---------------------------------------------------------------------------------------
+
+/**
+ * Creates an ISO dateFormatter (UTC) with the following attributes:
+ * locale set to 'en_US_POSIX', timestyle set to 'NSDATEFormatterFullStyle',
+ * date format set to 'yyyy-MM-dd HH:mm:ss'.
+ *
+ * @return A DateFormatter with the default attributes.
+ */
++ (NSDateFormatter *)ISODateFormatterUTC;
 
 @end

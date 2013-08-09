@@ -1,5 +1,5 @@
 /*
- Copyright 2009-2012 Urban Airship Inc. All rights reserved.
+ Copyright 2009-2013 Urban Airship Inc. All rights reserved.
  
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -36,26 +36,22 @@ typedef enum {
 
 // The different service provider types, for UAAnalytics
 typedef NSString UALocationServiceProviderType;
-extern UALocationServiceProviderType *const UALocationServiceProviderGps; 
-extern UALocationServiceProviderType *const UALocationServiceProviderNetwork;
-extern UALocationServiceProviderType *const UALocationServiceProviderUnknown;
+extern UALocationServiceProviderType * const UALocationServiceProviderGps;
+extern UALocationServiceProviderType * const UALocationServiceProviderNetwork;
+extern UALocationServiceProviderType * const UALocationServiceProviderUnknown;
 
 // These are the keys for the stored UALocationService values in the NSUserDefaults
 typedef NSString UALocationServiceNSDefaultsKey;
-extern UALocationServiceNSDefaultsKey *const UALocationServiceAllowedKey;
-extern UALocationServiceNSDefaultsKey *const UALocationServiceEnabledKey;  
-extern UALocationServiceNSDefaultsKey *const UALocationServicePurposeKey; 
-extern UALocationServiceNSDefaultsKey *const UAStandardLocationServiceRestartKey;
-extern UALocationServiceNSDefaultsKey *const UASignificantChangeServiceRestartKey;
-extern UALocationServiceNSDefaultsKey *const UAStandardLocationDistanceFilterKey;
-extern UALocationServiceNSDefaultsKey *const UAStandardLocationDesiredAccuracyKey;
-extern UALocationServiceNSDefaultsKey *const UASingleLocationDesiredAccuracyKey;
-extern UALocationServiceNSDefaultsKey *const UASingleLocationTimeoutKey;
-extern UALocationServiceNSDefaultsKey *const UADeprecatedLocationAuthorizationKey;
+extern UALocationServiceNSDefaultsKey * const UALocationServiceAllowedKey;
+extern UALocationServiceNSDefaultsKey * const UALocationServiceEnabledKey;
+extern UALocationServiceNSDefaultsKey * const UALocationServicePurposeKey;
+extern UALocationServiceNSDefaultsKey * const UAStandardLocationServiceRestartKey;
+extern UALocationServiceNSDefaultsKey * const UASignificantChangeServiceRestartKey;
+extern UALocationServiceNSDefaultsKey * const UAStandardLocationDistanceFilterKey;
+extern UALocationServiceNSDefaultsKey * const UAStandardLocationDesiredAccuracyKey;
+extern UALocationServiceNSDefaultsKey * const UASingleLocationDesiredAccuracyKey;
+extern UALocationServiceNSDefaultsKey * const UASingleLocationTimeoutKey;
+extern UALocationServiceNSDefaultsKey * const UADeprecatedLocationAuthorizationKey;
 
 typedef NSString UALocationServiceErrorDomain;
-extern UALocationServiceErrorDomain *const UALocationServiceTimeoutError;
-
-@interface UALocationCommonValues : NSObject
-
-@end
+extern UALocationServiceErrorDomain * const UALocationServiceTimeoutError;
