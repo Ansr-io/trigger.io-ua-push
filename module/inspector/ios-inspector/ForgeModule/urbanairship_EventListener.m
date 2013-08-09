@@ -5,6 +5,7 @@
 #import "UAAppDelegateSurrogate.h"
 #import "UALocationService.h"
 #import "UA_SBJsonWriter.h"
+#import "urbanairship_API.h"
 
 @implementation urbanairship_EventListener
 
@@ -13,15 +14,8 @@
 // These are functions which will get called when certain native events happen.
 //
 
-//
-// Here you can implement event listeners.
-// These are functions which will get called when certain native events happen.
-//
-
-
-
-+ (void)applicationWillTerminate:(UIApplication *)application {
-    [UAirship land];
++ (void)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	[urbanairship_API takeOff:nil];
 }
 
 + (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
