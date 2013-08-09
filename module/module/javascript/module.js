@@ -60,11 +60,9 @@ forge.urbanairship	 = {
         forge.internal.call('urbanairship.getQuietTime', {}, success, error);
     },   
     getTags: function ( success, error) {
-    	suc_f = function (d) {
-    		suc_f.cb( JSON.parse(d.tags));
+    	var suc_f = function (d) {
+    		success(d.tags);
     	}
-    	suc_f.cb = success;
-    	
         forge.internal.call('urbanairship.getTags', {}, suc_f, error);
     },   
     getAlias: function ( success, error) {
@@ -91,7 +89,13 @@ forge.urbanairship	 = {
     setQuietTimeEnabled: function (text,  success, error) {
         forge.internal.call('urbanairship.setQuietTimeEnabled', {text:(text ? 1 :0)}, success, error);
     },   
-    setQuietTime: function (quiteTimeDef, success, error) {
+    setQuietTime: function (startHour, startMinute, endHour, endMinute, success, error) {
+        var quiteTimeDef = {
+            startHour: startHour,
+            startMinute: startMinute,
+            endHour: endHour,
+            endMinute: endMinute
+        };
     
         forge.internal.call('urbanairship.setQuietTime', quiteTimeDef, success, error);
     },
