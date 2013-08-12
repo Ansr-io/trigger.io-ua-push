@@ -1,0 +1,207 @@
+[
+	{
+		"do": {
+			"android_add_permission": {
+				"permission": "android.permission.INTERNET"
+			}
+		}
+	},
+	{
+		"do": {
+			"android_add_permission": {
+				"permission": "android.permission.ACCESS_NETWORK_STATE"
+			}
+		}
+	},
+	{
+		"do": {
+			"android_add_permission": {
+				"permission": "android.permission.VIBRATE"
+			}
+		}
+	},
+	{
+		"do": {
+			"android_add_permission": {
+				"permission": "android.permission.GET_ACCOUNTS"
+			}
+		}
+	},
+	{
+		"do": {
+			"android_add_permission": {
+				"permission": "android.permission.WAKE_LOCK"
+			}
+		}
+	},
+	{
+		"do": {
+			"android_add_permission": {
+				"permission": "com.google.android.c2dm.permission.RECEIVE"
+			}
+		}
+	},
+	{
+		"do": {
+			"android_add_permission": {
+				"permission": "android.permission.ACCESS_FINE_LOCATION"
+			}
+		}
+	},
+
+	{
+		"do": {
+			"android_add_permission": {
+				"permission": "io.trigger.forge.android.inspector.permission.C2D_MESSAGE"
+			}
+		}
+	},
+
+	{
+		"do": {
+			"android_add_receiver": {
+				"receiver_name": "io.trigger.forge.android.modules.urbanairship.IntentReceiver"
+			}
+		}
+	},
+	{
+		"do": {
+			"android_add_to_application_manifest": {
+				"element": {
+					"tag": "receiver",
+					"attributes": {
+						"android:name": "com.urbanairship.CoreReceiver"
+					}
+				}
+			}
+		}
+	},
+	{
+		"do": {
+			"android_add_to_application_manifest": {
+				"element": {
+					"tag": "receiver",
+					"attributes": {
+						"android:name": "com.urbanairship.push.GCMPushReceiver",
+						"android:permission": "com.google.android.c2dm.permission.SEND"
+					},
+					"children": [{
+						"tag": "intent-filter",
+						"children": [{
+							"tag": "action",
+							"attributes": {
+								"android:name": "com.google.android.c2dm.intent.RECEIVE"
+							}
+						}, {
+							"tag": "action",
+							"attributes": {
+								"android:name": "com.google.android.c2dm.intent.REGISTRATION"
+							}
+						}, {
+							"tag": "category",
+							"attributes": {
+								"android:name": "io.trigger.forge.android.inspector"
+							}
+						}]
+					}, {
+						"tag": "intent-filter",
+						"children": [{
+							"tag": "action",
+							"attributes": {
+								"android:name": "android.intent.action.PACKAGE_REPLACED"
+							}
+						}, {
+							"tag": "data",
+							"attributes": {
+								"android:scheme": "package"
+							}
+						}]
+					}]
+				}
+			}
+		}
+	},
+	{
+		"do": {
+			"android_add_to_application_manifest": {
+				"element": {
+					"tag": "service",
+					"attributes": {
+						"android:name": "com.urbanairship.push.PushService",
+						"android:label": "Push Notification Service"
+					}
+				}
+			}
+		}
+	},
+	{
+		"do": {
+			"android_add_to_application_manifest": {
+				"element": {
+					"tag": "service",
+					"attributes": {
+						"android:name": "com.urbanairship.location.LocationService",
+						"android:label": "Segments Service"
+					}
+				}
+			}
+		}
+	},
+	{
+		"do": {
+			"android_add_to_application_manifest": {
+				"element": {
+					"tag": "service",
+					"attributes": {
+						"android:name": "com.urbanairship.push.PushWorkerService",
+						"android:label": "Push Notification Worker Service"
+					}
+				}
+			}
+		}
+	},
+	{
+		"do": {
+			"android_add_to_application_manifest": {
+				"element": {
+					"tag": "service",
+					"attributes": {
+						"android:name": "com.urbanairship.analytics.EventService",
+						"android:label": "Event Service"
+					}
+				}
+			}
+		}
+	},
+	{
+		"do": {
+			"android_add_to_application_manifest": {
+				"element": {
+					"tag": "provider",
+					"attributes": {
+						"android:name": "com.urbanairship.UrbanAirshipProvider",
+						"android:authorities": "io.trigger.forge.android.inspector.urbanairship.provider",
+						"android:exported": "false",
+						"android:multiprocess": "true"
+					}
+				}
+			}
+		}
+	},
+	{
+		"do": {
+			"copy_file_from_src": {
+				"filename": "{{modules.urbanairship.config.airshipProperties}}",
+				"dest": "assets/airshipconfig.properties"
+			}
+		}
+	},
+	{
+		"do": {
+			"copy_file_from_src": {
+				"filename": "{{modules.urbanairship.config.locationProperties}}",
+				"dest": "assets/location.properties"
+			}
+		}
+	}
+]
