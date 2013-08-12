@@ -7,3 +7,16 @@ urbanairship_demoapp/.template
 urbanairship_demoapp/development/
 urbanairship_demoapp/release
 urbanairship_demoapp/misc/
+
+module/.trigger
+module/inspector/an-inspector.*
+module/inspector/ios-inspector.*
+module/inspector/an-inspector/ForgeInspector/
+module/inspector/an-inspector/ForgeModule/bin/
+module/inspector/ios-inspector/build
+module/inspector/ios-inspector/ForgeCore.bundle/
+module/inspector/ios-inspector/ForgeCore.framework/
+module/inspector/ios-inspector/ForgeInspector/
+module/inspector/ios-inspector/ForgeInspector.xcodeproj/
+module/inspector/ios-inspector/ForgeModule/ForgeModule.xcodeproj/xcshareddata/module/
+module/inspector/ios-inspector/ForgeModule/build
