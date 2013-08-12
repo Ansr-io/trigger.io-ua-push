@@ -19,7 +19,7 @@
 	"version": "0.3.0",
 	"core": {
 		"android": {
-			"package_name": "com.plugtester"
+            "package_name": "com.ondeviceresearch.ondeviceresearch"
 		},
 		"ios": {
 			"package_name": "com.ondeviceresearch.ondeviceresearch"
