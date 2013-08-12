@@ -1,0 +1,17 @@
+{
+	"core": {
+		"android": {
+			"package_name": "io.trigger.forge.android.inspector"
+		}
+	},
+	"modules": {
+		"urbanairship": {
+			"config": {
+				"airshipProperties": "fixtures/urbanairship/airshipconfig.properties",
+				"locationProperties": "fixtures/urbanairship/location.properties",
+				"airshipConfigPlist": "fixtures/urbanairship/AirshipConfig.plist"
+			},
+			"version": "example"
+		}
+	}
+}

@@ -1,27 +1,36 @@
 {
-	"config_version": "2",
+	"config_version": "4",
 	"name": "urbanairship_demoapp",
 	"author": "petehobo@gmail.com",
-	"version": "0.3.0",
-	"platform_version": "v1.4",
-	"description": "Simple demo app showing the use of urbanairship plugin for trigger.io",
 	"modules": {
-		"logging": {
-			"level": "DEBUG"
+		"prefs": {
+			"version": "2.0"
 		},
-		"package_names": {
-			"ios": "com.ondeviceresearch.ondeviceresearch",
-			"android": "com.plugtester"
-		},
-		"is": true,
-		"prefs": true
-	},
-	"plugins": {
 		"urbanairship": {
-			"hash": "ed805d5b8b932d8c0879319aaa3a462e2a80ad17",
-			"type": "project"
+			"version": "0.4.17",
+			"config": {
+				"airshipConfigPlist": "fixtures/urbanairship/AirshipConfig.plist",
+				"airshipProperties": "fixtures/urbanairship/airshipconfig.properties",
+				"locationProperties": "fixtures/urbanairship/location.properties"
+			}
 		}
 	},
-	"trusted_urls": [],
-	"uuid": "ef4904c2d9bf11e2a0e312313d00ecf3"
+	"platform_version": "v2.0.0",
+	"version": "0.3.0",
+	"core": {
+		"android": {
+			"package_name": "com.plugtester"
+		},
+		"ios": {
+			"package_name": "com.ondeviceresearch.ondeviceresearch"
+		},
+		"general": {
+			"reload": false,
+			"trusted_urls": [],
+			"logging": {
+				"level": "DEBUG"
+			}
+		}
+	},
+	"description": "Simple demo app showing the use of urbanairship plugin for trigger.io"
 }
