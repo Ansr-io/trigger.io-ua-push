@@ -1,12 +1,8 @@
 ## trigger.io-ua-push
 
-plugin for trigger.io platform allowing integration with push messaging service provided by Urban Airship
+Urban Airship module for trigger.io platform - integration with push messaging service provided by Urban Airship.
 Ported and modified with permission, from the official phonegap plugin.
 
-
-**************************************************************************************
-****IMPORTANT THIS PLUGIN REQUIRES THE USE OF BUILD HOOKS - SEE BELOW FOR DETAILS!****
-**************************************************************************************
 
 ### project url
 [https://github.com/Ansr-io/trigger.io-ua-push](https://github.com/Ansr-io/trigger.io-ua-push)
@@ -17,29 +13,54 @@ petehobo @ gmail DOT com
 ### project status
 Alpha
 
-### setup
-setup urbanship account
 
-Follow setup steps for ios and Android from : 
+### setup
+
+First, setup an Urban Airship account, then follow the setup instructions for iOS and Android:
 
 [http://docs.urbanairship.com/build/ios.html](http://docs.urbanairship.com/build/ios.html)
 
 [http://docs.urbanairship.com/build/android.html](http://docs.urbanairship.com/build/android.html)
 
 
-You will end with two configured services:
+You should have two configured services:
 
 - Apple Push Notification Service (APNS)
 - Google Cloud Messaging (GCM)
 
-NB. set `gcmSender` in `hooks/postbuild/uaplugin/airshipconfig.properties` equal to GCM Project Number, 
-see https://code.google.com/apis/console/ > project overview.
+
+### config
+
+The module requires three config files. These files should be stored under the `src/` directory of your app, e.g in `src/fixtures/urbanairship/`.
+
+
+#### UA Plist
+Your AirshipConfig.plist file.
+
+#### UA properties
+Your airshipconfig.properties file.
+
+- set `gcmSender` equal to GCM Project Number, (see 'project overview' at [https://code.google.com/apis/console/]()).
+
+
+#### Location properties
+Your location.properties file.
+
+
+
+
+
+
+--------------------------------------------------------------------
+TODO: review and update docs below this point
+--------------------------------------------------------------------
+
 
 
 ### Build Plugin (optional)
 
 Import the plugin inspectors to your forge workspace.  
-Build and upload the libiary versions of the plugin following:
+Build and upload the library versions of the module following:
 
 [https://trigger.io/docs/current/api/native_plugins/index.html](https://trigger.io/docs/current/api/native_plugins/index.html) (see section 'Building/packaging your plugin').
 
