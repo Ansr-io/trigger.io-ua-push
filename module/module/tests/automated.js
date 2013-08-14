@@ -173,8 +173,8 @@ asyncTest("getQuietTime", 1, function() {
 });
 
 asyncTest("getTags", 1, function() {
-	forge.urbanairship.getTags(function () {
-		ok(true, "ok");
+	forge.urbanairship.getTags(function (tags) {
+		ok(typeof tags === 'object', "ok"); // i.e. Array not JSON string!
 		start();
 	}, function () {
 		ok(false, "failure");
@@ -233,13 +233,21 @@ asyncTest("setQuietTimeEnabled", 1, function() {
 });
 
 asyncTest("setQuietTime", 1, function() {
-	forge.urbanairship.setQuietTime(10,0,12,30,function () {
-		ok(true, "ok");
-		start();
-	}, function () {
-		ok(false, "failure");
-		start();
-	});
+	forge.urbanairship.setQuietTime(
+        {
+            startHour: 22,
+            startMinute: 0,
+            endHour: 6,
+            endMinute: 0
+        },
+        function () {
+		    ok(true, "ok");
+            start();
+        }, function () {
+            ok(false, "failure");
+            start();
+        }
+    );
 });
 
 

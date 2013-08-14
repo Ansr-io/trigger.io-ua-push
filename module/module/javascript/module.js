@@ -61,7 +61,7 @@ forge.urbanairship	 = {
     },   
     getTags: function ( success, error) {
     	var suc_f = function (d) {
-    		success(d.tags);
+    		success( JSON.parse(d.tags) );
     	}
         forge.internal.call('urbanairship.getTags', {}, suc_f, error);
     },   
@@ -89,27 +89,20 @@ forge.urbanairship	 = {
     setQuietTimeEnabled: function (text,  success, error) {
         forge.internal.call('urbanairship.setQuietTimeEnabled', {text:(text ? 1 :0)}, success, error);
     },   
-    setQuietTime: function (startHour, startMinute, endHour, endMinute, success, error) {
-        var quiteTimeDef = {
-            startHour: startHour,
-            startMinute: startMinute,
-            endHour: endHour,
-            endMinute: endMinute
-        };
-    
+    setQuietTime: function (quiteTimeDef, success, error) {
         forge.internal.call('urbanairship.setQuietTime', quiteTimeDef, success, error);
     },
     setAutobadgeEnabled: function (text, success, error) {
-    if (forge.is.ios())
-        forge.internal.call('urbanairship.setAutobadgeEnabled', {text:(text ? 1 :0)}, success, error);
+        if (forge.is.ios())
+            forge.internal.call('urbanairship.setAutobadgeEnabled', {text:(text ? 1 :0)}, success, error);
     },
-    setBadgeNumber: function ( text, success, error) {
-     if (forge.is.ios())
-        forge.internal.call('urbanairship.setBadgeNumber', {text:text}, success, error);
+    setBadgeNumber: function (text, success, error) {
+        if (forge.is.ios())
+            forge.internal.call('urbanairship.setBadgeNumber', {text:text}, success, error);
     },
     
 //location stuff
-	recordCurrentLocation: function (  success) {
+	recordCurrentLocation: function (success) {
         forge.internal.call('urbanairship.recordCurrentLocation', {}, success, success);
     },
 //registration  
@@ -121,7 +114,7 @@ forge.urbanairship	 = {
       	sound: 2,
         alert: 4
     } ,
-    registerForNotificationTypes: function ( types, callback) {
+    registerForNotificationTypes: function (types, callback) {
      if (forge.is.ios())
         forge.internal.call('urbanairship.registerForNotificationTypes', {text:types}, callback, callback);
     },

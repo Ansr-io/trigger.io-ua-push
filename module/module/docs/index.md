@@ -106,6 +106,32 @@ Update the UA settings file `hooks/postbuild/uaplugin/airshipConfig.plist`
 All methods without a return value return null or undefined.
 
 
+### Data objects
+
+The Urban Airship javascript API provides standard instances for some of our data. This allows us to clearly explain
+what kind of data we're working with when we pass it around throughout the API.
+
+#### Push
+```
+Push = {
+    message: "Your team just scored!",
+    extras: {
+        "url": "/game/5555"
+    }
+}
+```
+
+#### Quiet Time
+```
+// Quiet time set to 10PM - 6AM
+QuietTime = {
+    startHour: 22,
+    startMinute: 0,
+    endHour: 6,
+    endMinute: 0
+}
+```
+
 ### Core methods
 
 
@@ -214,9 +240,8 @@ forge.urbanairship = {
     setQuietTimeEnabled: function (enabled, callback) {
         // @enabled : Boolean : enabled
     },
-    setQuietTime: function (startHour, startMinute, endHour, endMinute, success, error) {
+    setQuietTime: function (QuietTime, success, error) {
         // tested:working
-        // expected arguments: [QuietTime, success, error]
         // i.e. QuietTime : Object : same format as returned by getQuietTime
         // e.g. {"startHour":0,"startMinute":0,"endHour":0,"endMinute":0}
     },

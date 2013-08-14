@@ -31,7 +31,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.RemoteException;
-import android.util.Log;
+//import android.util.Log;
 
 import com.urbanairship.Logger;
 import com.urbanairship.UAirship;
@@ -40,7 +40,7 @@ import com.urbanairship.push.PushManager;
 import com.urbanairship.util.ServiceNotBoundException;
 
 import io.trigger.forge.android.core.ForgeActivity;
-import io.trigger.forge.android.core.ForgeApp;
+//import io.trigger.forge.android.core.ForgeApp;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -50,7 +50,7 @@ import java.util.Set;
 
 public class IntentReceiver extends BroadcastReceiver {
 
-    private static final String logTag = "PushSample";
+//    private static final String logTag = "PushSample";
 
     public static String APID_UPDATED_ACTION_SUFFIX = ".apid.updated";
 
