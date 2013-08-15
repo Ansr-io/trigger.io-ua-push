@@ -40,7 +40,7 @@ Your AirshipConfig.plist file.
 #### UA properties
 Your airshipconfig.properties file.
 
-- set `gcmSender` equal to GCM Project Number, (see 'project overview' at [https://code.google.com/apis/console/]()).
+- set `gcmSender` equal to GCM Project Number, (see 'project overview' at [https://code.google.com/apis/console/](https://code.google.com/apis/console/)).
 
 
 #### Location properties
