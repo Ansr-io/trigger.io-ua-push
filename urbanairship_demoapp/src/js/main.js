@@ -166,24 +166,24 @@
 //        });
 //    });
     // --------------------------------------------------------------------------------------
-//    forge.urbanairship.enableLocation(
-//        function () {
-//            log('enableLocation :: success');
-//
-//            forge.urbanairship.isLocationEnabled(function (d) {
-//                log('isLocationEnabled: '+d);
-//            });
-//
+    forge.urbanairship.enableLocation(
+        function () {
+            log('enableLocation :: success');
+
+            forge.urbanairship.isLocationEnabled(function (d) {
+                log('isLocationEnabled: '+d);
+            });
+
 //            forge.urbanairship.recordCurrentLocation(
 //                function () {
 //                    log('success :: forge.urbanairship.recordCurrentLocation');
 //                }
 //            );
-//        },
-//        function (e) {
-//            alert('error :: enableLocation :: '+JSON.stringify(e));
-//        }
-//    );
+        },
+        function (e) {
+            alert('error :: enableLocation :: '+JSON.stringify(e));
+        }
+    );
 
     // --------------------------------------------------------------------------------------
 //    forge.urbanairship.enableBackgroundLocation(

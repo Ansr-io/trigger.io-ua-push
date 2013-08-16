@@ -1,25 +1,25 @@
 {
 	"android": {
-		"device": "4df1a5c646d45f31",
+        "device": "00680fc051d40bb8",
 		"profiles": {
 			"DEFAULT": {
-				"keystore": ".",
-				"keypass": "password",
-				"keyalias": "key",
-				"storepass": "password"
+                "keystore": "misc/odr001-google-play.keystore",
+                "keyalias": "odr001"
 			}
 		},
-		"sdk": "/Users/pete/adt-bundle-mac-x86_64-20130522/sdk/"
+		"sdk": "/Users/zackd/src/adt-bundle/sdk"
 	},
 	"ios": {
 		"device": "simulator",
 		"simulatorsdk": "6.1",
 		"simulatorfamily": "iphone",
 		"profiles": {
-			"DEFAULT": {
-				"provisioning_profile": "/Users/pete/Desktop/1BD7ABAC-F3F6-40AB-897C-D0E8B9BA29A1.mobileprovision",
-				"developer_certificate": "iPhone Developer: Pete Hobson (45TGF7V3QL)"
-			}
+            "DEFAULT": {
+                "provisioning_profile": "misc/ODR_with_push.mobileprovision"
+            },
+            "production": {
+                "provisioning_profile": "misc/ODR_PRODUCTION_with_push.mobileprovision"
+            }
 		}
 	},
 	"general": {}
