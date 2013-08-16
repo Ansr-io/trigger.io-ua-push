@@ -21,15 +21,17 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		"07e9cce5-6baf-4421-8eed-498715ff92b6build" /* System/Library/Frameworks/UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "07e9cce5-6baf-4421-8eed-498715ff92b6file" /* System/Library/Frameworks/UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		"2ff1fb9e-462e-46bf-a59e-f6a219abe33cbuild" /* System/Library/Frameworks/MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "2ff1fb9e-462e-46bf-a59e-f6a219abe33cfile" /* System/Library/Frameworks/MapKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		"36a1e78d-c155-4045-81b6-7857488501e4build" /* System/Library/Frameworks/MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "36a1e78d-c155-4045-81b6-7857488501e4file" /* System/Library/Frameworks/MobileCoreServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		"3e925507-6257-48dd-8932-25513ee9dfe7build" /* System/Library/Frameworks/CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "3e925507-6257-48dd-8932-25513ee9dfe7file" /* System/Library/Frameworks/CFNetwork.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		"539de238-93d6-4a83-9540-c49c3253e33dbuild" /* System/Library/Frameworks/SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "539de238-93d6-4a83-9540-c49c3253e33dfile" /* System/Library/Frameworks/SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		"55cacce4-f663-4fc0-a094-588bbea4812bbuild" /* usr/lib/libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "55cacce4-f663-4fc0-a094-588bbea4812bfile" /* usr/lib/libsqlite3.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
-		"8343472c-1022-43e3-a358-d0b24d890f92build" /* System/Library/Frameworks/AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "8343472c-1022-43e3-a358-d0b24d890f92file" /* System/Library/Frameworks/AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		"8d5097e5-904e-4d77-96f4-9de4c33f3dcbbuild" /* System/Library/Frameworks/Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "8d5097e5-904e-4d77-96f4-9de4c33f3dcbfile" /* System/Library/Frameworks/Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		"9f286681-b98f-4834-8194-981442d82d7dbuild" /* usr/lib/libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "9f286681-b98f-4834-8194-981442d82d7dfile" /* usr/lib/libz.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		"08e8bc22-61a9-44fd-9b22-8ef0bbc3419cbuild" /* System/Library/Frameworks/UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "08e8bc22-61a9-44fd-9b22-8ef0bbc3419cfile" /* System/Library/Frameworks/UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		"14b9ba4a-e54a-4fb6-b1aa-a99ad45c5ff0build" /* System/Library/Frameworks/CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "14b9ba4a-e54a-4fb6-b1aa-a99ad45c5ff0file" /* System/Library/Frameworks/CoreGraphics.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		"1ab65deb-f382-414f-a9d1-2879d006c824build" /* System/Library/Frameworks/AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "1ab65deb-f382-414f-a9d1-2879d006c824file" /* System/Library/Frameworks/AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		"25d31f18-f9b2-424c-aaf4-f9ee55116c0dbuild" /* usr/lib/libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "25d31f18-f9b2-424c-aaf4-f9ee55116c0dfile" /* usr/lib/libsqlite3.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		"2d9ed745-0c1f-4d04-9ae9-a577c090690cbuild" /* System/Library/Frameworks/SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "2d9ed745-0c1f-4d04-9ae9-a577c090690cfile" /* System/Library/Frameworks/SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		"5966b243-0d35-4952-8311-719ddd9ee060build" /* System/Library/Frameworks/MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "5966b243-0d35-4952-8311-719ddd9ee060file" /* System/Library/Frameworks/MobileCoreServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		"75d26cff-865a-4894-b289-b4f917beeb79build" /* System/Library/Frameworks/MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "75d26cff-865a-4894-b289-b4f917beeb79file" /* System/Library/Frameworks/MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		"8242eb12-16e1-48e6-871f-f0dfa832c0e4build" /* System/Library/Frameworks/CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "8242eb12-16e1-48e6-871f-f0dfa832c0e4file" /* System/Library/Frameworks/CoreLocation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		"8f7df02f-acd6-4025-9643-00ce8d441b63build" /* System/Library/Frameworks/MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "8f7df02f-acd6-4025-9643-00ce8d441b63file" /* System/Library/Frameworks/MapKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		"951c249b-d6a0-41ef-9a41-6bbcf258cd6fbuild" /* System/Library/Frameworks/CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "951c249b-d6a0-41ef-9a41-6bbcf258cd6ffile" /* System/Library/Frameworks/CFNetwork.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		"99f8035b-f295-4ca8-9012-3aa8dde91e15build" /* System/Library/Frameworks/CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "99f8035b-f295-4ca8-9012-3aa8dde91e15file" /* System/Library/Frameworks/CoreTelephony.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B307826415C2A393006798D7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B307826315C2A393006798D7 /* AssetsLibrary.framework */; };
 		B307826C15C2A44F006798D7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B307826B15C2A44F006798D7 /* SystemConfiguration.framework */; };
 		B307826E15C2A47B006798D7 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = B307826D15C2A47B006798D7 /* assets */; };
@@ -51,12 +53,9 @@
 		B3FC518815C14B2A003574D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FC518715C14B2A003574D9 /* main.m */; };
 		B3FC519315C14B35003574D9 /* ForgeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FC519215C14B35003574D9 /* ForgeCore.framework */; };
 		B3FC519515C14B3C003574D9 /* ForgeCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3FC519415C14B3C003574D9 /* ForgeCore.bundle */; };
-		C1A906FC1790056E007B21AA /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1A906FB1790056E007B21AA /* AirshipConfig.plist */; };
-		"b0d83fef-e0e8-4d59-ab2c-0737980d0a6dbuild" /* System/Library/Frameworks/CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "b0d83fef-e0e8-4d59-ab2c-0737980d0a6dfile" /* System/Library/Frameworks/CoreGraphics.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		"c8a1da35-3624-475e-8da0-0d4bd8d4d2dbbuild" /* System/Library/Frameworks/CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "c8a1da35-3624-475e-8da0-0d4bd8d4d2dbfile" /* System/Library/Frameworks/CoreLocation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		"d2aba75e-8017-458b-b6d4-d42f1980b9e0build" /* System/Library/Frameworks/Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "d2aba75e-8017-458b-b6d4-d42f1980b9e0file" /* System/Library/Frameworks/Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		"faf7b3a5-3ad2-49e8-acf3-2ab8d616076fbuild" /* System/Library/Frameworks/MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "faf7b3a5-3ad2-49e8-acf3-2ab8d616076ffile" /* System/Library/Frameworks/MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		"ff4c7142-0d1f-4b47-b351-cedc0eefb541build" /* System/Library/Frameworks/CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ff4c7142-0d1f-4b47-b351-cedc0eefb541file" /* System/Library/Frameworks/CoreTelephony.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		"a3abd0b4-9de8-463c-b651-520755495edbbuild" /* System/Library/Frameworks/Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "a3abd0b4-9de8-463c-b651-520755495edbfile" /* System/Library/Frameworks/Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		"c9a11866-10f5-4173-9d3d-84768fa669c4build" /* System/Library/Frameworks/Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "c9a11866-10f5-4173-9d3d-84768fa669c4file" /* System/Library/Frameworks/Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		"e0fbcef6-677b-4dab-b88f-d3a438935e53build" /* usr/lib/libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "e0fbcef6-677b-4dab-b88f-d3a438935e53file" /* usr/lib/libz.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,15 +90,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		"07e9cce5-6baf-4421-8eed-498715ff92b6file" /* System/Library/Frameworks/UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		"2ff1fb9e-462e-46bf-a59e-f6a219abe33cfile" /* System/Library/Frameworks/MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		"36a1e78d-c155-4045-81b6-7857488501e4file" /* System/Library/Frameworks/MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		"3e925507-6257-48dd-8932-25513ee9dfe7file" /* System/Library/Frameworks/CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		"539de238-93d6-4a83-9540-c49c3253e33dfile" /* System/Library/Frameworks/SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		"55cacce4-f663-4fc0-a094-588bbea4812bfile" /* usr/lib/libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		"8343472c-1022-43e3-a358-d0b24d890f92file" /* System/Library/Frameworks/AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		"8d5097e5-904e-4d77-96f4-9de4c33f3dcbfile" /* System/Library/Frameworks/Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		"9f286681-b98f-4834-8194-981442d82d7dfile" /* usr/lib/libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		"08e8bc22-61a9-44fd-9b22-8ef0bbc3419cfile" /* System/Library/Frameworks/UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		"14b9ba4a-e54a-4fb6-b1aa-a99ad45c5ff0file" /* System/Library/Frameworks/CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		"1ab65deb-f382-414f-a9d1-2879d006c824file" /* System/Library/Frameworks/AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		"25d31f18-f9b2-424c-aaf4-f9ee55116c0dfile" /* usr/lib/libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		"2d9ed745-0c1f-4d04-9ae9-a577c090690cfile" /* System/Library/Frameworks/SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		"5966b243-0d35-4952-8311-719ddd9ee060file" /* System/Library/Frameworks/MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		"75d26cff-865a-4894-b289-b4f917beeb79file" /* System/Library/Frameworks/MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		"8242eb12-16e1-48e6-871f-f0dfa832c0e4file" /* System/Library/Frameworks/CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		"8f7df02f-acd6-4025-9643-00ce8d441b63file" /* System/Library/Frameworks/MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		"951c249b-d6a0-41ef-9a41-6bbcf258cd6ffile" /* System/Library/Frameworks/CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		"99f8035b-f295-4ca8-9012-3aa8dde91e15file" /* System/Library/Frameworks/CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B307826315C2A393006798D7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B307826B15C2A44F006798D7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B307826D15C2A47B006798D7 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
@@ -124,12 +125,9 @@
 		B3FC518915C14B2A003574D9 /* ForgeInspector-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ForgeInspector-Prefix.pch"; sourceTree = "<group>"; };
 		B3FC519215C14B35003574D9 /* ForgeCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ForgeCore.framework; sourceTree = "<group>"; };
 		B3FC519415C14B3C003574D9 /* ForgeCore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ForgeCore.bundle; sourceTree = "<group>"; };
-		C1A906FB1790056E007B21AA /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
-		"b0d83fef-e0e8-4d59-ab2c-0737980d0a6dfile" /* System/Library/Frameworks/CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		"c8a1da35-3624-475e-8da0-0d4bd8d4d2dbfile" /* System/Library/Frameworks/CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		"d2aba75e-8017-458b-b6d4-d42f1980b9e0file" /* System/Library/Frameworks/Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		"faf7b3a5-3ad2-49e8-acf3-2ab8d616076ffile" /* System/Library/Frameworks/MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		"ff4c7142-0d1f-4b47-b351-cedc0eefb541file" /* System/Library/Frameworks/CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		"a3abd0b4-9de8-463c-b651-520755495edbfile" /* System/Library/Frameworks/Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		"c9a11866-10f5-4173-9d3d-84768fa669c4file" /* System/Library/Frameworks/Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		"e0fbcef6-677b-4dab-b88f-d3a438935e53file" /* usr/lib/libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,20 +142,20 @@
 				B3FC517E15C14B2A003574D9 /* Foundation.framework in Frameworks */,
 				B3FC518015C14B2A003574D9 /* CoreGraphics.framework in Frameworks */,
 				B3FC519315C14B35003574D9 /* ForgeCore.framework in Frameworks */,
-				"3e925507-6257-48dd-8932-25513ee9dfe7build" /* System/Library/Frameworks/CFNetwork.framework in Frameworks */,
-				"b0d83fef-e0e8-4d59-ab2c-0737980d0a6dbuild" /* System/Library/Frameworks/CoreGraphics.framework in Frameworks */,
-				"d2aba75e-8017-458b-b6d4-d42f1980b9e0build" /* System/Library/Frameworks/Foundation.framework in Frameworks */,
-				"36a1e78d-c155-4045-81b6-7857488501e4build" /* System/Library/Frameworks/MobileCoreServices.framework in Frameworks */,
-				"8d5097e5-904e-4d77-96f4-9de4c33f3dcbbuild" /* System/Library/Frameworks/Security.framework in Frameworks */,
-				"539de238-93d6-4a83-9540-c49c3253e33dbuild" /* System/Library/Frameworks/SystemConfiguration.framework in Frameworks */,
-				"07e9cce5-6baf-4421-8eed-498715ff92b6build" /* System/Library/Frameworks/UIKit.framework in Frameworks */,
-				"9f286681-b98f-4834-8194-981442d82d7dbuild" /* usr/lib/libz.dylib in Frameworks */,
-				"55cacce4-f663-4fc0-a094-588bbea4812bbuild" /* usr/lib/libsqlite3.dylib in Frameworks */,
-				"ff4c7142-0d1f-4b47-b351-cedc0eefb541build" /* System/Library/Frameworks/CoreTelephony.framework in Frameworks */,
-				"c8a1da35-3624-475e-8da0-0d4bd8d4d2dbbuild" /* System/Library/Frameworks/CoreLocation.framework in Frameworks */,
-				"faf7b3a5-3ad2-49e8-acf3-2ab8d616076fbuild" /* System/Library/Frameworks/MessageUI.framework in Frameworks */,
-				"8343472c-1022-43e3-a358-d0b24d890f92build" /* System/Library/Frameworks/AudioToolbox.framework in Frameworks */,
-				"2ff1fb9e-462e-46bf-a59e-f6a219abe33cbuild" /* System/Library/Frameworks/MapKit.framework in Frameworks */,
+				"951c249b-d6a0-41ef-9a41-6bbcf258cd6fbuild" /* System/Library/Frameworks/CFNetwork.framework in Frameworks */,
+				"14b9ba4a-e54a-4fb6-b1aa-a99ad45c5ff0build" /* System/Library/Frameworks/CoreGraphics.framework in Frameworks */,
+				"a3abd0b4-9de8-463c-b651-520755495edbbuild" /* System/Library/Frameworks/Foundation.framework in Frameworks */,
+				"5966b243-0d35-4952-8311-719ddd9ee060build" /* System/Library/Frameworks/MobileCoreServices.framework in Frameworks */,
+				"c9a11866-10f5-4173-9d3d-84768fa669c4build" /* System/Library/Frameworks/Security.framework in Frameworks */,
+				"2d9ed745-0c1f-4d04-9ae9-a577c090690cbuild" /* System/Library/Frameworks/SystemConfiguration.framework in Frameworks */,
+				"08e8bc22-61a9-44fd-9b22-8ef0bbc3419cbuild" /* System/Library/Frameworks/UIKit.framework in Frameworks */,
+				"e0fbcef6-677b-4dab-b88f-d3a438935e53build" /* usr/lib/libz.dylib in Frameworks */,
+				"25d31f18-f9b2-424c-aaf4-f9ee55116c0dbuild" /* usr/lib/libsqlite3.dylib in Frameworks */,
+				"99f8035b-f295-4ca8-9012-3aa8dde91e15build" /* System/Library/Frameworks/CoreTelephony.framework in Frameworks */,
+				"8242eb12-16e1-48e6-871f-f0dfa832c0e4build" /* System/Library/Frameworks/CoreLocation.framework in Frameworks */,
+				"75d26cff-865a-4894-b289-b4f917beeb79build" /* System/Library/Frameworks/MessageUI.framework in Frameworks */,
+				"1ab65deb-f382-414f-a9d1-2879d006c824build" /* System/Library/Frameworks/AudioToolbox.framework in Frameworks */,
+				"8f7df02f-acd6-4025-9643-00ce8d441b63build" /* System/Library/Frameworks/MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,20 +199,20 @@
 				B3FC517B15C14B2A003574D9 /* UIKit.framework */,
 				B3FC517D15C14B2A003574D9 /* Foundation.framework */,
 				B3FC517F15C14B2A003574D9 /* CoreGraphics.framework */,
-				"3e925507-6257-48dd-8932-25513ee9dfe7file" /* System/Library/Frameworks/CFNetwork.framework */,
-				"b0d83fef-e0e8-4d59-ab2c-0737980d0a6dfile" /* System/Library/Frameworks/CoreGraphics.framework */,
-				"d2aba75e-8017-458b-b6d4-d42f1980b9e0file" /* System/Library/Frameworks/Foundation.framework */,
-				"36a1e78d-c155-4045-81b6-7857488501e4file" /* System/Library/Frameworks/MobileCoreServices.framework */,
-				"8d5097e5-904e-4d77-96f4-9de4c33f3dcbfile" /* System/Library/Frameworks/Security.framework */,
-				"539de238-93d6-4a83-9540-c49c3253e33dfile" /* System/Library/Frameworks/SystemConfiguration.framework */,
-				"07e9cce5-6baf-4421-8eed-498715ff92b6file" /* System/Library/Frameworks/UIKit.framework */,
-				"9f286681-b98f-4834-8194-981442d82d7dfile" /* usr/lib/libz.dylib */,
-				"55cacce4-f663-4fc0-a094-588bbea4812bfile" /* usr/lib/libsqlite3.dylib */,
-				"ff4c7142-0d1f-4b47-b351-cedc0eefb541file" /* System/Library/Frameworks/CoreTelephony.framework */,
-				"c8a1da35-3624-475e-8da0-0d4bd8d4d2dbfile" /* System/Library/Frameworks/CoreLocation.framework */,
-				"faf7b3a5-3ad2-49e8-acf3-2ab8d616076ffile" /* System/Library/Frameworks/MessageUI.framework */,
-				"8343472c-1022-43e3-a358-d0b24d890f92file" /* System/Library/Frameworks/AudioToolbox.framework */,
-				"2ff1fb9e-462e-46bf-a59e-f6a219abe33cfile" /* System/Library/Frameworks/MapKit.framework */,
+				"951c249b-d6a0-41ef-9a41-6bbcf258cd6ffile" /* System/Library/Frameworks/CFNetwork.framework */,
+				"14b9ba4a-e54a-4fb6-b1aa-a99ad45c5ff0file" /* System/Library/Frameworks/CoreGraphics.framework */,
+				"a3abd0b4-9de8-463c-b651-520755495edbfile" /* System/Library/Frameworks/Foundation.framework */,
+				"5966b243-0d35-4952-8311-719ddd9ee060file" /* System/Library/Frameworks/MobileCoreServices.framework */,
+				"c9a11866-10f5-4173-9d3d-84768fa669c4file" /* System/Library/Frameworks/Security.framework */,
+				"2d9ed745-0c1f-4d04-9ae9-a577c090690cfile" /* System/Library/Frameworks/SystemConfiguration.framework */,
+				"08e8bc22-61a9-44fd-9b22-8ef0bbc3419cfile" /* System/Library/Frameworks/UIKit.framework */,
+				"e0fbcef6-677b-4dab-b88f-d3a438935e53file" /* usr/lib/libz.dylib */,
+				"25d31f18-f9b2-424c-aaf4-f9ee55116c0dfile" /* usr/lib/libsqlite3.dylib */,
+				"99f8035b-f295-4ca8-9012-3aa8dde91e15file" /* System/Library/Frameworks/CoreTelephony.framework */,
+				"8242eb12-16e1-48e6-871f-f0dfa832c0e4file" /* System/Library/Frameworks/CoreLocation.framework */,
+				"75d26cff-865a-4894-b289-b4f917beeb79file" /* System/Library/Frameworks/MessageUI.framework */,
+				"1ab65deb-f382-414f-a9d1-2879d006c824file" /* System/Library/Frameworks/AudioToolbox.framework */,
+				"8f7df02f-acd6-4025-9643-00ce8d441b63file" /* System/Library/Frameworks/MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,7 +229,6 @@
 		B3FC518215C14B2A003574D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C1A906FB1790056E007B21AA /* AirshipConfig.plist */,
 				B33F8970171479080050FB45 /* Default-568h@2x~iphone.png */,
 				B33F8971171479080050FB45 /* Default-Landscape@2x~ipad.png */,
 				B33F8972171479080050FB45 /* Default-Landscape~ipad.png */,
@@ -278,7 +275,7 @@
 		B3FC516E15C14B2A003574D9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Trigger Corp";
 			};
 			buildConfigurationList = B3FC517115C14B2A003574D9 /* Build configuration list for PBXProject "ForgeInspector" */;
@@ -340,7 +337,6 @@
 				B33F8983171479080050FB45 /* ipad.png in Resources */,
 				B33F8984171479080050FB45 /* normal.png in Resources */,
 				B33F8985171479080050FB45 /* retina.png in Resources */,
-				C1A906FC1790056E007B21AA /* AirshipConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

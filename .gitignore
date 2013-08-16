@@ -1,3 +1,7 @@
+
+*/inspector/an-inspector.*
+*/inspector/ios-inspector.*
+
 forge-error.log
 urbanairship_demoapp/hooks/postbuild/uaplugin/AirshipConfig.plist
 urbanairship_demoapp/hooks/postbuild/uaplugin/airshipconfig.properties
