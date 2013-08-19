@@ -153,19 +153,6 @@
 				"element": {
 					"tag": "service",
 					"attributes": {
-						"android:name": "com.urbanairship.push.PushWorkerService",
-						"android:label": "Push Notification Worker Service"
-					}
-				}
-			}
-		}
-	},
-	{
-		"do": {
-			"android_add_to_application_manifest": {
-				"element": {
-					"tag": "service",
-					"attributes": {
 						"android:name": "com.urbanairship.analytics.EventService",
 						"android:label": "Event Service"
 					}
