@@ -174,15 +174,15 @@ public class API {
 	
 // Getters
 	public static void getIncoming(final ForgeTask callbackContext) {
-	      String alert =incomingAlert;
-	        Map<String, String> extras = incomingExtras;
-	        JsonObject obj = notificationObject(alert, extras);
+		String alert = incomingAlert;
+		Map<String, String> extras = incomingExtras;
+	    JsonObject obj = notificationObject(alert, extras);
 
-	        callbackContext.success(obj);
+	    callbackContext.success(obj);
 
-	        //reset incoming push data until the next background push comes in
-	        incomingAlert = "";
-	        incomingExtras = new HashMap<String,String>();
+	    //reset incoming push data until the next background push comes in
+	    incomingAlert = "";
+	    incomingExtras = new HashMap<String,String>();
 	}
 	public static void getPushID(final ForgeTask callbackContext) {
         if (requirePushServiceEnabled(callbackContext)) {

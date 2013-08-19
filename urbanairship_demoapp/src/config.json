@@ -7,7 +7,7 @@
 			"version": "2.0"
 		},
 		"urbanairship": {
-			"version": "0.4.17",
+			"version": "0.4.24",
 			"config": {
 				"airshipConfigPlist": "fixtures/urbanairship/AirshipConfig.plist",
 				"airshipProperties": "fixtures/urbanairship/airshipconfig.properties",
@@ -19,13 +19,15 @@
 	"version": "0.3.0",
 	"core": {
 		"android": {
-			"package_name": "com.plugtester"
+			"package_name": "com.ondeviceresearch.ondeviceresearch",
+			"minimum_version": "5"
 		},
 		"ios": {
-			"package_name": "com.ondeviceresearch.ondeviceresearch"
+			"package_name": "com.ondeviceresearch.ondeviceresearch",
+			"minimum_version": "4.3",
+			"device_family": "any"
 		},
 		"general": {
-			"reload": false,
 			"trusted_urls": [],
 			"logging": {
 				"level": "DEBUG"
