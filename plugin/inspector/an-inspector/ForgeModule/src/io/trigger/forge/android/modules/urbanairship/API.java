@@ -294,15 +294,14 @@ public class API {
            }
 
            PushManager.shared().setTags(tagSet);
-           Logger.debug("Settings tags: " + tagSet);;
+           Logger.debug("Settings tags: " + tagSet);
            callbackContext.success();
        } catch (JsonIOException e) {
            Logger.error("Error reading tags JSON", e);
            callbackContext.error("Error reading tags JSON");
        }	 
-	
-	
 	}
+	
 	public static void setSoundEnabled(final ForgeTask callbackContext, @ForgeParam("text") final int text) {
         if (!requirePushServiceEnabled(callbackContext)) {
             return;
