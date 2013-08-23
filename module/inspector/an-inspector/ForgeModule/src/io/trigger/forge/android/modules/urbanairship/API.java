@@ -278,7 +278,7 @@ public class API {
            }
 
            PushManager.shared().setTags(tagSet);
-           Logger.debug("Settings tags: " + tagSet);
+           Logger.debug("Settings tags: " + tagSet);  
            callbackContext.success();
            
        } catch (JsonIOException e) {

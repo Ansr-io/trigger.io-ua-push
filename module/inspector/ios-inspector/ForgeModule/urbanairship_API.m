@@ -85,11 +85,7 @@
         UALOG(@"bitmask value: %d", text);
         [[UAPush shared] registerForRemoteNotificationTypes:bitmask];
         [command success:nil];
-
-    
-        [command success:nil];
-        
-    
+        //[command success:nil];
 }
 
 //general enablement
@@ -304,9 +300,12 @@
 + (void)setTags:(ForgeTask*)command tags:(NSArray *)tags{
     
     //todo revist this def
-    // NSMutableArray *tagsA = [NSMutableArray arrayWithArray:tags ];
-    // [UAPush shared].tags = tagsA;
-    // [[UAPush shared] updateRegistration];
+    
+    UALOG(@"setTags: %@", tags);
+    
+    NSMutableArray *tagsA = [NSMutableArray arrayWithArray:tags ];
+    [UAPush shared].tags = tagsA;
+    [[UAPush shared] updateRegistration];
     [command success:nil];
 }
 
@@ -347,7 +346,7 @@
 }
 
 + (void)setQuietTime:(ForgeTask*)command startHour:(NSNumber *)startHour startMinute:(NSNumber *)startMinute  endHour:(NSNumber *)endHour  endMinute:(NSNumber *)endMinute  {
-    Class c = [NSNumber class];
+//    Class c = [NSNumber class];
     [self takeOff:command];
     id startHr = startHour;
     id startMin = startMinute;
