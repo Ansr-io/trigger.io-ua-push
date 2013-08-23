@@ -322,11 +322,10 @@
 //setters
 
 + (void)setTags:(ForgeTask*)command tags:(NSArray *)tags{
-    
-    //todo revist this def
-    // NSMutableArray *tagsA = [NSMutableArray arrayWithArray:tags ];
-    // [UAPush shared].tags = tagsA;
-    // [[UAPush shared] updateRegistration];
+    //    UALOG(@"setTags: %@", tags);
+    NSMutableArray *tagsA = [NSMutableArray arrayWithArray:tags ];
+    [UAPush shared].tags = tagsA;
+    [[UAPush shared] updateRegistration];
     [command success:nil];
 }
 
