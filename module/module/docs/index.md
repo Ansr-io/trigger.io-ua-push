@@ -1,4 +1,4 @@
-## trigger.io-ua-push
+# trigger.io-ua-push
 
 Urban Airship module for trigger.io platform - integration with push messaging service provided by Urban Airship.
 Ported and modified with permission, from the official phonegap plugin.
@@ -16,97 +16,101 @@ Alpha
 
 ### setup
 
-First, setup an Urban Airship account, then follow the setup instructions for iOS and Android:
+First you will need to setup Urban Airship account.
+
+Read the [getting started guide](http://docs.urbanairship.com/dashboard/getting_started.html), and follow the setup steps for ios and Android:
 
 [http://docs.urbanairship.com/build/ios.html](http://docs.urbanairship.com/build/ios.html)
 
 [http://docs.urbanairship.com/build/android.html](http://docs.urbanairship.com/build/android.html)
 
+You should then have 2 configured services:
 
-You should have two configured services:
-
-- Apple Push Notification Service (APNS)
-- Google Cloud Messaging (GCM)
+Apple Push Notification Service (APNS)
+Google Cloud Messaging (GCM)
 
 
-### config
+### module config
 
 The module requires three config files. These files should be stored under the `src/` directory of your app, e.g in `src/fixtures/urbanairship/`.
 
 
-#### UA Plist
-Your AirshipConfig.plist file.
+#### AirshipConfig.plist
+[http://docs.urbanairship.com/build/ios.html#create-airshipconfig-plist](http://docs.urbanairship.com/build/ios.html#create-airshipconfig-plist)
 
-#### UA properties
-Your airshipconfig.properties file.
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>inProduction</key>
+  <false/>
+  <key>developmentAppKey</key>
+  <string>Your Development App Key</string>
+  <key>developmentAppSecret</key>
+  <string>Your Development App Secret</string>
+  <key>productionAppKey</key>
+  <string>Your Production App Key</string>
+  <key>productionAppSecret</key>
+  <string>Your Production App Secret</string>
+</dict>
+</plist>
+```
 
-- set `gcmSender` equal to GCM Project Number, (see 'project overview' at [https://code.google.com/apis/console/](https://code.google.com/apis/console/)).
+#### airshipconfig.properties
+[http://docs.urbanairship.com/build/android.html#setting-up-gcm-support-for-your-app](http://docs.urbanairship.com/build/android.html#setting-up-gcm-support-for-your-app)
+
+```
+gcmSender = Your Google API Project Number (allows multiple senders separated by commas)
+transport = gcm
+developmentAppKey = Your Development App Key
+developmentAppSecret = Your Development App Secret
+productionAppKey = Your Production App Key
+productionAppSecret = Your Production App Secret
+inProduction = false
+```
+
+#### location.properties
+
+```
+# These settings correspond to the minimum distance and time passed to
+# Android's LocationManager when requesting location updates.
+updateIntervalMeters = 500
+updateIntervalSeconds = 900
+
+# Flag indicating whether the application is allowed to use location.
+# You must still enable location inside the application with
+# UALocationManager.enableLocation() once your user has opted in.
+
+locationServiceEnabled = true
+
+# If you would rather not have the library using the GPS while tracking
+# location, set this to false and the library will only use the network.
+# If false, this setting will override the location manager if the best
+# provider is determined to be the GPS.
+
+allowGPSForLocationTracking = true
+
+# These settings correspond to the properties of Android's Criteria
+# class and are used when determining a location provider.
+
+accuracy = ACCURACY_COARSE
+powerRequirement = POWER_LOW
+altitudeRequired = false
+bearingRequired = false
+speedRequired = false
+costAllowed = false
+```
 
 
-#### Location properties
-Your location.properties file.
 
 
-
-
-
-
---------------------------------------------------------------------
-TODO: review and update docs below this point
---------------------------------------------------------------------
-
-
-
-### Build Plugin (optional)
-
-Import the plugin inspectors to your forge workspace.  
-Build and upload the library versions of the module following:
-
-[https://trigger.io/docs/current/api/native_plugins/index.html](https://trigger.io/docs/current/api/native_plugins/index.html) (see section 'Building/packaging your plugin').
-
-
-### Run Test App
-Import the plugin
-Import the demo app /UA
-
-** IMPORTANT - USE OF HOOKS. **  
-The Urban Airship system needs to modify the generated forge project during 
-the build process.  This is accomplished by use of build hooks 
-[https://trigger.io/docs/current/tools/hooks.html](https://trigger.io/docs/current/tools/hooks.html).  
-When developing your own project you must copy the Hooks folder from the demo project.  
-PLEASE NOTE - special attention will be required if your project uses build hooks. 
-
- Further, the Android version of the plugin makes direct modifications to the generated 
- 
- `Android-manifest.xml` file - this could potentially cause unexpected results.  
- 
-** >>> USE WITH CAUTION <<< **
-
-
-### Modify local UrbanAirship settings
-
-#### Android
-
-Update the UA settings file `hooks/postbuild/uaplugin/airshipconfig.properties`
-
-Open `hooks/postbuild/hook.py`, and set `APP_PACKAGE_NAME` to your app package name.
-
-N.B. package_names is defined in `src/config.json`.
-- package name must be a valid Java package name (lowercase, no hyphens)
-- package name may not contain underscores - Apple rejects bundle identifiers with underscores as invalid.
-
-
-#### iOS
-
-Update the UA settings file `hooks/postbuild/uaplugin/airshipConfig.plist`
-
-
-## API documentation
+# API documentation
 
 All methods without a return value return null or undefined.
 
 
-### Data objects
+## Data objects
 
 The Urban Airship javascript API provides standard instances for some of our data. This allows us to clearly explain
 what kind of data we're working with when we pass it around throughout the API.
@@ -121,7 +125,7 @@ Push = {
 }
 ```
 
-#### Quiet Time
+#### QuietTime
 ```
 // Quiet time set to 10PM - 6AM
 QuietTime = {
@@ -132,139 +136,160 @@ QuietTime = {
 }
 ```
 
-### Core methods
+
+## Core functions
+
+`forge.urbanairship.<method>`
+
+All methods without a return value return undefined.
 
 
-```
-forge.urbanairship = {
-    enablePush: function (success, error) {
-        // Enable push notifications on the device. This sends a registration request to the backend service.
-    },
-    disablePush: function (success, error) {
-        // Disable push notifications on the device. The device will no longer recieve push notifications.
-    },
-    enableLocation: function (success, error) {
-        // Enable location updates on the device.
-    },
-    disableLocation: function (success, error) {
-        // Disable location updates on the device.
-    },
-    enableBackgroundLocation: function (success, error) {
-        // Enable background location updates on the device.
-    },
-    disableBackgroundLocation: function (success, error) {
-        // Disable background location updates on the device.
-    },
-    registerForNotificationTypes: function (bitmask) {
-        // Note:: iOS Only
-        //
-        // On iOS, registration for push requires specifying what combination of badges,
-        // sound and alerts are desired. This function must be explicitly called in order
-        // to begin the registration process. For example:
-        //
-        // push.registerForNotificationTypes(push.notificationType.sound | push.notificationType.alert)
-        //
-        // If your are unfamiliar with bitmasks, see: https://en.wikipedia.org/wiki/Bitmask#Uses_of_bitmasks
-        //
-        // Available notification types:
-        //
-        // notificationType.sound
-        // notificationType.alert
-        // notificationType.badge
-    },
-    // ------------------------------------------------------------
-    isPushEnabled: function (callback) {
-        // Callback arguments : Boolean : enabled
-    },
-    isSoundEnabled: function (callback) {
-        // Note: Android Only
-        // Callback arguments : Boolean : enabled
-    },
-    isVibrateEnabled: function (callback) {
-        // Note: Android Only
-        // Callback arguments : Boolean : enabled
-    },
-    isQuietTimeEnabled: function (callback) {
-        // Callback arguments : Boolean : enabled
-    },
-    isInQuietTime: function (callback) {
-        // Callback arguments : Boolean : enabled
-    },
-    isLocationEnabled: function (callback) {
-        // Callback arguments : Boolean : enabled
-    },
-    isBackgroundLocationEnabled: function (callback) {
-        // Callback arguments : Boolean : enabled
-    },
-    // ------------------------------------------------------------
-    getIncoming: function ( success, error) {
-        // Will bring up any existing notification if launched from one
-        // i.e. is only called when the app is NOT running and is launched from a push notification
-    },
-    getPushID: function ( success, error) {
-        // Callback arguments: (Object) {valid: Boolean, pushID: String}
-        //
-        // Get the push identifier for the device. The push ID is used to send messages to
-        // the device for testing, and is the canoncial identifer for the device in Urban Airship.
-        //
-        // Note: iOS will always have a push identifier, Android will have one after successful registration.
-    },
-    getQuietTime: function (success, error) {
-        // @return : Object : {"startHour":0,"startMinute":0,"endHour":0,"endMinute":0}
-    },
-    getTags: function (success, error) {
-        // @return : Array : array of tags
-    },
-    getAlias: function (success, error) {
-        // @return : String : alias
-        // Get alias for the device.
-    },
-    // ------------------------------------------------------------
-    setAlias: function (alias, success, error) {
-        // @alias : String : alias
-        // Set alias for the device.
-    },
-    setTags: function (tags, success, error) {
-        // @tags: Array : tags
-        // The maximum length of a tag is 128 characters.
-    },
-    setSoundEnabled: function (enabled, callback) {
-        // Note: Android Only, iOS sound settings come in the push
-        // Set whether the device makes sound on push.
-        // @enabled : Boolean : enabled
-    },
-    setVibrateEnabled: function (enabled, callback) {
-        // Note: Android Only
-        // Set whether the device vibrates on push.
-    },
-    setQuietTimeEnabled: function (enabled, callback) {
-        // @enabled : Boolean : enabled
-    },
-    setQuietTime: function (QuietTime, success, error) {
-        // tested:working
-        // i.e. QuietTime : Object : same format as returned by getQuietTime
-        // e.g. {"startHour":0,"startMinute":0,"endHour":0,"endMinute":0}
-    },
-    setAutobadgeEnabled: function (enabled, callback) {
-        // Note: iOS only
-        // Enable/disable the Urban Airship Autobadge feature.
-    },
-    setBadgeNumber: function (number, success, error) {
-        // Note: iOS only
-    },
-    //
-    recordCurrentLocation: function (callback) {
-        // Report the location of the device.
-    }
-};
-```
+#### enablePush: function (success, error) {}
+Enable push notifications on the device. This sends a registration request to the backend service.
 
-### Events
+#### disablePush: function (success, error) {}
+Disable push notifications on the device. The device will no longer receive push notifications.
+
+#### enableLocation: function (success, error) {}
+Enable location updates on the device.
+
+#### disableLocation: function (success, error) {}
+Disable location updates on the device.
+
+#### enableBackgroundLocation: function (success, error) {}
+Enable background location updates on the device.
+
+#### disableBackgroundLocation: function (success, error) {}
+Disable background location updates on the device.
+
+#### registerForNotificationTypes: function (Bitmask) {}
+Note: iOS Only
+
+On iOS, registration for push requires specifying what combination of badges,
+sound and alerts are desired. This function must be explicitly called in order
+to begin the registration process. For example:
+
+`forge.urbanairship.registerForNotificationTypes(push.notificationType.sound | push.notificationType.alert)`
+
+
+Available notification types:
+
+notificationType.sound
+notificationType.alert
+notificationType.badge
+
+
+
+## Status functions
+
+#### isPushEnabled: function (callback) {}
+Callback arguments : Boolean : enabled
+
+#### isSoundEnabled: function (callback) {}
+Note: Android Only
+
+Callback arguments : Boolean : enabled
+
+#### isVibrateEnabled: function (callback) {}
+Note: Android Only
+
+Callback arguments : Boolean : enabled
+
+#### isQuietTimeEnabled: function (callback) {}
+Callback arguments : Boolean : enabled
+
+#### isInQuietTime: function (callback) {}
+Callback arguments : Boolean : enabled
+
+#### isLocationEnabled: function (callback) {}
+Callback arguments : Boolean : enabled
+
+#### isBackgroundLocationEnabled: function (callback) {}
+Callback arguments : Boolean : enabled
+
+
+
+## Getters
+
+#### getIncoming: function ( success, error) {}
+Will bring up any existing notification if launched from one
+i.e. is only called when the app is NOT running and is launched from a push notification
+
+#### getPushID: function (success, error) {}
+Callback arguments: (Object) {valid: Boolean, pushID: String}
+
+Get the push identifier for the device. The push ID is used to send messages to
+the device for testing, and is the canoncial identifer for the device in Urban Airship.
+
+Note: iOS will always have a push identifier, Android will have one after successful registration.
+
+#### getQuietTime: function (success, error) {}
+Callback arguments : Object : QuietTime
+
+#### getTags: function (success, error) {}
+Callback arguments : Array : array of tags
+
+#### getAlias: function (success, error) {}
+Callback arguments : String : alias
+
+Get alias for the device.
+
+
+
+## Setters
+
+#### setAlias: function (alias, success, error) {}
+@alias : String : alias
+
+Set alias for the device.
+
+#### setTags: function (tags, success, error) {}
+@tags: Array : tags
+
+The maximum length of a tag is 128 characters.
+
+#### setSoundEnabled: function (enabled, callback) {}
+Note: Android Only, iOS sound settings come in the push
+
+@enabled : Boolean : enabled
+
+Set whether the device makes sound on push.
+
+#### setVibrateEnabled: function (enabled, callback) {}
+Note: Android Only
+
+Set whether the device vibrates on push.
+
+#### setQuietTimeEnabled: function (enabled, callback) {}
+@enabled : Boolean : enabled
+
+Set whether quiet time is on.
+
+#### setQuietTime: function (QuietTime, success, error) {}
+QuietTime : Object
+
+Set the quiet time for the device.
+
+#### setAutobadgeEnabled: function (enabled, callback) {}
+Note: iOS only
+
+@enabled : Boolean : enabled
+
+Enable/disable the Urban Airship Autobadge feature.
+
+#### setBadgeNumber: function (number, success, error) {}
+Note: iOS only
+
+#### recordCurrentLocation: function (callback) {}
+Report the location of the device.
+
+
+## Events
 
 #### Incoming Push
 
 This is called when a push is received, but ONLY while the app is active.
-See also `forge.urbanairship.getIncoming()`.
+See also `getIncoming()`.
 
 ```
 forge.internal.addEventListener("urbanairship.pushReceived", function (data) {
@@ -283,7 +308,6 @@ This event is trigerred when a registration response is recieved from UrbanAirsh
 var registered = false;
 forge.internal.addEventListener("urbanairship.registration", function (d) {
         var txt;
-
         if (!registered) {
             registered = d;
             txt = 'registration: '+JSON.stringify(registered);
