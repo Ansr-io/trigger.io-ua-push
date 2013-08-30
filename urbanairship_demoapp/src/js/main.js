@@ -78,7 +78,7 @@
         errorfail
     );
     forge.urbanairship.setTags(
-        ['more', 'awesomeness'],
+        ['uademo-one', 'uademo-two', 'uademo-three'],
         function () {
             log('success :: setTags');
         },
@@ -99,31 +99,31 @@
         errorfail
     );
     // --------------------------------------------------------------------------------------
-//    forge.urbanairship.getPushID(
-//        function (d) {
-//            log('getPushID: '+d);
-//        },
-//        errorfail
-//    );
-//    forge.urbanairship.getQuietTime(
-//        function (d) {
-//            log('getQuietTime: '+JSON.stringify(d));
-//        },
-//        errorfail
-//    );
-//    forge.urbanairship.getTags(
-//        function (tags) {
-//            log('getTags: '+tags.join(', '));
-//        },
-//        errorfail
-//    );
-//
-//    forge.urbanairship.getAlias(
-//        function (alias) {
-//            log('getAlias: '+alias);
-//        },
-//        errorfail
-//    );
+    forge.urbanairship.getPushID(
+        function (d) {
+            log('getPushID: '+d);
+        },
+        errorfail
+    );
+    forge.urbanairship.getQuietTime(
+        function (d) {
+            log('getQuietTime: '+JSON.stringify(d));
+        },
+        errorfail
+    );
+    forge.urbanairship.getTags(
+        function (tags) {
+            log('getTags: '+tags.join(', '));
+        },
+        errorfail
+    );
+
+    forge.urbanairship.getAlias(
+        function (alias) {
+            log('getAlias: '+alias);
+        },
+        errorfail
+    );
 //
 
     if (forge.is.ios()) {

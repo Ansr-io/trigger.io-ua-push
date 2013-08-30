@@ -1,10 +1,10 @@
 {
 	"android": {
-        "device": "00680fc051d40bb8",
+		"device": "00680fc051d40bb8",
 		"profiles": {
 			"DEFAULT": {
-                "keystore": "misc/odr001-google-play.keystore",
-                "keyalias": "odr001"
+				"keystore": "misc/odr001-google-play.keystore",
+				"keyalias": "odr001"
 			}
 		},
 		"sdk": "/Users/zackd/src/adt-bundle/sdk"
@@ -14,12 +14,12 @@
 		"simulatorsdk": "6.1",
 		"simulatorfamily": "iphone",
 		"profiles": {
-            "DEFAULT": {
-                "provisioning_profile": "misc/ODR_with_push.mobileprovision"
-            },
-            "production": {
-                "provisioning_profile": "misc/ODR_PRODUCTION_with_push.mobileprovision"
-            }
+			"DEFAULT": {
+				"provisioning_profile": "misc/ODR_with_push.mobileprovision"
+			},
+			"production": {
+				"provisioning_profile": "misc/ODR_PRODUCTION_with_push.mobileprovision"
+			}
 		}
 	},
 	"general": {}

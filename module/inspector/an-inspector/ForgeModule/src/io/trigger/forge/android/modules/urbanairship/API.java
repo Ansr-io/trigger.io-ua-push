@@ -274,12 +274,13 @@ public class API {
            HashSet<String> tagSet = new HashSet<String>();
          
            for (int i = 0; i < tagsArray.size(); ++i) {
-               tagSet.add(tagsArray.get(i).toString());
+               tagSet.add(tagsArray.get(i).getAsString());
            }
 
            PushManager.shared().setTags(tagSet);
-           Logger.debug("Settings tags: " + tagSet);;
+           Logger.debug("Settings tags: " + tagSet);  
            callbackContext.success();
+           
        } catch (JsonIOException e) {
            Logger.error("Error reading tags JSON", e);
            callbackContext.error("Error reading tags JSON");
