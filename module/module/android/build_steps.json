@@ -48,6 +48,13 @@
 			}
 		}
 	},
+	{
+		"do": {
+			"android_add_permission": {
+				"permission": "android.permission.BROADCAST_STICKY"
+			}
+		}
+	},
 
 	{
 		"do": {
