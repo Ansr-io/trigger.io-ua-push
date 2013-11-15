@@ -91,7 +91,6 @@
 //general enablement
 
 + (void)enablePush:(ForgeTask*)command {
-    [self takeOff:command];
     [UAPush shared].pushEnabled = YES;
     //forces a reregistration
     [[UAPush shared] updateRegistration];
@@ -100,7 +99,6 @@
 }
 
 + (void)disablePush:(ForgeTask*)command {
-    [self takeOff:command];
     [UAPush shared].pushEnabled = NO;
     //forces a reregistration
     [[UAPush shared] updateRegistration];
@@ -109,21 +107,18 @@
 }
 
 + (void)enableLocation:(ForgeTask*)command {
-    [self takeOff:command];
     [UALocationService setAirshipLocationServiceEnabled:YES];
     [command success:nil];
     
 }
 
 + (void)disableLocation:(ForgeTask*)command {
-    [self takeOff:command];
     [UALocationService setAirshipLocationServiceEnabled:NO];
     [command success:nil];
     
 }
 
 + (void)enableBackgroundLocation:(ForgeTask*)command {
-    [self takeOff:command];
     [UAirship shared].locationService.backgroundLocationServiceEnabled = YES;
     [command success:nil];
     
@@ -153,13 +148,11 @@
 }
 
 + (void)isQuietTimeEnabled:(ForgeTask*)command {
-    [self takeOff:command];
     BOOL enabled = [UAPush shared].quietTimeEnabled;
     [command success:[NSNumber numberWithBool:enabled]];
 }
 
 +(void)isInQuietTime:(ForgeTask*)command {
-    [self takeOff:command];
     BOOL inQuietTime;
     NSDictionary *quietTimeDictionary = [UAPush shared].quietTime;
     if (quietTimeDictionary) {
@@ -185,27 +178,20 @@
 }
 
 + (void)isLocationEnabled:(ForgeTask*)command {
-    [self takeOff:command];
     BOOL enabled = [UALocationService airshipLocationServiceEnabled];
     [command success:[NSNumber numberWithBool:enabled]];
     
 }
 
 + (void)isBackgroundLocationEnabled:(ForgeTask*)command {
-    [self takeOff:command];
     BOOL enabled = [UAirship shared].locationService.backgroundLocationServiceEnabled;
     [command success:[NSNumber numberWithBool:enabled]];
     
 }
 
 + (void)getIncoming:(ForgeTask*)command {
-    
-    
-    
-    [self takeOff:command];
     NSString *incomingAlert = @"";
     NSMutableDictionary *incomingExtras = [NSMutableDictionary dictionary];
-    
    
     NSDictionary *launchOptions = [UAAppDelegateSurrogate shared].launchOptions;
     if ([[launchOptions allKeys]containsObject:@"UIApplicationLaunchOptionsRemoteNotificationKey"]) {
@@ -213,7 +199,6 @@
         incomingAlert = [self alertForUserInfo:payload];
         [incomingExtras setDictionary:[self extrasForUserInfo:payload]];
     }
-  
     
     NSMutableDictionary *returnDictionary = [NSMutableDictionary dictionary];
     
@@ -225,19 +210,14 @@
     [[UAAppDelegateSurrogate shared] clearLaunchOptions];
     
     [command success:returnDictionary];
-    
-    
 }
 
 + (void)getPushID:(ForgeTask*)command {
-    [self takeOff:command];
     NSString *pushID = [UAirship shared].deviceToken ?: @"";
     [command success:pushID];
-    
 }
 
 + (void)getQuietTime:(ForgeTask*)command {
-    
     NSDictionary *quietTimeDictionary = [UAPush shared].quietTime;
     //initialize the returned dictionary with zero values
     NSNumber *zero = [NSNumber numberWithInt:0];
@@ -281,7 +261,6 @@
 }
 
 + (void)getTags:(ForgeTask*)command {
-    [self takeOff:command];
     NSArray *tags = [UAPush shared].tags? : [NSArray array];
     NSDictionary *returnDictionary = [NSDictionary dictionaryWithObjectsAndKeys:tags, @"tags", nil];
     [command success:returnDictionary];
@@ -289,7 +268,6 @@
 }
 
 + (void)getAlias:(ForgeTask*)command {
-    
     NSString *alias = [UAPush shared].alias ?: @"";
     [command success:alias];
     
@@ -306,7 +284,6 @@
 }
 
 + (void)setAlias:(ForgeTask*)command text:(NSString *)text {
-    [self takeOff:command];
     NSString *alias = text;
     // If the value passed in is nil or an empty string, set the alias to nil. Empty string will cause registration failures
     // from the Urban Airship API
@@ -323,16 +300,13 @@
 }
 //API Parity with andorid
 + (void)setSoundEnabled:(ForgeTask*)command  text:(NSNumber *)text {
-    
     [command success:nil];
 }
 + (void)setVibrateEnabled:(ForgeTask*)command  text:(NSNumber *)text {
-    
     [command success:nil];
 }
 
 + (void)setQuietTimeEnabled:(ForgeTask*)command  text:(NSNumber *)text {
-    [self takeOff:command];
     NSNumber *value = text;
     BOOL enabled = [value boolValue];
     [UAPush shared].quietTimeEnabled = enabled;
@@ -342,8 +316,6 @@
 }
 
 + (void)setQuietTime:(ForgeTask*)command startHour:(NSNumber *)startHour startMinute:(NSNumber *)startMinute  endHour:(NSNumber *)endHour  endMinute:(NSNumber *)endMinute  {
-//    Class c = [NSNumber class];
-    [self takeOff:command];
     id startHr = startHour;
     id startMin = startMinute;
     id endHr = endHour;
@@ -371,7 +343,6 @@
 }
 
 + (void)setAutobadgeEnabled:(ForgeTask*)command text:(NSNumber *)text{
-    [self takeOff:command];
     NSNumber *number = text;
     BOOL enabled = [number boolValue];
     [UAPush shared].autobadgeEnabled = enabled;
@@ -380,7 +351,6 @@
 }
 
 + (void)setBadgeNumber:(ForgeTask*)command text:(NSNumber *)text {
-    [self takeOff:command];
     id number = text;
     NSInteger badgeNumber = [number intValue];
     [[UAPush shared] setBadgeNumber:badgeNumber];
@@ -391,7 +361,6 @@
 //reset badge
 
 + (void)resetBadge:(ForgeTask*)command {
-    [self takeOff:command];
     [[UAPush shared] resetBadge];
     [[UAPush shared] updateRegistration];
     [command success:nil];
@@ -401,7 +370,6 @@
 //location recording
 
 + (void)recordCurrentLocation:(ForgeTask*)command {
-    
     [[UAirship shared].locationService reportCurrentLocation];
     [command success:nil];
     
