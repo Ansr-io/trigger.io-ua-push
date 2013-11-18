@@ -160,6 +160,19 @@
 				"element": {
 					"tag": "service",
 					"attributes": {
+						"android:name": "com.urbanairship.location.LocationService",
+						"android:process": ":com.urbanairship.process"
+					}
+				}
+			}
+		}
+	},
+	{
+		"do": {
+			"android_add_to_application_manifest": {
+				"element": {
+					"tag": "service",
+					"attributes": {
 						"android:name": "com.urbanairship.analytics.EventService",
 						"android:label": "Event Service"
 					}
