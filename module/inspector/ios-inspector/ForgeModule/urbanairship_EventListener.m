@@ -16,8 +16,8 @@
 
 + (void)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	[urbanairship_API takeOff:nil];
-//    [[UAPush shared] setAutobadgeEnabled:YES];
-//    [[UAPush shared] resetBadge];//zero badge
+    [[UAPush shared] setAutobadgeEnabled:YES];
+    [[UAPush shared] resetBadge];//zero badge
 }
 
 + (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
@@ -38,7 +38,7 @@
     UALOG(@"PushNotificationPlugin: Received remote notification: %@", userInfo);
     
     [[UAPush shared] handleNotification:userInfo applicationState:application.applicationState];
-    //[[UAPush shared] setBadgeNumber:0]; // zero badge after push received
+    [[UAPush shared] resetBadge];// zero badge after push received
     
     NSString *alert = [self alertForUserInfo:userInfo];
     NSMutableDictionary *extras = [self extrasForUserInfo:userInfo];
