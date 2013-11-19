@@ -70,6 +70,7 @@ public class IntentReceiver extends BroadcastReceiver {
                     // only)
                     PushManager.EXTRA_PUSH_ID,// internal UA push id
                     PushManager.EXTRA_ALERT);// ignore alert
+            
             if (ignoredKeys.contains(key)) {
                 continue;
             }
@@ -107,12 +108,11 @@ public class IntentReceiver extends BroadcastReceiver {
             String alert = intent.getStringExtra(PushManager.EXTRA_ALERT);
             Map<String, String> extras = getNotificationExtras(intent);
 
-            Logger.info("User clicked notification. Message: " + alert
-                    + ". Payload: " + extras.toString());
+            Logger.info("User clicked notification. Message: " + alert + ". Payload: " + extras.toString());
 
             Intent launch = new Intent(Intent.ACTION_MAIN);
-            launch.setClass(UAirship.shared().getApplicationContext(), 
-                    ForgeActivity.class);
+            launch.setClass(UAirship.shared().getApplicationContext(), ForgeActivity.class);
+            
             //TODO set above class to dynmaic property
             launch.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
@@ -144,7 +144,7 @@ public class IntentReceiver extends BroadcastReceiver {
                 Logger.error("Recording current location on Intent failed");
                 e.printStackTrace();
             } catch (RemoteException e) {
-                Logger.error("zomg flailsauce");
+                Logger.error("Recording current location on Intent failed");
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }

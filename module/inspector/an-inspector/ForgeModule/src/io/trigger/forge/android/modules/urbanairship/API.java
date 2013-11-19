@@ -86,26 +86,23 @@ public class API {
 
 
 	public static void enablePush(final ForgeTask callbackContext) {
-	      if (requirePushServiceEnabled(callbackContext)) {
-	            PushManager.enablePush();
-	           // PushManager.shared().setIntentReceiver(PushNotificationPluginIntentReceiver.class);
-	            callbackContext.success();
-	        }
+		if (requirePushServiceEnabled(callbackContext)) {
+            PushManager.enablePush();
+           // PushManager.shared().setIntentReceiver(PushNotificationPluginIntentReceiver.class);
+            callbackContext.success();
+        }
 	}
 	public static void disablePush(final ForgeTask callbackContext) {
-	  if (requirePushServiceEnabled(callbackContext)) {
+		if (requirePushServiceEnabled(callbackContext)) {
 	        PushManager.disablePush();
 	        callbackContext.success();
 	    }
 	}
 	public static void enableLocation(final ForgeTask callbackContext) {
-       if (requireLocationServiceEnabled(callbackContext)) {
+		if (requireLocationServiceEnabled(callbackContext)) {
             UALocationManager.enableLocation();            
             callbackContext.success();
         }
-        
-		//UALocationManager.enableLocation();
-        //callbackContext.success();
 	}
 	public static void disableLocation(final ForgeTask callbackContext) {
         if (requireLocationServiceEnabled(callbackContext)) {
@@ -127,7 +124,7 @@ public class API {
 	}
 	
 	// is* functions
-
+	
 	public static void isPushEnabled(final ForgeTask callbackContext) {
         if (requirePushServiceEnabled(callbackContext)) {
             Boolean value =PushManager.shared().getPreferences().isPushEnabled();
@@ -258,19 +255,15 @@ public class API {
 //setters
 
 	public static void setAlias(final ForgeTask callbackContext, @ForgeParam("text") final String text) {
-       
 		Logger.debug("setAlias"+ text.toString());
 		PushManager.shared().setAlias(text);
         callbackContext.success();
-        
-        
-        
 	}
 	public static void setTags(final ForgeTask callbackContext,  @ForgeParam("tags") final JsonArray tagsArray) {
-       if (!requirePushServiceEnabled(callbackContext)) {
+		if (!requirePushServiceEnabled(callbackContext)) {
             return;
         }
-       try {
+		try {
            HashSet<String> tagSet = new HashSet<String>();
          
            for (int i = 0; i < tagsArray.size(); ++i) {
@@ -281,12 +274,10 @@ public class API {
            Logger.debug("Settings tags: " + tagSet);  
            callbackContext.success();
            
-       } catch (JsonIOException e) {
+		} catch (JsonIOException e) {
            Logger.error("Error reading tags JSON", e);
            callbackContext.error("Error reading tags JSON");
-       }	 
-	
-	
+		}	 
 	}
 	public static void setSoundEnabled(final ForgeTask callbackContext, @ForgeParam("text") final int text) {
         if (!requirePushServiceEnabled(callbackContext)) {
@@ -342,7 +333,6 @@ public class API {
         try {
             Calendar start = new GregorianCalendar();
             Calendar end = new GregorianCalendar();
-    
 
             start.set(Calendar.HOUR_OF_DAY, startHour);
             start.set(Calendar.MINUTE, startMinute);
@@ -358,7 +348,7 @@ public class API {
         }
 	}
 
-//location stuff
+	//location stuff
 	public static void recordCurrentLocation(final ForgeTask callbackContext) {	
 	    if (!requireLocationServiceEnabled(callbackContext)) {
 	        return;
@@ -374,56 +364,15 @@ public class API {
 	        Logger.error("Caught RemoteException in recordCurrentLocation", e);
 	    } catch (Exception e) {
 	    	 Logger.error("Exception in recordCurrentLocation", e);
-	    
 	    }
 	    
 	    callbackContext.success();
 	}
 	
-	
 
- // Helpers
-	
-
-
+	// Helpers
     public static  boolean requirePushServiceEnabled(final ForgeTask callbackContext) {
-    	
     	/*
-    	if (takeOff) {
-			LocationOptions lOptions 		= new LocationOptions();
-			lOptions.locationServiceEnabled = true;
-			
-			
-			 AirshipConfigOptions options 	= new AirshipConfigOptions();
-			 options.developmentAppKey		= "v_WZYBsVTxWS4U1UBHQK7w";
-			 options.developmentAppSecret	= "SkADXHqWRNyCQoVSJErbGA";
-			 options.transport				= "gcm";
-			 options.gcmSender				= "128731908880";
-			 options.inProduction			= false;
-			 options.developmentLogLevel	= Log.DEBUG;
-			 options.pushServiceEnabled		= true;
-			 
-			 options.locationOptions      = lOptions;
-			 
-			
-			UAirship.takeOff(ForgeApp.getApp(), options);
-			//TODO figure out a way to enable this...
-			//ForgeApp.getApp().registerReceiver(new IntentReceiver(), new IntentFilter("com.urbanairship.push.PUSH_RECEIVED") );
-			
-			
-			//PushManager.shared().setIntentReceiver(GCMPushReceiver.class);	
-			
-			Logger.debug(IntentReceiver.class.getPackage().toString());
-			PushManager.enablePush();
-			PushManager.shared().setIntentReceiver(IntentReceiver.class);	
-			
-			UALocationManager.enableLocation();  	
-			takeOff= false;
-    	
-    	}
-    	
-    	
-    	
         if (!UAirship.shared().getAirshipConfigOptions().pushServiceEnabled) {
            // Logger.warn("pushServiceEnabled must be enabled in the airshipconfig.properties file");
             callbackContext.error("pushServiceEnabled must be enabled in the airshipconfig.properties file");
@@ -435,62 +384,11 @@ public class API {
     }
 
     private static boolean requireLocationServiceEnabled(final ForgeTask callbackContext) {
-    	
     	if (locationTakeOff == false) {
-    
     		UALocationManager.init();
     		locationTakeOff = true;
     	}
-    	
         return true;
     }
 	
-//	public static void showAlert(final ForgeTask task, @ForgeParam("text") final String text) {
-//	
-//	
-//		
-//		LocationOptions lOptions 		= new LocationOptions();
-//		lOptions.locationServiceEnabled = true;
-//		
-//		
-//		 AirshipConfigOptions options 	= new AirshipConfigOptions();
-//		 options.developmentAppKey		= "v_WZYBsVTxWS4U1UBHQK7w";
-//		 options.developmentAppSecret	= "SkADXHqWRNyCQoVSJErbGA";
-//		 options.transport				= "gcm";
-//		 options.gcmSender				= "128731908880";
-//		 options.inProduction			= false;
-//		 options.developmentLogLevel	= Log.DEBUG;
-//		 options.pushServiceEnabled		= true;
-//		 
-//		 options.locationOptions      = lOptions;
-//		 
-//		
-//		UAirship.takeOff(ForgeApp.getApp(), options);
-//		//TODO figure out a way to enable this...
-//		ForgeApp.getApp().registerReceiver(new IntentReceiver(), new IntentFilter("com.urbanairship.push.PUSH_RECEIVED") );
-//		
-//		//PushManager.shared().setIntentReceiver(IntentReceiver.class);			
-//		requirePushServiceEnabled(task);
-//		UALocationManager.enableLocation();
-//		
-//		
-//		if (text.length() == 0) {
-//			// Error if there is no text to show
-//			task.error("No text entered");
-//			return;
-//			
-//		}
-//		task.performUI(new Runnable() {
-//			public void run() {
-//				AlertDialog.Builder builder = new AlertDialog.Builder(ForgeApp.getActivity());
-//				builder.setMessage(text).setCancelable(false).setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-//					public void onClick(DialogInterface dialog, int which) {
-//						task.success();
-//					}
-//				});
-//				AlertDialog alert = builder.create();
-//				alert.show();
-//			}
-//		});
-//	}
 }

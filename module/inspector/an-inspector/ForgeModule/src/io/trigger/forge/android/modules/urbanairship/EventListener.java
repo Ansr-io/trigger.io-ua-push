@@ -8,31 +8,18 @@ import com.urbanairship.location.UALocationManager;
 import com.urbanairship.push.PushManager;
 import android.util.Log;
 
-
 public class EventListener extends ForgeEventListener {
 	
 	private static final String TAG = ">>>>> UA_MODULE";
 	
 	@Override
-	public void onApplicationCreate() {
-		
+	public void onApplicationCreate() {	
 		Log.v(TAG, "onApplicationCreate");
-		
 		UAirship.takeOff(ForgeApp.getApp());
 		PushManager.enablePush();
 		UALocationManager.init();
 		PushManager.shared().setIntentReceiver(IntentReceiver.class);
 	}
-	
-//	@Override
-//    public void onStop() {      
-//		Log.v(TAG, "onStop");
-//        UAirship.land(); 
-//    }
-	
-	
-	
-//	where these belong... ?
 	
 	@Override
     public void onStart() {
@@ -43,7 +30,6 @@ public class EventListener extends ForgeEventListener {
     @Override
     public void onStop() {
     	Log.v(TAG, "onStop");
-//    	UAirship.land();
         UAirship.shared().getAnalytics().activityStopped(ForgeApp.getActivity());
     }
 }
