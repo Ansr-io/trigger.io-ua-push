@@ -123,6 +123,8 @@ public class IntentReceiver extends BroadcastReceiver {
 
             UAirship.shared().getApplicationContext().startActivity(launch);
 
+            API.raiseClick(alert, extras);
+
         } else if (action.equals(PushManager.ACTION_REGISTRATION_FINISHED)) {
 
             String apid = intent.getStringExtra(PushManager.EXTRA_APID);
