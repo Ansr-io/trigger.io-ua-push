@@ -1,3 +1,7 @@
+# Notice
+
+We at On Device Research are no longer actively supporting this plugin or developing with the trigger.io platform.
+
 ## trigger.io-ua-push
 
 Urban Airship module for trigger.io platform - integration with push messaging service provided by Urban Airship.
