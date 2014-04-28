@@ -59,6 +59,20 @@ public class API {
         }
         
     }
+
+    public static  void raiseClick(String message, Map<String, String> extras) {
+        
+        JsonObject data = notificationObject(message, extras);
+        Logger.info("raiseClick: " + data);
+
+        try {
+            ForgeApp.event("urbanairship.clickReceived", data);
+        }
+        catch (Exception e) {
+            Logger.error("unexpected exception in raiseClick", e);
+        }
+        
+    }
     
     public static void raiseRegistration(Boolean valid, String pushID) {
     	

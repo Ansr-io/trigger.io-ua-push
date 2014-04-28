@@ -124,5 +124,10 @@ forge.urbanairship	 = {
         addListener: function (callback) {
             forge.internal.addEventListener("urbanairship.pushReceived", callback);
         }
+    },
+    clickReceived: {
+        addListener: function (callback) {
+            forge.internal.addEventListener("urbanairship.clickReceived", callback);
+        }
     }
 };
